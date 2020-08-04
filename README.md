@@ -7,9 +7,11 @@ A shell script to help clearing the licenses for NuttX
 The script extracts copyright owners and declared authors from the comment blocks at the start of a file. The top 3 (number of lines edited) contributors to the file, determined by git log, are also recorded. All data is stored in a SQLite3 database for ease of use.
 
 Comments like:
+
 ![Code Screenshot](CodeScreenshot.png)
 
 are converted to:
+
 ![Database Screenshot](DBScreenshot.png)
 
 The data fields explained:
