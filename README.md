@@ -17,8 +17,8 @@ are converted to:
 The data fields explained:
 
 |    field name  | explanation |
-| ---------- | --- |  ---- |
-| id | index(auto-generated) |
+| -------------- | ----------- |
+| id   | index(auto-generated) |
 | file | file path |
 | license | APACHE or OTHER |
 | note | warnings: CP>3 indicates more than 3 copyright owners, DA>100 indicates long declared author string(bug), AUTHOR_DIFF indicates top 1 contributor is different from declared author(file may be copied from sw. else) |
@@ -27,14 +27,14 @@ The data fields explained:
 | copyright2 | third copyright owner |
 | declared_author | authors declared in file |
 | author0 | first contributor | 
-| email0 | first contributor's email| 
-| lines0 | first contributor's total edited lines| 
+| email0 | first contributor's email | 
+| lines0 | first contributor's total edited lines | 
 | author1 | second contributor | 
-| email1 | second contributor's email| 
-| lines1 | second contributor's total edited lines| 
+| email1 | second contributor's email | 
+| lines1 | second contributor's total edited lines | 
 | author2 | third contributor | 
-| email2 | third contributor's email| 
-| lines2 | third contributor's total edited lines| 
+| email2 | third contributor's email | 
+| lines2 | third contributor's total edited lines | 
 
 **Bugs**:
  - Copyright only extracts first two words of the owner name
