@@ -6,6 +6,7 @@ DBNAME=authors.db
 	id INTEGER PRIMARY KEY, \
 	file TEXT NOT NULL, \
 	license TEXT NOT NULL, \
+	note TEXT, \
 	copyright0 TEXT NOT NULL, \
 	copyright1 TEXT, \
 	copyright2 TEXT, \
@@ -18,18 +19,25 @@ DBNAME=authors.db
 	lines1 INTEGER, \
 	author2 TEXT, \
 	email2 TEXT, \
-	lines2 INTEGER, \
-	NOTE TEXT);"
+	lines2 INTEGER
+	);"
 LICENSE="OTHER"
+NOTE=
+#Check if Apache
 head -10 $FILE | grep -i 'Apache' && LICENSE="APACHE"
-CP=$(head -20 $FILE | grep -iE "copyright.*[19,20][0-9][0-9]" | sed 's/^.*[19,20][0-9][0-9]. \([[:alnum:]]* [[:alnum:]]*\).*$/\1/')
+#Process copyrights
+CP=$(head -30 $FILE | grep -iE "copyright.*[19,20][0-9][0-9]" | sed 's/^.*[19,20][0-9][0-9]. \([[:alnum:]]* [[:alnum:]]*\).*$/\1/')
 CP0="$(head -1 <<< $CP)"
 CP1=
 CP2=
-[ $(wc -l <<< $CP) > 1 ] && CP1="$(head -2 <<< $CP | tail -n +2)"
-[ $(wc -l <<< $CP) > 2 ] && CP2="$(head -3 <<< $CP | tail -n +3)"
-DECLARED_AUTHOR="$(head -20 $FILE | grep -iE -A2 'author[s]*:' | xargs | sed 's/.*author[s]*:\(.*<.*@.*>\).*$/\1/i;s/[\*]//g')"
+[ $(wc -l <<< $CP) -gt 1 ] && CP1="$(head -2 <<< $CP | tail -n +2)"
+[ $(wc -l <<< $CP) -gt 2 ] && CP2="$(head -3 <<< $CP | tail -n +3)"
+[ $(wc -l <<< $CP) -gt 3 ] && NOTE="CP>3;"
+#Process declared authors
+DECLARED_AUTHOR="$(head -50 $FILE | grep -iE -A5 'author[s]*:' | xargs | sed 's/[\*]*//g;s/^[/, ]*author[s]*:\(.*<.*@.*>\).*$/\1/i;s/author[s]*://gi')"
 echo "Declared author(s) for $FILE: $DECLARED_AUTHOR"
+[ ${#DECLARED_AUTHOR} -gt 30 ] && NOTE=$NOTE"DA>30;"
+#Process contributors according to git log
 echo "Top 3 committers:"
 AUTHORS=$(git log --no-merges --pretty=format:"%an;%ae"  --stat --follow $FILE | \
 sed '/./{H;$!d} ; x ; s/\n\(.*\);\(.*\)\n.*| \([0-9]*\).[+,-]*.*/\1,\2,\3/' | \
@@ -39,16 +47,22 @@ sed '1d' | \
 sort -t, -k3nr | \
 sed '1,3!d' | tee /dev/tty
 )
+AUTHOR0=$(head -1 <<< $AUTHORS | awk -F, '{print $1}')
+#Special note
+if [ ${#DECLARED_AUTHOR} -gt 1 ] && !(echo "$DECLARED_AUTHOR" | grep -iq "$AUTHOR0") then
+	NOTE=$NOTE"AUTHOR DIFF;"
+fi
+#Convert to SQL command
 case $(wc -l <<< $AUTHORS) in
 
-1) DBCMD=$(echo $AUTHORS | xargs | sed "s|\(.*\),\(.*\),\([0-9]*\)|insert into n(file,license,copyright0,copyright1,copyright2,declared_author,author0,email0,lines0) values('$FILE','$LICENSE','$CP0','$CP1','$CP2','$DECLARED_AUTHOR','\1','\2',\3)|")
+1) DBCMD=$(echo $AUTHORS | xargs | sed "s|\(.*\),\(.*\),\([0-9]*\)|insert into n(file,license,note,copyright0,copyright1,copyright2,declared_author,author0,email0,lines0) values('$FILE','$LICENSE','$NOTE','$CP0','$CP1','$CP2','$DECLARED_AUTHOR','\1','\2',\3)|")
     ;;
-2) DBCMD=$(echo $AUTHORS | xargs | sed "s|\(.*\),\(.*\),\([0-9]*\) \(.*\),\(.*\),\([0-9]*\)|insert into n(file,license,copyright0,copyright1,copyright2,declared_author,author0,email0,lines0,author1,email1,lines1) values('$FILE','$LICENSE','$CP0','$CP1','$CP2','$DECLARED_AUTHOR','\1','\2',\3,'\4','\5',\6)|")
+2) DBCMD=$(echo $AUTHORS | xargs | sed "s|\(.*\),\(.*\),\([0-9]*\) \(.*\),\(.*\),\([0-9]*\)|insert into n(file,license,note,copyright0,copyright1,copyright2,declared_author,author0,email0,lines0,author1,email1,lines1) values('$FILE','$LICENSE','$NOTE','$CP0','$CP1','$CP2','$DECLARED_AUTHOR','\1','\2',\3,'\4','\5',\6)|")
     ;;
-3) DBCMD=$(echo $AUTHORS | xargs | sed "s|\(.*\),\(.*\),\([0-9]*\) \(.*\),\(.*\),\([0-9]*\) \(.*\),\(.*\),\([0-9]*\)|insert into n(file,license,copyright0,copyright1,copyright2,declared_author,author0,email0,lines0,author1,email1,lines1,author2,email2,lines2) values('$FILE','$LICENSE','$CP0','$CP1','$CP2','$DECLARED_AUTHOR','\1','\2',\3,'\4','\5',\6,'\7','\8',\9)|")
+3) DBCMD=$(echo $AUTHORS | xargs | sed "s|\(.*\),\(.*\),\([0-9]*\) \(.*\),\(.*\),\([0-9]*\) \(.*\),\(.*\),\([0-9]*\)|insert into n(file,license,note,copyright0,copyright1,copyright2,declared_author,author0,email0,lines0,author1,email1,lines1,author2,email2,lines2) values('$FILE','$LICENSE','$NOTE','$CP0','$CP1','$CP2','$DECLARED_AUTHOR','\1','\2',\3,'\4','\5',\6,'\7','\8',\9)|")
     ;;
 esac
-
+#Execute!
 echo "Executing SQL command:"
 echo $DBCMD
 sqlite3 $DBNAME "$DBCMD"
