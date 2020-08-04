@@ -34,7 +34,7 @@ CP2=
 [ $(wc -l <<< $CP) -gt 2 ] && CP2="$(head -3 <<< $CP | tail -n +3)"
 [ $(wc -l <<< $CP) -gt 3 ] && NOTE="CP>3;"
 #Process declared authors
-DECLARED_AUTHOR="$(head -50 $FILE | grep -iE -A5 'author[s]*:' | xargs | sed 's/[\*]*//g;s/^[/, ]*author[s]*:\(.*<.*@.*>\).*$/\1/i;s/author[s]*://gi')"
+DECLARED_AUTHOR="$(head -50 $FILE | grep -iE -A5 'author[s]*:' | xargs | sed 's/[\*,\#]*//g;s/^[/, ]*author[s]*:\(.*<.*@.*>\).*$/\1/i;s/author[s]*://gi')"
 echo "Declared author(s) for $FILE: $DECLARED_AUTHOR"
 [ ${#DECLARED_AUTHOR} -gt 30 ] && NOTE=$NOTE"DA>30;"
 #Process contributors according to git log
