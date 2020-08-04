@@ -26,7 +26,7 @@ NOTE=
 #Check if Apache
 head -10 $FILE | grep -i 'Apache' && LICENSE="APACHE"
 #Process copyrights
-CP=$(head -30 $FILE | grep -iE "[copyright,(c)].*[19,20][0-9][0-9]" | sed 's/^.*[19,20][0-9][0-9]. \([[:alnum:]]* [[:alnum:]]*\).*$/\1/')
+CP=$(head -30 $FILE | grep -iE "copyright|work" | grep -iE "[19,20][0-9][0-9]" | sed 's/^.*[19,20][0-9][0-9]. \([[:alnum:]]* [[:alnum:]]*\).*$/\1/')
 CP0="$(head -1 <<< $CP)"
 CP1=
 CP2=
