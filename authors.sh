@@ -26,7 +26,7 @@ NOTE=
 #Check if Apache
 head -10 $FILE | grep -i 'Apache' && LICENSE="APACHE"
 #Process copyrights
-CP=$(head -30 $FILE | grep -iE "copyright.*[19,20][0-9][0-9]" | sed 's/^.*[19,20][0-9][0-9]. \([[:alnum:]]* [[:alnum:]]*\).*$/\1/')
+CP=$(head -30 $FILE | grep -iE "[copyright,(c)].*[19,20][0-9][0-9]" | sed 's/^.*[19,20][0-9][0-9]. \([[:alnum:]]* [[:alnum:]]*\).*$/\1/')
 CP0="$(head -1 <<< $CP)"
 CP1=
 CP2=
@@ -36,7 +36,7 @@ CP2=
 #Process declared authors
 DECLARED_AUTHOR="$(head -50 $FILE | grep -iE -A5 'author[s]*:' | xargs | sed 's/[\*,\#]*//g;s/^[/, ]*author[s]*:\(.*<.*@.*>\).*$/\1/i;s/author[s]*://gi')"
 echo "Declared author(s) for $FILE: $DECLARED_AUTHOR"
-[ ${#DECLARED_AUTHOR} -gt 30 ] && NOTE=$NOTE"DA>30;"
+[ ${#DECLARED_AUTHOR} -gt 100 ] && NOTE=$NOTE"DA>100;"
 #Process contributors according to git log
 echo "Top 3 committers:"
 AUTHORS=$(git log --no-merges --pretty=format:"%an;%ae"  --stat --follow $FILE | \
