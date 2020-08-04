@@ -49,7 +49,7 @@ Install SQLite3:
     
 ## Usage:
 
-Put the scripts in the root folder of git repo and run ./loop.sh
+Put the scripts in the root folder of git repo and run ./loop.sh for recursive processing or ./authors.sh <Filename> for a single file.
 
 ## SQLite Tips
 
