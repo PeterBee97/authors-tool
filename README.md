@@ -53,7 +53,7 @@ Put the scripts in the root folder of git repo and run ./loop.sh
 
 ## SQLite Tips
 
-I'm currently using the DB Browser for SQLite for browsing, You can also execute direct SQL commands in GUI or CLI, such as:
+I'm currently using the [DB Browser for SQLite](https://sqlitebrowser.org/dl/) for browsing, You can also execute direct SQL commands in GUI or CLI, such as:
 
     select * from n where license="OTHER" and copyright0!="Gregory Nutt" and copyright0!='' and copyright1!="Gregory Nutt";
 
