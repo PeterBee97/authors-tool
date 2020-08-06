@@ -4,6 +4,7 @@ Scripts to help clearing the licenses for NuttX
 
 ## Functions
 
+### Database
 The script authors-db.sh extracts copyright owners and declared authors from the comment blocks at the start of a file. The top 3 (number of lines edited) contributors to the file, determined by git log, are also recorded. All data is stored in a SQLite3 database for ease of use.
 
 Comments like:
@@ -41,7 +42,9 @@ The data fields explained:
  - Sometimes copyright contains the whole line
  - Sometimes copyright0 is absolutely wrong
  - Declared authors may contain extra characters between names
- 
+
+### Names
+
  The Python script process.py uses some NLP library to filter out names from text log. Put changelog.sh, process.py and <somelog.txt> in the same folder and run:
  
      ./changelog.sh <somelog.txt>
