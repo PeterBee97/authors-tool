@@ -1,4 +1,5 @@
 #!/bin/bash
-cat ChangeLog | grep -iE "from|by" | sed 's/^.*by//i;s/^.*from//i;s/[^a-zA-Z0-9!@#$%&*()_+-=;:,.<>/? ]//g' > ChangeLog2
-./process.py | sed 's/^ //' | sort | uniq > names.txt
+cat $1 | grep -iE "from|by" | sed 's/^.*by//i;s/^.*from//i;s/[^a-zA-Z0-9!@#$%&*()_+-=;:,.<>/? ]//g' > log.tmp
+./process.py log.tmp | sed 's/^ //' | sort | uniq > names.txt
+rm log.tmp
 
