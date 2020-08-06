@@ -1,0 +1,6184 @@
+ the C5471 serial port:
+tes of stack).
+ interrupt handlers
+ interrupt
+ IDLE task.
+ use signal handler can alter errno.
+ processor architecture logic
+ pthreads.
+
+ signals.
+ both child tasks and threads.
+ moving the mutual exclusion logic to a
+ arch/c5471 and arch/dm320 combined into arch/arm.
+().
+() logic
+() and accept() now correctly return the remote address.
+ timeout bug
+ Jacques Pelletier.
+ kwonsk.
+ kwonsk.
+ kwonsk.
+ kwonsk (Changes not yet
+ the timer signal handler.
+ fs to fs/fat
+ a socket while another is
+ ungetc().
+
+ 20x in nuttx-0.3.15)
+ the driver.
+ the
+ the
+() compilation error: only noted under ZDS
+tes (Kevin Franzen).
+ JPelletier).  The is the same fix that was needed for the
+ NSH directory to board-
+ task_create():
+ http://xflat.sourceforge.net.  At present is supports on
+ ROMFS file systems.  Initial check-in is untested
+ the .config file or the OSTest wont work on platforms
+.c and net/accept(): Sockets now support some non-blocking
+ non-blocking socket read.
+ one causes false alarm
+tes
+tes of length cause the driver to sometimes read one too many
+ the received FIFO (corrupting the next queued receive packet,
+ accepting a new connection.  Since the reference
+ a file system and executing NXFLAT-based CGI programs
+ a factor
+ a
+ simply add the volatile storage class
+ an interrupt to a task.
+
+ stall on TX endpoint.
+
+ stdbool.  This effected
+ not being used
+ stdint.h and stdbool.h and re-integrated with NuttX.
+ the packet size (to
+te packet FCS in the
+ the recipient; this greatly improves throughput.
+ the recipient and transfers
+ Gary S. Brown to lib/.  This is
+ David Hewson.  The
+ David Hewson.
+ David Hewson.
+ David Hewson.
+ David Hewson.
+
+ Yolande Cates.  NOTE:  these
+ David Hewson.
+ 2G Engineering (http://www.2g-eng.com/)
+ application software.
+ Alan Carvalho de Assis).
+ Tiago Maluta).
+ Tiago Maluta.
+ bf.nuttx).
+ Tiago Maluta).
+ Larry Arnold.
+ Larry Arnold).
+
+ offsets into this file that correspond to virtual
+ Dave Marples).
+ a signal.
+ Larry Arnold.  That port is purported
+ www.mcuzone.com.
+ complete.
+ the signal handler trampoline was missing.  Under
+ David Hewson on an ARM9 platform, but since the code
+ ARM to Cortex-M3,
+ Michael Hrabanek.
+ changing lots of files and directories.
+ Wilton Tong.
+ all Cortex-M3 NuttX users.
+tes were acknowledged; send.c knew that they were not.
+ a browser.
+ re-entrancy; lots of re-
+ the tool.
+ http://gitweb.aeruder.net/?p=uip.git;a=summary.
+ changing all uname -o references to the more
+
+ Uros Platise:
+ Uros Platise).
+ NSH.
+ Johannes Hampel).
+ Uros Platise.
+
+ Uros Platise).
+ Uros Platise.
+ Uros Platise.  It
+ the NSH command line.  This apps/ addon
+ Uros to accomplish just that.
+tes, it is now conditioned on
+ the SLIP driver.
+ the Linux kernel.  That changes the
+ re-installing the driver, you agree to the GPL licsensing
+
+ sched/ to lib/pthread where they more appropriately belong.
+ sched/ to lib/pthread where they more appropriately belong.
+ a comma-separated-value (CSV) data file.
+ Uros Platise.
+ Sheref Younan.  USB
+ Sheref Younan.  Thanks!
+ Uros Platise.
+ Bassem Fahmy.  The function
+ Uros Platise)
+ Yu Qiang.
+ Yu Qiang.
+ lpc313x
+ the MCU.  MCUs
+ the smaller, 16-
+.c: Fix an error found in receiving small files via FTP:
+, the socket is
+
+ SoC Robotics.  Not much present in this directory on initial
+ Sheref H.
+ one, and (2) Some devices stall of get Max LUN request
+ FLASH or EEPROM
+ simply de-referencing
+ the console device while using another device for NSH.
+ Hal Glenn.
+ Hal Glenn).
+
+ Li Zhuoyi).
+ include/nuttx to
+ the target.  The write requests were not being
+ Paul Osmialowski).
+ Li Zhuoy (Lzyy))
+
+ interrupt handlers.  In the second, there was missing
+
+ Li Zhouy (Lzyy)).
+ Li Zhouy (Lzyy)).
+ Uros Platise).
+ my last merge (sorry),
+ Li Zhuoyi (Lzyy).
+ Uros Platise).
+ Kurt Lidl).
+
+
+ Li Zhuoyi (Lzyy)
+tes in length, then it should not include a
+ Kaushal Parikh.
+ an
+ the system timer.
+ graphics memory
+ Hal Glenn).
+te boundaries.  This is necessary for
+
+ size_t
+ Windows, it is not initialized
+
+chek).
+ Laurent Latil.  These changes also include support for the STM32F103VCT6.
+
+ Mike Smith to support configuration and make export on MAC OS.
+ Mike Smith.
+ application
+ being used as interrupt sources.
+ Mike Smith)
+ Mike Smith)
+ Mike Smith.  Also includes a more flexible
+ Mike Smith).
+chek)
+chek)
+ Mike Smith)
+ making libboard.a a phony target, libboard.a should
+ Mike Smith).
+ lib/misc to this new
+
+ the original nsh configuration because it does not have an RS-232
+
+ Gary Teravskis.
+.c: Correct a bug in return value:  The the peer
+te
+tes of
+h
+ both
+ Max Nekludov.
+.c and net/uip/uip_tcpcallback.c:  Fix a leak in the TCP
+ the socket, you detect the end-of-connection event.  Change
+ Max Nekludov.
+ Max Nekludov.
+ the host
+ the FTP controlling terminal.  More will
+ include/net and
+ Gary Teravskis,
+ Gary Teravskis,
+ making a semaphore
+ include/nuttx to
+ include/nuttx to
+ certain low-power
+ Denis Carilki and includes the work of Denis,
+ Denis Carilki and includes the work of Denis, Alan Carvalho de
+ Lzyy.
+ re-entrance with debug
+ write-only
+ Lzyy.
+ include/nuttx/math.h to
+ Lzyy.
+ for the STM3240G-EVAL (the
+ Richard Cochran).
+ f_open() and
+te.
+ Mike Smith)
+ Mike Smith)
+.c:  Fix a compilation problem.  Some UDP logic was conditioned
+ not used.
+ the LCD is a property of the LCD, not of NxConsole.
+ the underlying graphic device (LCD
+ the internal header file to a place where
+ Petri Tanskanen.
+ the NX keyboard input callback.  If this option is set, then
+
+ stdin (/dev/console).  This works great but
+ Erik Van Der Zalm).
+ sleep().  The correct behavior is
+ sigtimedwait().
+ signal 255!  Now detects the timeout and errors -1 with errno == EGAIN.  If
+ an unblocked signal, but it is not one of the
+ Max Neklyudov).
+ Mike Smith.
+ the Mikroelektronika
+ default.
+ default in the PIC32MX7 MMB board configuration.
+ default.
+ zero error would occur.  The fix is to draw the 1 line high
+ http://www.dimitech.com/
+ any PIC32 users.
+ Jose Pablo Rojas V.
+ adding a volatile qualifier to a timing loop.  Oddly, the consequence
+ Lorenz Meier).
+
+ defining CONFIG_ARCH_STDARG_H=y.  If CONFIG_ARCH_STDARG_H,
+ NSH.  Does not work!  Crashes on first SPIFI write.
+ the
+ Diego Sanchez.
+ Mike Smith.
+ Mike Smith.
+ POSIX
+ Mike Smith.
+ Gary Teravskis and Scott Rondestvedt.
+ Denis Carilki and
+ Diego Sanchez.
+ default.  This is necessary because the free C32
+ Mike Smith)
+ Chris Taglia).
+ drivers/syslog to fs/ where is belongs.  Especially after realizing that
+ PM logic to re-start
+ deep sleep modes.
+ statfs() was wrong
+ Max Holtzberg.
+ Max Holtzberg).
+ Max Holtzberg).
+ STM32 F2/F4 DMA drivers
+ 24 to 16 MHz.  Apparently 24 MHz is too fast for the board.
+ POSIX.
+ Mike Smith)
+
+ stm32_usbhost.c.
+ Mike Smith
+ Mike Smith)
+ Kate)
+ Kate).
+ Kate).
+ the Kconfig logic that
+ an interrupt handler.  The
+ Kate.
+ strerror().
+ config
+
+ apps/netutils/webserver/makefsdata to nuttx/tools/mkfsdata.pl
+ Max Holtzberg).
+ one version in this directory.
+ Max Holtzberg
+ different tasks.
+ mksyscall.c into files where it can be shared.
+ Mike Smith)
+ Diego Sanchez).
+ chip to drivers/serial).
+ Richard Cochran).
+ Richard Cochran).
+ Mike Smith).
+.c, net/Kconfig, include/nuttx/net/uipopt.h: Remove delay
+ Max Holtzberg).
+ Richard Cochran to build QEMU with Kconfig files.
+FLASH=y.  The old logic used to use
+ Ronen Vainish).
+ Ronen Vainish).
+ Kate).
+ AVR32 build errors that have crept in
+ different MCUs and some do not
+ Max Holtzberg.
+ if (1) read-ahead buffering
+ read-ahead buffers.
+ Max Holtzberg).
+ Max Holtzberg.
+ Max
+
+ Mike Smith.
+ locked devices on the bus.
+ the various Make.defs files into
+ Richard Cochran).
+ Kate).
+ Kate).
+tes.
+ Darcy
+ Darcy
+ the LCD.
+ the LCD.
+ the LCD is still disabled).
+
+ Darcy Gong
+ the STM32 watchdog driver.
+ Mike Smith.
+
+ Petteri Aimonen).
+ Petteri Aimonen).
+ Mike Smith.
+ Daniel Vik is now available (this is
+ http://www.danielvik.com/2010/02/fast-memcpy-in-c.html).
+ default, memset() is
+ the
+ Darcy Gong.
+ the Rhombus OS
+ Nick Johnson
+ Darcy Gong).
+ Freddie Chopin).
+ Qiany Yu.
+ Freddie Chopin.
+ Darcy Gong).
+ Freddie Chopin.
+ Freddie Chopin.
+ Petteri Aimonen.
+ Petteri Aimonen.
+ Ryan Sundberg.
+ Ryan Sundberg.
+ Konstantin Dimitrov.
+ Lorenz Meier).
+ Petteri Aimonen.
+ Petteri Aimonen.
+ Freddie Chopin.
+ Mike Smith
+ Mike Smith
+ Mike Smith).
+ Petteri
+
+ Peterri Aimonen).
+ Darcy Gong.  These should not be board-dependent,
+ any board.
+ Freddie Chopin.
+ Denis Carilki).
+
+ Freddie Chopin.
+ Denis Carikli.
+ Freddie Chopin.
+ Petteri Aimonen.
+ Petteri Aimonen.
+ Petteri Aimonen.
+, for example,
+
+ dx, dy. When given the full window area, nxtk_subwindowmove
+ Petteri Aimonen.
+ Petteri Aimonen.
+ Freddie Chopin.
+ Freddie Chopin.
+ os_bringup() will have the PATH
+ their relative path.
+ Petteri
+
+ a DOS shell.
+
+ Darcy Gong.
+ Darcy Gong.
+ Jose Pablo Carballo).
+ Freddie Chopin).
+ Rommel Marcelo).
+ CONFIG_EXECFUNCS_SYMTAB
+ posix_spawn().
+ Mike Smith).
+ Max Holtzberg).
+ Mike Smith).
+ apps/builtin/exec_builtins.c to
+ the BINFS
+ Mike Smith
+ Rommel
+ Rommel
+ splitting
+ Yan T.).
+():  Fix a bug.  When the host closes a connection
+() returned success and the closure
+():  Fix a introduced with the last bugfix.  If
+ Jose Pablo Carballo).
+ the src to the include chip.h header file.
+ the PX4 team).
+ POSIX.
+
+ Qiang:
+ the TCB to the task group structure.
+ the TCB to the task group structure.
+ the TCB to the task group structure.
+
+
+
+ CONFIG_SERIAL_REMOVABLE.
+ Petteri Aimonen.
+ Petteri Aimonen.
+
+ Petteri Aimonen.
+ Petteri Aimonen.
+ Petteri Aimonen.
+ Petteri Aimonen.
+
+ dividing the TCB structure into these variants,
+ task-specific data structures
+ local variables to TCB.  This is needed so that if a
+ Petteri
+ Petteri Aimonen.
+ Petteri
+ Petteri Aimonen.
+ Petteri
+ Petteri Aimonen.
+ Petteri Aimonen.
+ Petteri Aimonen.
+ Rashid.
+ Rashid.
+ Rashid.
+ Rashid.
+ Petterri Aimonen
+te name in the SCSI field.
+ Petteri Aimonen.
+ Petteri Aimonen.
+ Petteri Aimonen.
+
+ Mike Smith were incorporated.  These were
+ Rashid Fatah, (2013-03-04)).
+ Rommel
+ sched/ to libc/wqueue.  It
+ the remote peer).  That excludes the listen socket which
+
+ JP Carballo, 2013-03-15).
+ kernel signal delivery trampoline before calling user-
+ user-space signal handler using a
+
+ Kate) (2013-03-17).
+ the EXC_RETURN.  Silly me (2013-03-18).
+
+ Andrew Tridgell (2013-03-30).
+ the TCB parameter, but there are certain
+ protected kernel memory
+ unprotected user memory (2013-03-20).
+ user application meddling (2013-03-20).
+ the sigq to the stack.  The signal queue
+ kernel memory; however, the current stack is
+ the stack copy (2013-03-21).
+ the lpc17xx).  (2013-03-21).
+ Univision Technology Inc.
+ Manikandan.S (2013-03-22).
+ these issues.  I believe
+ the memory test at
+ Ronen Vainish.  These fixes mostly involve the
+ CPU SRAM
+ Mike Smith (2013-4-01).
+ M.Kannan (2013-4-01).
+ M. Kannan (2013-4-01).
+ peripheral SRAM.  CPU SRAM is shutdown
+ Daniel OConnor (2013-4-05).
+ Rommel Marcelo (2013-4-05).
+ Manikandan. S (2013-4-10)
+ Alan
+ Alan Carvalho de Assis.  NOTE:  This is still
+ Lorenz Meier (2013-4-18).
+ the user, it should
+ Petteri
+ Petteri Aimonen (2014-4-22).
+ MKannan
+
+ Paul Y. Zhang (2014-4-23)
+
+ Ken Pettit (2014-4-24).
+ Ken Pettit, 2013-4-30).
+te oriented writes if so configured
+ Alan Carvalho de Assis
+te write method (2013-5-3).
+ Alan Carvalho de Assis (2013-5-3).
+
+te write
+ Craig Comstock via Alan Alan Carvalho de Assis, 2013-5-3).
+ Ken Pettit
+ Ken Pettit (2013-5-7).
+ Ken Pettit (2013-5-7).
+te read
+ M.Kannan (2013-5-8).
+ Ken Pettit (2014-5-8).
+ Ken Pettit (2013-5-11).
+ Laurent Latil (2013-5-15).
+ Laurent Latil (2013-5-15).
+ Christian
+ Ken Pettit (2013-5-17).
+ Ken Pettit (2013-5-17).
+ Ken Pettit (2013-5-17).
+ Ken Pettit
+ Ken Pettit (2013-5-19).
+ Ken
+ Max
+ Max Holtzberg
+
+ include/nuttx/ to include/nuttx/audio.
+ Max Holtzberg (2013-5-22).
+ slcd_codec.h (2013-5-25)
+ Laurent Latil (2013-5-28)
+ 64 to 96.  This will
+ Laurent
+ Laurent Latil (2013-6-1).
+ Laurent Latil (2013-6-01).
+ SAM3U_ to
+ setting name).  This
+ Lorenz Meier
+ Andrew Tridgell, 2013-6-2).
+ Petteri Aimonen
+ the specified address.  This change is
+ Petteri Aimonen (2013-6-4).
+ AVR32 (2013-6-5).
+ AVR32).
+ Mike Smith (2013-6-6).
+ Scott (2013-6-6).
+ the SAM4L (2013-6-9).
+ my reading of the ADS7843 spec, it
+ Alan Carvalho de Assis (2013-6-18).
+ Alan Carvalho de Assis (2013-6-18).
+
+ Alan Carvalho de Assis (2013-6-20).
+ Dave (ziggurat29, 2013-6-22).
+ lessons learned with the
+ other allocations (that may be used used
+ the SAM3U only in because of the
+ drivers/Kconfig to drivers/spi/kconfig
+ Chia Cheng Tsao, 2013-7-8).
+ Chia Cheng Tsao, 2013-7-8)
+ Chia Cheng Tsao, 2013-7-8).
+
+te stack alignment
+ arch/Kconfig to
+ CONFIG_ARCH_ to, for example,
+ NOR FLASH (2013-7-29).
+ John
+ John Wharington (2013-7-30).
+ CONFIG_PAGING out of arm_head.S.  That was just
+ the SAM3/4 (2013-8-4).
+ SAM/3/4.  Initial check-in is untested
+ default (2013-8-5)
+ the SAM3/4 and
+ Andrew Tridgell
+ Mike Smith, Andrew Tridgell and Lorenz
+ Lorenz Meier
+ Lorenz Meier (2013-8-10).
+-port basis.  This effects a lot of files and
+ Max Holtzberg (2013-8-12).
+ John Wharington (2013-8-13).
+ struct usbhost_driver_s and move
+ physical to virtual addresses (2013-8-14).
+ Teemu Pirinen)
+ Yiran Liao
+ CCTSAO
+ Andrew Bradford (2013-8-23).
+ giving the port to the OHCI driver (2013-8-24).
+ Max Holtzberg (2013-8-25).
+
+ Max Holtzberg
+ Max Holtzberg (2013-8-25).
+ Mike Smith
+ CCTSAO (2013-6-26)
+ Max Holtzberg (2013-6-26).
+ usbhost_enumerate in order to set a credible initial EP0
+tes,
+ another architecture.  There is very little
+ Alan Carvalho de Assis (2013-8-31).
+ CCCTSAO (2013-9-2).
+ Alan Carvalho
+ config/*/usbstorage to match the
+ CCTSAO (2013-9-5).
+ Max Holtzberg) (2013-9-6).
+ Max Holtzberg (2013-9-6).
+ the ENCX24J600
+ Max Holtzberg.  These seem like reasonable and
+ class drivers.
+ Lorenz Meier (2013-9-13).
+ Lorenz Meier
+ Lorenz Meier (2013-9-13).
+ Lorenz Meier (2013-9-13).
+ Librae (2013-9-13).
+ Alan
+
+ Rashid
+ 0xff (invalid) to 10.  This is not a critical change
+ the Linux driver when it overrides
+ Rashid Fatah (2013-9-23).
+ Max
+ common stack monitoring logic (2013-9-24).
+ moving
+ moving
+ moving
+ Max Holtzberg (2013-9-27).
+
+
+ Craig Comstock (2013-9-27).
+ Max Holtzberg (2013-9-28).
+ Max Holtzberg
+ adding a object path to the mkdeps.c,
+ Alan Carvalho de Assis, 2013-9-30).
+ Alan Carvalho de Assis. (2013-9-30).
+ Max Holtzberg (2013-9-30).
+addr.c:  Now (1) uses the routing table
+ Max Holtzberg (2013-10-6).
+ Max Holtzberg (2013-10-6).
+
+ gdi@embedders.org.
+ internal SRAM (2012-10-10).
+ the software resolution (2013-10-10.
+
+ Max
+.c, sendto.c, uip/uip_input.c, uip/uip_udpcallback.c,
+ Max Holtzberg (2013-10-11).
+ Max Holtzberg
+ David Sidrane (2013-10-16).
+ David Sidrane (2013-10-16).
+ David
+
+ Max Holtzberg (2013-10-17).
+ Max Holtzberg (2013-10-17).
+passing and moving directly into ESTABLISHED.
+ Max Holtzberg (2013-10-17).
+ Max Holtzberg
+ Mike Smith (2013-10-18).
+ Mike Smith
+ Mike Smith (2013-10-18).
+ Mike Smith (2013-10-18).
+ Mike Smith
+ David Sidrane (2013-10-18).
+
+ default in the demo configuration (2013-10-20).
+ kfrolov: 1) sscanf()
+ GCC (2013-10-21).
+ David Sidrane (2013-10-23).
+ David Sidrane
+ David
+ David Sidrane:
+ David
+ David
+ Martin Lederhilger
+ Martin Lederhilger
+ Martin Lederhilger (2013-10-24).
+ Alan Carvalho de Assis
+ David Sidrane
+ David Sidrane (2013-10-25).
+ Ken Pettit (2013-10-27).
+ ken Pettit (2013-10-27).
+ Ken Pettit (2013-10-27).
+ Ken
+ David Sidrane (2013-10-27)
+ Ken Pettit (2013-10-28).
+ David Sidrane
+ David Sidrane (2013-10-13).
+ Ken Pettit (2013-10-31).
+ David Sidrane (2013-10-31).
+ Ken Pettit (2013-11-1).
+ Ken Pettit (2013-11-1).
+ David Sidrane (2013-11-1).
+ David
+
+ a different task group than the pthread.  This
+ David Sidrane plugs the hole for now (2013-11-1).
+
+ fixing a bug
+tes after the
+
+
+ Ken Pettit (2013-11-4).
+ Ken
+ David
+ David Sidrane (2011-11-5).
+ Ken Pettit (2013-11-7).
+ Ken Pettit (2013-11-7).
+ David Sidrane (2013-11-7).
+ David Sidrane (2013-11-7).
+ David Sidran (2013-11-7).
+ Ken Pettit (2013-11-10).
+ Ken Pettit (2013-11-10)
+ Alan Carvalho de Assis (2013-11-10).
+ Alan Carvalho de Assis
+ Ken
+ Mitko (2013-11-11).
+ Ken Pettit (2013-11-11).
+ Martin Lederhilger (2013-11-14).
+ Daniel Palmer (2013-11-15).
+
+
+
+ Ken Pettit
+ sst25.c because it supports larger SST25 parts:  In
+te/word writes like
+ Ken Pettit (2013-11-28).
+ Ken
+ Ken Pettit (2013-11-28).
+ Ken
+ calling unregister_blockdriver().  But (5)
+ FLASH (2013-12-05).
+
+ Ken Pettit to extend procfs/
+ Ken Pettit (2013-12-12)
+ Max Holtzberg (2013-12-12).
+ sched/sleep.c and usleep.c to libc/unistd.  These
+ Alan Carvalho de Assis
+ Librae (2013-12-15).
+ the nested
+ Librae (2013-12-23).
+ Librae (2013-12-23).
+ Brian Webb (2013-12-27).
+ graphics/nxmu to libnx/nxmu (2013-12-29).
+ within the RTOS (2013-12-29).
+ the STM32F4Discovery to the STM3240G-EVAL.
+
+ Max Holtzberg (2014-1-4).
+ Max Holtzberg (2014-1-4).
+ Max Holtzberg
+ Steve Redler IV
+ Steve Redler IV (2014-1-7).
+ the
+ Steve Redler IV (2014-1-7).
+ Steve Redler IV (2014-1-7).
+ Alan Carvalho de Assis (2014-1-12).
+ Jason Jiang.  Enabled with
+ Max Holtzberg (2014-1-13).
+
+ Tridge via Lorenz Meier
+ interrupt
+ clearing the bit in the ISER register.  That will
+
+ the custom board directory (2014-1-16).
+ Max Holtzberg (2014-1-21).
+ Max Holtzberg to improve
+ Richard Cochran (2014-1-23).
+ Richard Cochran (2014-1-23).
+ Richard Cochran (2014-1-23).
+ Richard
+ ARM mean that we need to be explicit about branch
+ Mike Smith (2014-1-23).
+ Matt Campbell
+ NOR FLASH with .data and .bss in
+ C logic.  This fixes
+ being used with the LM4F120 Launchpad (2014-02-03).
+ Duckworth (2014-2-10).
+ Duckworth (2014-2-10).
+ the tool CppCheck.  Several
+ Gosha (2014-2-18).
+
+
+ David
+ David
+ David Sidrane
+ David Sidrane (2014-2-18).
+ David Sidrane (2014-2-18).
+ Alan Carvalho de Assis (2014-2-18).
+ Duckwork (2014-2-19).
+ the USART-specific files to a share-able file where it can
+ SPI and I2C drivers (2014-2-19).
+ Gosha (2014-2-19).
+ Alan Carvalho de Assis (2014-2-20).
+ the
+ Alan Carvalho de Assis (2014-2-10)
+ David
+ default the next time that
+ Max Kriegleder (2014-3-1).
+ Andrew Tridgell.  This replaces a previous, partial
+ Lzyy (2014-3-6).
+ Lzyy (2014-3-6).
+ every defconfig
+ the
+
+ Max
+ Lizhuoyi (2014-3-8).
+ Lizhuoyi (2014-3-8).
+ TI (2014-3-8).
+
+ default
+ the SAM3A and SAM3X and also supports
+ default in the NSH configuration
+
+ Vijay Kumar
+ Vijay Kumar (2014-3-19).
+ Vijay Kumar (2014-3-19).
+addr.c:  Skip network devices that are in the
+ Brennan Ashton (2014-3-20).
+
+ Manuel Sthn (2014-3-24).
+tes (2014-3-24).
+ Lorenz Meier.  This
+ Duckworth (2014-3-27).
+te was always copying before testing
+ SDRAM, we need to query the PMC registers (using
+ kfrolov.  Also, sscanf() should
+ Macs N (2014-3-31).
+ Macs N (2014-3-14).
+ Macs N (2013-3-31).
+ kfrolov (2014-4-2).
+ SDRAM, vectors must lie in SRAM (2014-4-2).
+ a bootloader (vs. a RESET), then the VBAR register
+ SDRAM, dont relocated vectors to ISRAM.  Instead,
+ David Sidrane (2014-4-3).
+ implementing RAM functions.
+ ISRAM and the crash is
+ Daniel Carvalho with modifications.  I think the
+ Librae (2014-4-8).
+ David Sidrane
+ PE24 which is
+ David Sidrane (2014-4-11).
+ Leo (2014-4-12).
+ SDRAM, then BOARD_MCK_FREQUENCY
+
+ dlsitzer (2014-4-26).
+ the .c file to the .h file or,
+ Luciano Neri
+ Luciano
+ Luciano Neri (2014-4-17).
+ Leo (2014-4-17).
+ Leo (2014-4-17).
+ Leo (2014-4-17).
+ the device
+ Leo (2014-4-17).
+ Frank Bennett (2014-4-20).
+
+ SAMA5 to
+ Bob Doiron (2014-4-21)
+ Bob Doiron (2014-4-21)
+ Bob Doiron
+ Bob Doiron needed to support PDC-based HSMCI DMA transfers
+ Bob Doiron (2014-4-21).
+ Bob Doiron (2014-4-21).
+
+ Bob
+ Bob Doiron (2014-4-21).
+ Bob Doiron
+ Pelle
+ Luciano Neri
+ Mark Whitehorn to support the 8Mbit
+ Bob Doiron
+ Bob Doiron (2014-4-30).
+ Bob Doiron (2014-4-30).
+ Bob Doiron (2014-4-30).
+ an external clock, then the prototype
+
+ Bob Doiron.  Also
+ Bob Doiron  (2014-5-5).
+
+name.c:  Fix an error in the symbol search
+ Pelle Windestam (2014-5-6).
+ the on-chip HSI clock (2014-5-6).
+ David Sidrane to work with the ARMv7-A (2014-5-6).
+ Kosma Moczek (2014-5-8).
+ Jussi Kivilinna (2014-5-8).
+ Jussi Kivilinna and Sami Pelkonen
+ the P-Code binfmt (2014-5-8).
+ the PX4 commit
+ Tridge here:
+
+ Patrizio
+ eero.nurkkala
+ Sami PelKonen (2014-5-20).
+ Mike Smith (2014-05-20).
+ Jussi Kivilinna (2014-5-21).
+ Jussi Kivilinna (2014-5-21).
+ running and use the uninitialized message queue. The main
+ Jussi Kivilinna (2014-5-21).
+ Jussi Kivilinna (2014-5-21).
+ Bob Grimes (2014-5-22).
+ Max Kriegleder et al.
+ Hannes Delago (2014-5-25).
+ dlsitzer (2014-5-27).
+ Sami Pelkonen (2014-5-30).
+ net/uip to net/arp.  Files renamed
+ net/uip to net/igmp (2014-5-30).
+ net/uip to net/icmp (2014-5-30).
+ Max Holtzberg (2014-6-2).
+ Max Holtzberg
+ Martin Lederhilger (2014-6-3).
+ anything.
+ Lizhuoyi (2014-6-6).
+ Lizhuoyi (2014-6-6).
+ Lizhuoyi (2014-6-6).
+ Freddie Chopin (2014-6-11).
+ Pelle Windestam (2014-6-12).
+ Lazlo Sitzer (2014-6-12).
+ Daniel Lazlo Sitzer (2014-6-18).
+ Daniel Lazlo Sitzer: (1) properly
+tes to
+ net/uip to net/tcp (2014-6-18).
+ net/uip to net/udp (2014-6-18).
+ net/uip to net/pkt (2014-6-18).
+ buffer allocation failures.
+ Max/Himax (2014-6-19).
+ Max/Himax
+ Manuel
+ Stefan Sperling (2014-6-23).
+
+ Max (himax) (2014-6-23).
+ net/net_send_unbuffered.c to net/uip/uip_pktsend.c.
+ packet sockets (2014-6-24).
+ Max Neklyudov (2014-6-25).
+ Alex D. (2014-6-25).
+ uip.h to new netstats.h
+ ISRAM and loads an Intel HEX file into DRAM (2014-6-26).
+ default (2014-6-26).
+ Pelle
+ Daniel
+ Max Neklyudov (2104-6-27).
+ Max Neklyudov (2104-6-27).
+ Manuel Sthn (2014-6-28).
+ net/uip to net/ipv6 (2014-6-28).
+ uip_* to devif_*
+ default (2014-6-29).
+ Max (2014-6-29).
+ Kosma
+ Kosma Moczek (2014-6-30).
+ Kosma Moczek (2014-6-30).
+ Kosma
+ back-powering on
+ Kosma Moczek (2014-6-30)
+ chip
+
+ Kosma Moczek (2014-6-30)
+ Kosma Moczek (2014-6-30)
+ Max Neklyudov (2014-7-3).
+
+ Pelle Winderstam (2013-7-3).
+TE_WRITE
+ Ken Pettit (2014-7-3).
+ Douglas Beattie (2014-7-4).
+ uint16_t to uint32_t
+ Ken Pettit (2014-7-4).
+ header files
+ header files
+.c:  Important fix to
+tes were being
+ the head of the queue, but the queue head itself was
+ Rony XLN (2014-7-7).
+  Max Nekludov (2014-7-7).
+  Max Nekludov (2014-7-7)
+ hung (2014-7-9).
+ Max (2014-7-11).
+ the last, uncleared line (2014-7-17).
+ Max
+ Petteri Aimonen (2014-7-22).
+ Peterri Aimonen
+
+ some bad conditional compilation (2015=4-7-22).
+ end (2014-7-22).
+ CMediaPlayer; add hooks for
+ the WM8904 (2014-7-24).
+ Max (2014-7-24).
+ Max
+ Max
+ Max (2014-7-24).
+
+ time to
+ Max (2013-7-24).
+ cp_XYZ_cache()
+
+ sub-sampling.
+ sub-sampling (2014-7-27).
+ Max.  Also fixes some syntax errors that I introduced in
+ the DRAMBOOT loader (2014-7-28).
+te SCR transfer was failing silently with the DMA
+ looking
+ the PCM decoder:  That always reduces the
+ the
+ this option (Safer
+ typos and other
+ sched/ to
+ sched/ to sched/signal
+ sched/ to sched/pthread
+ sched/ to
+ sched/ to sched/environ
+ sched/ to sched/group (2014-8-8).
+ sched/ to sched/wdog
+ sched/ to sched/irq
+ sched/ to sched/clock
+ sched/ to sched/timer
+ sched/ to sched/paging
+ sched/ to sched/init
+ sched/ to sched/errno
+ sched/ to sched/task
+ sched/ to sched/sched
+ several new
+ Vijay Kumar (2014-9-9).
+ calculation and convert uint32_t to uin64_t
+ Max Neklyudov
+ net.h to slip.h
+ a PHY interrupt (2014-8-16).
+
+
+ arp_inout.c to its own file
+ arp_inout.c to its own file
+ the ARP logic.  Setting it globally
+ Manuel Stuehn
+ the heap.  A reserve of
+ include/ to
+ the Users Guide
+ Freddie Chopin (2014-8-22).
+ the ELF loader in order to flush D-cache
+ Jim Ewing (2014-8-26).
+ Jim Ewing (2014-8-26).
+
+ within the kernel for certain configurations
+ a file system.  This new configuration is defined but only
+ a program on a file
+ Jim Ewing (2014-9-1).
+ the NuttX source tree.  The
+ kernel logic in the kernel
+ a kernel thread, then all resources in the group must
+ the NuttX
+ the platform Make.defs file
+ Fabien Comte (2014-9-8).
+ Freddie Chopin (2014-9-8).
+ Denis Arnst (2014-9-8).
+ a ROMFS file system (2014-9-9).
+ Aton (2014-9-11).
+ Jim Ewing (2014-9-11).
+
+ adding a
+ up_fullcontextrestore().  That would be
+
+
+ the stack:  regsREG_PC+4 is the address, not regsREG_PC+4
+ sama5/sam_pgalloc.c
+ Fabien Comte (2014-9-17).
+  Daniel Lazlo
+  Daniel Lazlo
+ Ken
+ Ken Pettit
+ mm/. to
+ mm/. to mm/kmm_heap/.
+ mm/. to mm/umm_heap/.
+ mm/. to mm/mm_heap/.
+
+ Ken
+ Ken Pettit
+ Ken Pettit
+ shmat() and shmdt() to pick the
+ include/nuttx to
+ Max
+ Johannes Hampel (2014-9-25).
+ Brennan Ashton (2014-9-25).
+ Bob Doiron (2014-9-26)
+ fs/. to fs/inode/. (2014-9-28).
+ fs/. to fs/driver/. (2014-9-28).
+ fs/. to fs/dirent/. (2014-9-23).
+ fs/. to fs/mount/. (2014-9-23).
+ parent to child in
+
+
+ libc/aio
+tes.  That is OK
+ Brennan Ashton (2014-10-7).
+ Brennan
+ libc/misc and
+ fs/driver to fs/syslog (2014-10-8).
+ Lazlo (2014-10-9).
+ the set of system calls (2014-10-9).
+ Cris Kvist (2014-10-9).
+ Lazlo (2014-10-10).
+ Serg Podtynnyi
+ Serg Podtynnyi
+ Kriegleder
+ Pierre-noel
+ Marco Krahl (2014-10-20).
+ Marco Krahl (2014-10-20).
+ Brandon Warhurst (2014-10-21).
+ Martin Lederhilger  (2014-10-21).
+ Pierre-noel Bouteville (2104-10-21).
+ Pierre-noel Bouteville (2104-10-21).
+
+
+ Brandon
+
+  Pierre-Noel Bouteville
+  Pierre-Noel Bouteville
+  Alan Carvalho de Assis (2014-10-27).
+ Sbastien
+ Murilo Ponte (2014-11-10).
+ Lorenz
+ Lorenz Meier (2014-11-12).
+ replacing all occurrences of fdbg with
+
+ C++ name
+ Lorenz Meier (2014-11-12).
+
+
+
+
+ Pierre-noel
+ Brennan Ashton (2014-11-14).
+ Brennan Ashton (2014-11-14).
+ the driver.  Use this value to replace some
+ Ethernet drivers.
+ net/arp logic.  Use
+spas (2014-11-16).
+  Pierre-noel
+ initializing properly (2014-11-17).
+ tcp.h to ip.h and rename
+ setting absolute timeout value to past time,
+ clock_abstime2ticks, instead of
+
+ signals (for example
+ Jussi Kivilinna (2014-11-19).
+ Brennan Ashton (2014-11-20).
+ Pierre-Noel Bouteville (2014-11-20).
+ Jussi Kivilinna (2014-11-21).
+ Brennan Ashton.
+addr()
+addr()
+.c, sendto.c,
+ Alan Carvalho de Assis (2014-11-23).
+
+ Sbastien Lorquet (2014-11-26).
+ Pierre-noel Bouteville (2014-11-26).
+
+ Duckworth.  This port is a leverage of the LPC3330-Xplorer port
+ that port that needs to be
+
+ a
+ Pierre-noel Bouteville (2014-11-27).
+ Jussi
+ remotely
+ Lorenz Meier
+ the PX4 repository (2014-11-29).
+ Jussi Kivilinna (2014-12-02).
+ Jussi Kivilinna (2014-12-02).
+ Sebastien
+  Pierre-Noel
+
+ Thomas Gruber via
+ Sebastien Lorquet after much
+ Ken Pettit
+ Ken Pettit (2014-12-9).
+ Ken Pettit (2014-12-9).
+
+ Pierre-Noel
+ Lazlo (2014-12-10).
+ Yasuhiro Osaki (2014-12-11).
+ Ken Pettit (2014-12-12).
+ Sbastien Lorquet (2014-12-12).
+ WFI due to a chip issue.  This is only an issue if you
+ Ken Pettit (2014-12-13).
+ pthread_cancel(), then uart_close() gets called, but
+ re-initializing the semaphores on the last
+ Harald Welte (2014-12-13).
+ Alan Carvalho de Assis (2014-12-13).
+  Alan
+  Alan Carvalho de Assis (2014-12-16).
+te is always zero and let strncpy
+tes. The issue of unterminated names
+  Daniel Willmann (2014-12-17).
+ one to hold a NUL terminator.  This changes reduces
+ one so that no additional memory is used
+ Alan Carvalho de Assis (2014-12-18).
+ Alan Carvalho de Assis
+ Marco Krahl (2014-12-19).
+ Marco Krahl (2014-12-19).
+ Marco Krahl (2014-12-19).
+ Marco Krahl (2014-12-19).
+ Marco Krahl
+ Marco Krahl (2014-12-19).
+ Marco Krahl (2014-12-19).
+ the implementation: gevideoinfo, getplaneinfo, getlid, setclut,
+ Marco
+ the ltdc controller and dma2d controller later
+ the
+ Marco
+ Marco Krahl (2014-12-19).
+ Marco Krahl
+ Marco Krahl (2014-12-19).
+ Marco Krahl (2014-12-19).
+ Marco Krahl (2014-12-19).
+ Marco Krahl
+  Pierre-Noel Bouteville
+
+tes in the buffer and a boolean indication of which
+ a signal, but also the case with sem_timedwait.c
+ a timeout (2014-12-28).
+ Marco Krahl
+ Marco Krahl (2014-12-29).
+ Marco Krahl (2014-12-29).
+ Marco Krahl (2014-12-29).
+
+ Kevin Hester (2015-01-02).
+ reconfiguring the SD D0 pin as a GPIO interrupt,
+
+
+ files in net/icmp, (3) copied
+ icmp.h, (5) IP_HDRLEN became IPv4_HDRLEN
+
+ the differing sizes of the IP header
+ the worker thread, it is necessary to have the stack locked
+ Freddie
+ the PX4 team
+ Pavel Krienko (2015-01-19).
+ accept() in the
+ Rony Xln (2015-01-22).
+ Pierre-noel Bouteville
+ Brennan Ashton (2015-01-23).
+ David Sidrane
+ Duckworth.
+ Brennan Ashton (2015-01-26).
+ Brennan Ashton (2015-01-26).
+ Brennan Ashton (2015-01-26).
+ Brennan Ashton
+ Liio Chen via the PX4 repository
+ Jussi Kivilinna (2015-01-27).
+
+ duplicating most of the IOB interfaces:
+ David Sidrane (2015-01-29).
+.c, and udp/udp_callback.c: Add UDP
+ Macs N (2015-01-30).
+ net_poll.c into a new udp_netpoll.c;
+ HFPERCLK or HFCORECLK,
+ Pierre-noel Bouteville (2015-01-30).
+ Macs N
+ Macs N.
+ Jedi TekUnum (2015-01-31).
+ Jedi TekUnum
+ Pierre-Noel Bouteville
+ Macs N (2015-02-03).
+ Macs N (2015-02-03).
+ Pierre-noel Bouteville
+ Pierre-noel Bouteville (2015-02-03).
+ Juha Niskanen (2015-02-04).
+ Calvin
+
+ Calvin Maguranis (2015-02-05).
+ Pierre-noel
+ adding new net_timedwait() function
+ Pierre-noel
+ the
+ the interrupt level
+ David
+ Macs N
+ Derek B. Noonburg (2015-02-11).
+ Derek B. Noonburg (2015-02-11).
+
+ Frank Sautter (2015-02-11).
+ sched/clock to libc/time.
+ NuttX system calls.  It is only a wrapper
+ Alan Carvalho de
+ Alan Carvalho de Assis
+ David Sidrane (2015-02-13).
+ include/nuttx/rtc.h.  The
+ application code (2015-02-13).
+
+ Freddie Chopin (2015-02-13).
+ Max Neklyudov (2015-02-13).
+ Max Neklyudov (2015-02-14).
+ include/time.h
+ Jussi Kivilinna
+ Pierre-noel Bouteville (2015-02-16).
+ files in net/ to include/nuttx/ip.h.  These are
+ the
+ Calvin Maguranis (2015-02-17).
+ Calvin Maguranis
+ Andrew Tridgell via the PX4/NuttX repository (2015-02-17).
+ Juha Niskanen (2015-02-20).
+ Calvin
+ Calvin Maguranis (2015-02-20).
+ enable to the
+
+ David Sidrane (2015-02-21).
+ pic32-starterkit to make
+ being
+ Freddie Chopin
+ 0 to 1. This causes
+ two different tasks.
+ Anonymous (2015-02-23).
+ Frank Sautter (2015-02-24).
+ Michal Ulianko (2015-02-24).
+ the returned time.  It needs to
+ Max Neklyudov (2015-02-25).
+ subsequent actions so
+ Max Neklyudov
+ Max
+ Max Neklyudov (2015-02-27).
+ incrementing the device
+ Max Neklyudov
+
+  Marten
+
+ Juha
+ Freddie Chopin (2015-03-04).
+ David Sidrane (2015-03-04).
+ Freddie Chopin (2015-03-04).
+ STM32
+ Freddie Chopin
+ Bradley Noyes (2015-03-10).
+ Max Neklyudov (2015-03-11).
+ Juha Niskanen (2015-03-11).
+ Juha Niskanen (2015-03-12).
+ Juha Niskanen (2015-03-12).
+ Juha
+ Juha
+ Juha
+ Juha Niskanen (2015-03-12).
+ Juha Niskanen (2015-03-12).
+
+ Juha Niskanen (2015-03-12).
+  Jussi Kivilinna (2015-03-13).
+ Jussi Kivilinna (2015-03-13).
+ Jussi Kivilinna (2015-03-13).
+tes free in
+ Sami Pelkonen via Jussi Kivilinna
+
+ Pierre-noel
+ working (2015-03-15).
+te-oriented read() method, (2) devices that
+ David Sidrane (2015-03-17).
+
+ Bob Doiron (2015-03-20).
+ David Sidrane (2015-03-20).
+ Kristopher Tate
+ arch/arm/src/tiva to
+ Calvin Maguranis (2015-03-23).
+ Kristopher Tate (2015-030-29).
+ Leo Aloe3132
+
+ boardctl().  In all
+ drawing a file circle at
+
+ SAM3/4 -- UNVERIFIED. (2015-04-08).
+
+
+ Brennan
+ the pppd
+ Brennan Ashton (2015-04-13).
+ Juha Niskanen (2015-04-14).
+ Juha Niskanen (2015-04-14).
+ the programmers
+ source to destination layer) also works
+ the
+ the ccm allocator.
+
+ a dma2d layer to an ltdc layer) also works with
+ the ltdc interface. dma2d layer
+ the dma2d interface.
+ a special flag when using
+ the dma2d interface.
+ Marco Krahl (2015-04-16).
+ Marco Krahl (2015-04-16).
+ 32
+ Marco, ocram.lhark@yahoo.com
+ Kaushal Parikh
+
+ Darcy Gong (2015-04-19).
+
+
+ orbitalfox (2015-04-22).
+ Marten Svanfeldt (2015-04-24).
+
+ Juha Niskanen (2015-04-28).
+ Greg Meiste (2015-05-01).
+ being
+ Hal Glenn (2015-05-02).
+ David Sidrane (2015-05-02).
+
+ Jussi Kivilinna (2015-05-04).
+ Michael as SourceForge patch 50 (2015-05-07)
+ Michael Hope as
+ Michael Hope (2015-05-07).
+ Michael Hope (2015-05-07).
+ Michael Hope
+ Ben Dyer via PX4/David Sidrane (2015-05-08).
+ Craig Comstock (2015-05-08).
+
+ increasing
+ uint16_t to uint32_t.  This
+ Rony XLN (2015-05-12).
+ stdio.h.  Belongs in
+ Michael Hope (2015-05-12).
+ Michael
+ Michael Hope (2015-05-12).
+ Jussi Kivilinna (2015-05-12).
+
+ adding per connection
+  Jussi Kivilinna (2015-05-12).
+ Max Neklyudov (2015-05-13).
+ Max Neklyudov (2015-05-13).
+ Max Neklyudov
+ Max Neklyudov (2015-05-19).
+
+ Frank Sautter.  (2015-05-20).
+ Frank Sautter (2015-05-20).
+ UART.  This happens because RX interrupt
+ Max
+ Alan Carvalho
+ Alan Carvalho de Assis (2015-05-22).
+ Max Neklyudov
+ Alan Carvalho de Assis
+ Alan Carvalho de Assis (2015-05-23).
+ Alan Carvalho de Assis (2015-05-23).
+ teensy-lc and teensy-3.1 (2015-05-15).
+ Sbastien Lorquet (2015-05-26).
+ Max Neklyudov (2015-05-26).
+ PX4.  This is the
+ Max Neklyudov (2015-05-27).
+
+ Librae (2015-05-29).
+
+ Alan Carvalho
+ a re-entrant semaphore.  With the recent change
+ the interrupt level -- this is bad but a fact in the
+ SourceForge Ticket 40 (anonymous,
+ Leo Aloe3132 (2015-06-01).
+ subsequent actions
+ Freddie Chopin (2015-06-03).
+
+ user mode code (2015-06-03).
+ Max Neklyudov (2015-06-03.
+ Max Neklyudov (2015-06-04).
+
+
+ Pierre-noel Bouteville (2015-06-09).
+ Juha Niskaneni (2015-06-11).
+ Marco Aurlio da Cruz (2015-06-11).
+ SAM3/4
+ Juha Niskanen (2015-06-16).
+ Juha Niskanen (2015-06-16).
+ George McWilliams
+ Max Neklyudov (2015-06-22).
+ Max Neklyudov (2015-06-22).
+  Max Neklyudov (2015-06-22).
+ Max Neklyudov
+ Max Neklyudov.  Also
+  Max Neklyudov
+ Efim Monjak (2015-06-26).
+ Manuel Sthn (2015-06-25).
+ Alan Carvalho de Assis
+ Alan Carvalho de Assis
+ Jussi Kivilinna (2015-07-01).
+ Sebastien Lorquet (2015-07-02).
+ Max
+addr().  Also
+name_r() and
+addr_r() (2015-07-08).
+ Sebastien Lorquet
+ Alessandro Temil (2015-07-09).
+ the kernel code in protected mode.  It
+ the interface.  Instead, the interface exports the users pace
+ lib/net to lib/netdb.  Move
+ apps/netutils/dnscient to libc/netdb.
+name() so that it will attempt a DNS host
+ Janne Rosberg (2015-07-10).
+ dns.h to libc/netdb/lib_dns.h
+ libc/netdb/dns_soccket.c to
+name()
+ Alan Carvalho de Assis
+ early in initialization (2015-07-17).
+ Sebastien Lorquet (2015-07-17).
+ Alan Carvalho de Assis (2015-07-20).
+ Alan Carvalho de Assis (2015-07-20).
+ Max Neklyudov (2015-07-21).
+ David Sidrane (2015-07-22).
+ 1 to 2 bits to allow additional,
+ Anton
+ Anton D. Kachalov (2015-07-29).
+ Anton D. Kachalov (2015-07-29).
+ Anton D. Kachalov (2015-07-29).
+
+te
+ Paul Alexander Patience
+ Paul Alexander
+ Anton
+ David Sidrane (2015-08-10).
+ Max Neklyudov
+ Paul Alexander Patience
+ Paul Alexander Patience
+ Macs Neklyudov (2015-08-13).
+
+ Paul Alexander Patience
+ Max
+ Paul
+
+ RAM.  It is also
+ the logic of up_ramvec_initialize() which gets the vector
+ Pavel Pisa (2015-08-21).
+(): Correct wait for new data when NET_UDP_READAHEAD is
+_udpreadahead() sets
+ Pavel Pisa
+ David
+ Pavel Pisa (2015-08-21).
+name(): correct returned address format when DNS is used.
+ Pavel Pisa  (2015-08-21).
+ Pavel Pisa (2015-08-23).
+
+
+ Dmitry Nikolaev
+ Paul Alexander Patience (2015-08-28).
+
+ Bruno Herrera (2015-08-30).
+ Bruno Herrera (2015-08-30).
+ Ilya Averyanov
+ Ilya Averyanov
+ checking if the input
+ Stefan Kolb (2015-09-01).
+ Ilya
+
+ combining common logic into a new Board.mk Makefile
+ Paul Alexander Patience (2015-09-04).
+ Sebastien
+ Alan Cavalho de Assis (2015-09-07).
+
+  Ilya
+ Paul Alexander Patience (2015-09-10).
+
+
+ assembly
+ Alan Carvalho de Assis (2015-09-19).
+ Alan
+ Alan Carvalho de Assis (2015-09-20).
+ Lok Tep
+ Lok Tep  (2015-09-29).
+ Paul
+ NetBSD (2015-10-02).
+ OpenGroup.org, rename formal
+  Pierre-noel Bouteville (2015-10-07).
+ Max Kriegleder
+ Alan Carvalho de Assis
+ Alan
+ Alan
+ Alan Carvalho de Assis (2015-10-18).
+ Frank Benkert (2015-10-20).
+
+ applications to write
+ any board that supports the standard
+ Lok
+ the lower half driver to avoid this hang condition
+
+ Alan Carvalho de Assis (2015-11-16).
+ Wail Khemir
+ Karim Keddam (2015-11-17).
+
+ Ken Pettit
+ Ken Pettit (2015-11-18).
+tes in a single sector.  Logical sectors 1 and 2 were simply not
+ Ken Pettit (2015-11-18).
+ Ken Pettit
+ the
+ Ken Pettit (2015-11-25).
+  Marco Krahl (2015-11-25).
+ Ken Pettit
+ Ken
+ applications.
+ network applications.  All Ethernet
+ Ken Pettit (2015-11-28).
+ SAMA5 into
+ the SAMA5D3/4 to the
+ the SAMA5D3/4 to the
+ apps/netutils/telnetd
+ Alexander
+ the waited-for task group
+ Manuel Sthn
+ Pierre-Noel
+ Dimitry Kloper
+
+ Dimitry Kloper (2016-01-05).
+
+ Dimitri Kloper
+ Dimitri Kloper (2016-01-09).
+ a Windows compiler so that they can be
+ mkdeps.c is now that the only supported
+ Alexander Entinger (2016-01-15).
+ Lok Tep (2016-01-15).
+
+
+ Paul Alexander Patience (2016-01-17).
+ Neil Hancock. (2016-01-18)
+ Hang Xu (2016-01-18).
+ Frank
+ Andrew Webster (2016-01-21).
+ Andrew Webster (2016-01-21).
+
+ Hang
+ Stefan Kolb (2016-01-26).
+ Freddie Chopin.
+
+ Vladimir Komendantskiy
+
+ the OS;
+ Manuel Stuhn
+ devif_timer().
+
+ NuttX (2016-02-09).
+ the TCB to the group structure.  Signal handlers are not
+
+ Alan Carvalho de Assis (2016-02-22).
+ Paul Alexander Patience
+ error conditions (2016-03-05)
+ Frank
+ Stefan Kolb (2016-03-09).
+ Sebastien Lorquet (2016-03-10).
+
+ the correct device is received (2016-03-20).
+ Linfei Chen (2016-03-22).
+ Dave (2016-03-25).
+ the main NuttX
+
+
+ Kha Vo (2016-04-08)
+ Kha Vo
+ Kha Vo (2016-04-08).
+ Kha Vo (2016-04-08).
+
+ the 2g-eng.com website.
+ Henry Zhang (2015-04-15).
+ Alan Carvalho de Assis (2016-04-15).
+ Alan Carvalho de Assis (2016-04-15).
+ Dave dev@ziggurat29.com (2016-04-17).
+ Dave dev@ziggurat29.com
+ Dave dev@ziggurat29.com (2016-04-18).
+ Marco Krahl
+ Dave
+ Dave dev@ziggurat29.com (2016-04-24).
+ Dave dev@ziggurat29.com (2016-04-24).
+ Dave dev@ziggurat29.com (2016-04-27).
+
+ Dave dev@ziggurat29.com (2016-04-27).
+ David Sidrane
+ Dave dev@ziggurat29.com
+ Dave
+ David Sidrane (2016-05-04).
+
+
+ Dave
+ Young (2016-05-07).
+ Sebastien Lorquet (2016-05-10).
+ Frank Benkert (2016-05-11).
+ Kconstantin Berezenko (2015-05-12).
+ Paul Alexander Patience
+ David Sidrane (2016-05-18).
+ Alan Carvalho de Assis (2016-05-18).
+ apps/examples/watchdog.
+ application code.
+ calling the appropriate, MCU-specific driver
+ your board initialization logic
+ Sebastien
+ David Sidrane (2016-05-19).
+ Steve (2016-05-20).
+ Konstantin Berezenko (2016-05-20).
+ Alexander Vasiljev (2016-05-23).
+ Alexander Vasiljev
+ tiva_timer_initialize() to
+ David Sidrane (2016-05-23).
+ David Sidrane (2016-05-23).
+ Alexander Vasiljev (2016-05-24).
+  Frank Benkert  (2015-05-25).
+
+ Aleksandr Vyhovanec (2015-05-25).
+ a file descriptor.
+ Dave
+ a
+ interrupt
+ a trigger. In this case, the counter value passes to zero on
+ doing so the
+ Stefan Kolb
+ Konstantin Berezenko (2016-05-27).
+ Pierre-noel Bouteville (2016-05-30).
+ Pierre-noel Bouteville (2016-05-31).
+ Neil Hancock (2016-05-31).
+ David Sidrane (2016-05-31).
+ Frank Benkert (2016-06-01).
+
+ calling flash_eraseall().
+
+ Pierre-noel Bouteville (2016-6-03)
+
+ v01d
+ Alan
+ Alan Carvalho de Assis
+ Pierre-noel Bouteville (2016-06-05).
+
+ kfazz
+
+ Konstantin
+ Aleksandr Vyhovanec (2016-06-07).
+ David Sidrane (2016-06-07).
+ David Sidrane (2016-06-08).
+ David
+ Paul Alexander
+ Marten Svanfeldt (2016-06-08).
+ Marten
+ booting except
+ kfazz
+
+ kfazz (2016-06-09).
+ Konstantin Berezenko (2016-06-09).
+ kfazz
+  Paul Alexander Patience (2016-06-10).
+  Paul Alexander Patience (2016-06-10).
+ kfazz (2016-06-10).
+
+ Konstantin Berezenko (2016-06-10).
+ debug output. CONFIG_DEBUG is gone.
+ debug output. (5) You
+ function
+ Sebastien Lorquet
+
+ David Sidrane
+ Shirshak Sengupta (2016-06-14).
+ 20 to 40 MHz.
+ fixed peripheral selection (single device) to
+ Frank Benkert (2016-06-14)
+ Lok Tep (2016-06-15).
+ Alan Carvalho de Assis (2016-06-16).
+ an interrupt handler (2016-06-16).
+ Pascal Speck  (2016-06-17).
+ Sebastien Lorquet (2016-06-17).
+
+  Jakub gwa (2016-06-20).
+ Paul Alexander
+
+ Paul Alexander Patience
+ Sebastien Lorquet (2016-06-22).
+ David Sidrane
+ Lok Tep
+
+ the repository
+ Wolfgang Reissnegge
+ David
+ Sebastien
+ Alexander Vasiljev (2016-06-24)
+ the pin is read back.
+ inside the driver (see next point)
+ the twi_reset
+ Michael Spahlinger (2016-06-24)
+
+ Lok Tep (2016-06-27).
+ Mateusz Szafoni (2016-06-27).
+ Michael
+ David
+ David Sidrane (2016-06-27).
+ David
+ David Sidrane (2016-06-27).
+
+ Michael Spahlinger (2016-06-28).
+ Paul Alexander Patience (2016-06-28).
+ Linux to Windows or vice-versa.  It is a problem
+ the pre_config target.
+ Paul Alexander Patience (2016-06-28).
+ David Sidrane
+ David Sidrane
+
+ David Sidrane (2016-06-28).
+ David Sidrane
+ this change. Filtering has been tested with
+ Michael Spahlinger (2016-06-29).
+ STM32 CAN.
+ Paul Alexander Patience (2016-06-29).
+ the apps/include directory.
+ David Sidrane
+ https://github.com/jmacintyre/nuttx-k64f
+ https://github.com/jmacintyre/nuttx-k64f but with
+
+ Max Neklyudov (2016-07-06).
+passing
+ ziggurat29
+ ziggurat29 (2016-07-07).
+ David Sidrane (2016-07-07).
+
+ Frank Benkert (2016-07-08).
+ ziggurat29
+ ziggurat29 (2016-07-08).
+ ziggurat29 (2016-07-08).
+ Wolfgang
+ David Sidrane, file_ioctl() should not
+
+ David Alessio
+ David Alessio (2016-07-11).
+ Sebastien Lorquet (2016-07-11).
+ Heath
+ Heath Petersen (2016-07-12).
+ chance. The writes should never
+ Sebastien Lorquet
+ having blocksize=eraseblocksize
+ ziggurat29 (2016-07-12).
+ ziggurat29 (2016-07-12).
+ Ken Pettit (2016-07-12).
+ an incorrect
+ Stefan Kolb (2016-07-13).
+ Max Neklyudov (2016-07-13).
+
+ Pierre-noel
+ Vytautas Lukenskas (2016-07-14).
+ Ken
+ Vytautas Lukenskas (2016-07-19).
+ Ken Pettit (2016-07-19).
+ PTY logic
+ include/nuttx
+ include/nuttx to
+ Stefan Kolb.
+ the TX buffer making the wait
+ an empty TX buffer (2016-07-22).
+ interrupt pins (2016-07-23).
+ queue.
+ Wolfgang Reissnegger (2016-07-23).
+ the fact that the code creating the scsi thread was
+ Wolfgang Reissnegger (2016-07-23).
+ Jordan MacIntyre (2016-07-25).
+tes waiting in
+ Pierre-
+ Max Neklyudov (Merged on
+ Max Neklyudov (Merged on 20160-07-28).
+ Linux
+ changing all of the make menuconfig (and related)
+shev fitting to a good guess. The problem theres a
+ David S. Alessio
+ ioexpander.h
+ Project Ara (2016-07-31).
+ the Motorola
+ the beginning of the file can be very time consuming.
+ Nate Weibley (2016-08-03).
+ Linux to Windows/Cygwin.
+ Young  (2016-08-05).
+ Alan Carvalho de Assis (2016-08-06).
+
+ no other SPI drivers.  This change
+ all
+ Alan Carvalho de Assis
+
+ Wolfgang Reissnegger (2016-08-09).
+ Young (2016-08-10).
+ Micha yszczek (2016-08-11).
+ v01d (phreakuencies)
+ v01d (phreakuencies) (2016-08-13).
+ v01d (phreakuencies) (2016-08-13).
+ iotr Mienkowski (2016-08-15).
+ Alan
+ Alan
+ Alan Carvalho de Assis (2016-08-16).
+ Konstantin Berezenko (2016-08-17).
+ Konstantin Berezenko (2016-08-17).
+  Micha yszczek
+ /dev/urandom and make it
+ Beat
+
+ Alexander Entinger (2016-08-23).
+ Beat Kng
+
+ Alexander Entinger (2016-08-24).
+ Aleksandr Vyhovanec (2016-08-24).
+ Sebastien
+ Sebastien Lorquet (2016-08-24).
+ Vytautas
+ Sebastien Lorquet (2016-08-24).
+ Sebastien Lorquet
+ FIFO
+ the FIFO if the
+ David Sidrane (2016-08-25).
+ Alan Carvalho de Assis (2016-08-28).
+
+ Ethernet driver.
+ Pascal Speck (2016-08-30).
+ Sebastien
+ drivers/wireless
+ Sebastien Lorquet (2016-08-31).
+ Aleksandr
+
+ Jim Wylder (2016-09-15).
+ Jim Wylder (2016-09-15).
+ Pierre-noel
+ Alan
+
+ Marc Recht
+ Vladimir
+ Wolfgang Reinegger
+
+ Mateusz
+ Sagitta Li (2016-09-22).
+ Pierre-noel Bouteville.
+ Petteri Aimonen (2016-09-22).
+
+ UART1), so, Kconfig needs to be adjusted. (2)
+ Vytautas
+ Neil Hancock
+ Alan Carvalho de Assis
+
+ avoiding SETUPDONE and
+ David Sidrane (2016-10-04).
+
+
+ Alan Carvalho de Assis (2016-10-11).
+ Alan Carvalho de Assis
+
+
+ Sebastien Lorquet (2016-10-14).
+ Sebastien Lorquet
+ 8 for the STM32 F4.
+ David Sidrane (2016-10-15).
+ David
+ Ken
+ newlib (2016-10-17).
+ Alan Carvalho de Assis (2016-10-17).
+ Alan Carvalho de Assis (2016-10-18).
+ Janne Rosberg
+ Jann
+ Alan Carvalho de Assis (2016-10-18).
+ David Sidrane
+ David Sidrane (2016-10-18).
+ David Sidrane (2016-10-18).
+ David Sidrane (2016-10-18).
+ David Sidrane
+ David Sidrane (2016-10-18).
+ Alan Carvalho de Assis
+ Alan Carvalho de Assis (2016-10-18).
+ Alan Carvalho de Assis (2016-10-18).
+ Alan Carvalho de
+ Alan Carvalho de Assis (2016-10-19).
+ Max Kriegleder
+ Maciej Wjcik
+ David Sidrane (2016-10-19).
+ Frank
+ Frank Berkert (2016-10-21).
+ Alan Carvalho de Assis (2016-10-21).
+  Max
+ Max Kriegleder
+ Sebastien
+ Sebastien Lorquet (2016-10-25).
+ Alan Carvalho de Assis (2016-10-25).
+  Marc Recht (2016-10-25).
+ Sebastien Lorquet
+ running and, as a result, the sem_addholder() may be
+ Benix Vincent who also suggested the
+ Alan Carvalho de Assis (2016-10-26).
+ David Sidrane (2016-10-26).
+
+ Vytautas
+ Paul
+  Marc Recht (2016-10-18).
+ Vytautas Lukenskas (2016-10-28).
+ David Sidrane
+ Alan
+o Aleksandr
+ Ramtin Amin (2016-11-01).
+ Ramtin Amin (2016-11-01).
+ David Sidrane (2016-11-01).
+ Paul A. Patience (2016-11-02).
+ defining these
+ Paul A. Patience (2016-11-02).
+ Michael
+ name change of
+
+ Heesub Shin
+ Heesub Shin (2016-11-06).
+ Heesub Shin (2016-11-06).
+ Heesub Shin (2016-11-06).
+ Heesub Shin (2016-11-06).
+ Heesub Shin (2016-11-06).
+ the corrupted or wrong CPSR restored on return
+ exception. NuttX restores the context using code like this:
+ Heesub Shin (2016-11-06).
+ Heesub Shin (2016-11-06).
+ Heesub Shin (2016-11-06).
+ work_signal() may interrupt the low
+ the signal
+ Heesub Shin (2016-11-06).
+  Marc Recht (2016-11-07).
+ Freddie Chopin
+ Sebastien Lorquet (2016-11-09).
+ Juha Niskanen
+ Alan
+ Ramtin Amin (2016-11-14)
+ resetting the register SAM_USBHS_DEVDMACTRL to a
+ Stefan Kolb (2016-11-14).
+ Eunbong Song (2016-11-15).
+ interrupts handlers (with SMP)
+ the timer driver into application code.  That
+ Sebastien Lorquet
+
+ Wolfgang Reinegger (2016-11-18).
+ Wolfgang
+ Wolfgang Reinegger (2016-11-18).
+ Wolfgang
+ Wolfgang Reinegger (2016-11-18).
+ Wolfgang Reinegger (2016-11-18).
+ Paul A.
+ Rajan Gill (2016-11-19).
+ Petteri Aimonen (2016-11-21).
+ a direct
+ Sebastien Lorquet (2016-11-22).
+ Sebastien Lorquet (2016-11-22).
+ Ramtin Amin (2016-11-22).
+ Ramtin Amin (2016-11-23).
+ Alan Carvalho de Assis (2016-11-23).
+ Ramtin Amin (2016-11-24).
+ Maciej Wjcik (2016-11-25).
+ Maciej Wjcik (2016-11-26).
+ the TRM.
+ Alan Carvalho de Assis (2016-11-27).
+ certain CPUs (2016-11-28).
+ Ramtin
+
+ Marc Recht (2016-11-29).
+ Ramtin Amin
+
+
+ Janne Rosberg (2016-11-30).
+ Alan Carvalho de Assis (2016-11-30).
+ Sebastien Lorquet (2016-12-01).
+ Alan Carvalho de Assis (2016-12-01).
+ the i.MX1 port
+ Masayuki Ishikawa
+ Masayuki Ishikawa
+ Masayuki
+ Gong Darcy
+ SDRAM before board
+ the
+ David Sidrane
+ David Sidrane (2016-12-05).
+ David Sidrane (2016-12-05).
+
+ Pierre-noel Bouteville
+ David
+ David
+
+ David Sidrane
+ Alan Carvalho de Assis (2016-12-09).
+ Pierre-Noel Bouteville
+ the application). Every time the chip tries to
+ Frank
+ callup up_getc and
+ 1.8V to 3.3V. This is not necessary right now, but may save some
+ Angus Gratton
+ David Sidrane
+  Aleksandr Vyhovanec (2016-12-17).
+ the bootloader (2016-12-18).
+ Young.Mu
+ IRAM or is
+ FLASH.   This is a bootloader issue (2016-12-20).
+ Frank
+ David Sidrane
+  Lorenz Meier (2016-12-26).
+ preventing the
+
+ Masayuki Ishikawa
+ Alan Carvalho de
+ graphics/nxterm.  Now in
+ within an interrupt handler.  That will cause
+ Pierre-noel Bouteville (2017-01-06).
+ Alan Carvalho de Assis (2017-01-07).
+ 137 (graphics
+ begin_packed_struct and end_packed_struct.
+ Aleksandr Vyhovanec (2017-01-09).
+ Masayuki Ishikawa
+ an interrupt handler.  The g_cpu_irqset bit was not being
+ Maciej
+ Maciej
+ Maciej
+
+ Maciej Skrzypek
+ Maciej Skrzypek (2017-01-13).
+ Alan Carvalho de Assis (2017-01-15).
+ Neil
+ Pascal Speck (2017-01-18).
+ STM32.  Also fixes a
+ Wolfgang Reinegger (2017-01-18).
+ BSD license ARM file
+ arch/arm/src/ to
+ Rajan Gill (2017-01-22).
+ the module (2017-01-22).
+ David Sidrane
+ David Sidrane (2017-01-23).
+ Aleksandr Vyhovanec (2017-01-25).
+ Alan Carvalho de Assis (2017-01-26).
+ Alan Carvalho de Assis
+ Oleg Evseev
+ the SDIO interface.  That is now a
+ the caller so that
+ Marc Recht (2017-02-06).
+ David
+ MCG.  Original
+ David Sidrane
+ David Sidrane (2017-02-07).
+ the boart.h file.  Moved
+ setting default values.  Allow for individule bit
+ David
+ review of last PR (2017-02-07).
+ Alan Carvalho de Assis
+ Wolfgang Reinegger
+ Alan Carvalho de Assis (2017-02-09).
+ Marc Recht (2017-02-09).
+ Alan Carvalho
+ David Sidrane (2017-02-09).
+ Kinetis chip.h
+ the reference manual.
+ David Sidrane (2017-02-09).
+ David Sidrane (2017-02-09).
+ David Sidrane
+ David Sidrane
+ Manohara HK (2017-02-13).
+ Alan Carvalho de Assis
+ David Sidrane
+ David Sidrane (2017-02-10).
+ David Sidrane
+ David
+ David Sidrane (2017-02-14).
+ David Sidrane
+ Alan Carvalho de Assis (2017-02-14).
+ Alan Carvalho de Assis
+ David Sidrane (2017-02-15).
+ David Sidrane (2017-02-15).
+ David
+ Michael
+pass-mode. This is needed to
+ Jussi Kivilinna (2017-02-17).
+ MDK (2017-02-17).
+ Motrola MDK into NuttX
+ the Motorola MDK (2017-02-18).
+
+
+ Motorola MDK (2017-02-19).
+ Marc
+ Jussi Kivilinna (2017-02-20).
+ Kinetis
+ the reference
+ David Sidrane (2017-02-21).
+ Kinetis chip.h.
+ the
+ David Sidrane (2017-02-22).
+ David
+ Alan Carvalho
+ Maciej Wjcik (2017-02-23).
+ David Sidrane (2017-02-23).
+ Marc Recht (2017-02-23).
+ Alan Carvalho
+ Alan Carvalho de
+:
+ David Sidrane (2017-02-23).
+ David Sidrane (2017-02-23).
+ David
+
+ Wolfgang Reinegger
+ Alan
+ Maciej Wjcik (2017-02-27).
+ David Sidrane
+ David Sidrane (2017-02-27).
+ the driver
+ David
+ David Sidrane (2017-02-27).
+ David
+ replace ad hoc parameter passing logic with a
+ Mark Schulte (2017-03-01).
+ Masayuki Ishikawa (2017-03-01).
+ Pascal Speck
+ Alan
+ Mateusz Szafoni
+  Mateusz Szafoni (2017-03-05).
+ Maciej Wjcik
+ class drivers
+
+ Janne Rosberg (2017-03-07).
+ Alan Carvalho de Assis (2017-03-08).
+ David Sidrane (2017-03-08).
+ David Sidrane (2017-03-08).
+ Alan
+ Andreas Bihlmaier (2017-03-09).
+ hex to int; add ADC driver
+ Andreas Bihlmaier (2017-03-09).
+ Andreas Bihlmaier (2017-03-09).
+ Andreas Bihlmaier (2017-03-09).
+ Andreas Bihlmaier
+ Andreas Bihlmaier (2017-03-09).
+ Andreas Bihlmaier (2017-03-09).
+ Andreas Bihlmaier (2017-03-09).
+ Andreas Bihlmaier
+ Andreas
+ Andreas
+ David
+ Simon
+ apps/examples/hidkbd.  That is violation of
+
+ webbbn@gmail.com
+ inverting the order of operations in the loop
+ Freddie Chopin (2017-03-10).
+ David Sidrane (2017-03-10).
+ David Sidrane
+ Simon Piriou
+ Leif Jakob (2017-03-10).
+ changing colliding STM32_ADC12_BASE to
+ Simon Piriou (2017-03-11).
+ Simon Piriou
+ Simon Piriou (2017-03-11).
+te alignment
+ David Sidrane (2017-03-11).
+ Simon
+ Simon Piriou
+ eunb.song@samsung.com (2017-03-13).
+ include/nuttx/net/ioctl to
+ David Sidrane (2017-03-13).
+
+
+ Alan Carvalho de Assis
+ Simon Piriou (2017-03-14).
+ David Sidrane
+ Anthony Merlino (2017-03-15).
+ Anthony Merlino (2017-03-15).
+
+ the holder prior to
+ holer to
+ David Sidrane (2017-03-15).
+ David
+ David Cabecinhas (2017-03-16).
+ David
+ no1wudi (2017-03-16).
+ Alan Carvalho de Assis
+ David
+ David
+ Jussi Kivilinna
+ commit
+ Jussi Kivilinna
+ Brian Webb (2017-03-17).
+ Brian Webb
+te aligned
+ David Cabecinhas (2017-03-18).
+ Mateusz Szafoni
+te-oriented read/write interfaces of mtd device accept the target
+ Heesub Shin
+
+ Mateusz Szafoni (2017-03-19).
+ Mateusz Szafoni (2017-03-19).
+ Juha Niskanen (2017-03-21).
+ Juha
+ Masayuki Ishikawa (2017-03-21).
+ Pascal Speck (2017-03-21).
+ David Sidrane (2017-03-21).
+ Anthony Merlino (2017-03-21).
+ Rajan Gill (2017-03-21).
+ Masayuki Ishikawa (2017-03-21).
+ Masayuki
+ David S. Alessio (2017-03-22).
+ the second bank cause the bit 4 of SNB
+ the first
+ Jos
+ Jos Roberto de Souza
+ Jos Roberto de Souza (2017-03-22).
+ Jos Roberto de Souza (2017-03-22).
+ David Sidrane (2017-03-23).
+
+ David Sidrane
+ David Sidrane
+ David Sidrane
+
+ David Sidrane
+ no1wudi (2017-03-24).
+ Aleksandr
+ David Sidrane (2017-03-24).
+ Anthony Merlino (2017-03-24).
+
+ Mateusz Szafoni
+ Mateusz Szafoni
+ Mateusz Szafoni
+ Mateusz
+ a
+ this situation (2017-03-26).
+ a thread in a list in the TCB
+ thread are marked
+ Alan Carvalho de
+ Martin
+ initialkjc@yahoo.com
+ Jussi Kivilinna (2017-03-28).
+ stm32l4.
+ Juha Niskanen (2017-03-29).
+ Juha Niskanen (2017-03-29).
+ Jussi Kivilinna.  This was a consequence of
+ an assertion when pthread_mutex_unlock() was called:
+ the TCB list and it was not there
+ Anthony Merlino (2017-03-29).
+ Anthony Merlino (2017-03-29).
+ gcc-arm-none-eabi-5-2016q1 toolchain:
+ making inlined caller to have internal
+ Juha Niskanen (2017-03-30).
+ device drivers, user-space, etc.,
+ *BSDs and uses BLAKE2Xs algorithm
+ Jussi Kivilinna (2017-03-30).
+ Konstantin
+ Juha
+
+ Harri Luhtala <harri.luhtala@haltian.com>. Tested
+ Jussi Kivilinna (2017-03-31).
+
+ the stm32.  see
+ David Sidrane
+ David Sidrane
+ Timo
+
+ Juha
+ Juha Niskanen (2017-04-03).
+ initial testing with the IEEE802.15.4
+ no1wudi
+ unconfigured
+ Juha Niskanen (2017-04-04).
+ Juha
+ Juha Niskanen (2017-04-05).
+ SYSCLK setting.  Zero wait-state
+ Juha Niskanen
+ Anthony Merlino (2017-04-05).
+ Simon Piriou (2017-04-03).
+ David Sidrane
+ Alan Carvalho
+ USART number,
+ Jussi Kivilinna (2017-04-06).
+ Jussi Kivilinna
+ Jussi
+ USART peripheral even if DMA buffer underruns.
+ doing long up_mdelay
+ Jussi Kivilinna (2017-04-06).
+ setting the WDD Value to the Maximum
+ Frank Benkert (2017-04-06).
+ launching
+ Jussi Kivilinna (2017-04-06).
+ Masayuki Ishikawa
+ Bob Ryan
+ Mark Schulte (2017-04-07).
+ Mark Schulte (2017-04-07).
+ Mark Schulte (2017-04-08).
+ Juha Niskanen
+ Jussi Kivilinna
+ Jussi Kivilinna (2017-04-11).
+ Alan Carvalho de
+ Juha Niskanen (2017-04-11).
+ Alan
+ Ritajina (2017-04-12).
+ Sebastien Lorquet
+ setting the
+ Thomas
+ Brian Webb
+ Masayuki
+ Alan Carvalho de Assis
+ Alan Carvalho de Assis
+ the lower MAC layer
+
+ Simon Piriou
+ Andreas Bihlmaier (2017-04-15).
+ MAC
+ Anthony Merlino (2017-04-05).
+ Anthony
+ Anthony Merlino (2017-04-15).
+ Anthony Merlino (2017-04-15).
+
+ Anthony Merlino
+ Matias v01d
+ Simon Piriou (2017-04-16).
+ Simon Piriou
+ Anthony Merlino (2017-04-17).
+ Alan Carvalho de
+ Alan Carvalho de Assis
+ Alan Carvalho de Assis (2017-04-17).
+ all
+ Juha Niskanen (2017-04-18).
+ Juha Niskanen (2017-04-18).
+ drivers/adc/Kconfig to
+ Anthony Merlino (2017-04-18).
+ Anthony Merlino (2017-04-19).
+ Anthony Merlino (2017-04-19).
+ Anthony Merlino (2017-04-19).
+ Ian McAfee
+ Anthony Merlino (2017-04-19).
+ ST-link chip (on Nucleo
+ Juha Niskanen (2017-04-20).
+ Juha
+ Nobutaka Toyoshima (2017-04-28).
+ Juha Niskanen (2017-04-21).
+ low-power state.  Add
+
+ Jussi
+
+ Anthony Merlino (2017-04-21).
+ the 6LoWPAN data structure.  This is
+ the radio driver.  Rather, use an IOCTL to obtain the PAN ID
+ the downstream radio driver (2017-04-21).
+ Simon Piriou (2017-04-22).
+ sixlowpan.h.  Put in
+ SAMA5 (2017-04-23).
+ kc_dtm (2017-04-23).
+ Simon Piriou (2017-04-23).
+ Masayuki Ishikawa
+
+ Simon Piriou (2017-04-24).
+
+ Juha Niskanen
+ Simon
+ all config README files (2017-04-26).
+ Jussi Kivilinna (2017-04-26).
+ Masayuki Ishikawa (2017-04-26).
+ Juha Niskanen (2017-04-27).
+ Juha Niskanen (2017-04-27).
+
+ wireless.h to
+
+ Jussi
+ Juha Niskanen (2017-04-28).
+ Jussi
+
+
+ Mateusz Szafoni (2017-04-30).
+ Mateusz Szafoni
+ Mateusz Szafoni (2017-04-30).
+ I2C tools
+ Simon Piriou (2017-04-30).
+ FreeBSD
+ Alan Carvalho de Assis
+  EunBong Song (2017-05-02).
+ Masayuki Ishikawa (2017-05-02).
+ Juha Niskanen
+ Juha Niskanen
+
+ Juha Niskanen (2017-05-02).
+ Anthony
+ Simon Piriou
+ Simon Piriou (2017-05-02).
+ Sebastien Lorquet
+ Juha Niskanen (2017-05-02).
+ Juha
+ Anthony
+
+
+ Simon Piriou (2017-05-03).
+
+ Juha Niskanen
+ Juha Niskanen
+ Juha Niskanen (2017-05-02).
+ Juha Niskanen
+
+ Jussi Kivilinna (2017-05-04).
+ Jussi
+ 6LoWPAN.  Now
+ the configuration.  The
+ Juha Niskanen (2017-05-05).
+ Juha Niskanen (2017-05-05).
+ Juha Niskanen (2017-05-05).
+ nucleo-144.  Removed
+ Juha Niskanen (2017-05-05).
+ David Sidrane (2017-05-05).
+ David Sidrane (2017-05-05).
+ David Sidrane
+ David Sidrane (2017-05-05).
+ David Sidrane
+ Anthony
+ Anthony
+ Anthony Merlino
+ STM32L4X3XX product line
+ Juha Niskanen (2017-05-05).
+ David
+ meta-data since it is
+ Anthony Merlino (2017-05-06).
+ Anthony Merlino
+ Anthony Merlino (2017-05-06).
+ David Sidrane (2017-05-06).
+ Anthony Merlino (2017-05-06).
+ David
+ David Sidrane
+ Anthony Merlino (2017-05-08).
+ Anthony Merlino (2017-05-08).
+ Anthony
+
+ Sebastien Lorquet (2017-05-09).
+ Sebastien Lorquet (2017-05-09).
+ Sebastien Lorquet
+ Sebastien Lorquet
+ driver/iob to a better location in mm/iob
+ Juha Niskanen (2017-05-09).
+ Anthony Merlino (2017-05-09).
+ Anthony Merlino (2017-05-09).
+ Stefan Kolb (2017-05-10).
+ Juha
+ the I2C-dependent block to the SPI-block to make
+ Floxx (2017-05-10).
+ Juha Niskanen
+ other task before reset sequence, causing
+ not flushing on
+ Jussi Kivilinna (2017-05-11).
+ Juha
+ Juha Niskanen
+
+ CONFIG variable differences between the
+ Juha Niskanen (2017-05-11).
+
+ Jussi Kivilinna (2017-05-12).
+ Alan Carvalho de Assis (2017-05-12).
+  (2017-05-12).
+ David Sidrane
+ David Sidrane
+ David Sidrane
+ Gwenhael
+ nuttx/include/nuttx/arch.h
+
+ Matias
+ Simon
+ Simon Piriou (2017-05-14).
+ Juha Niskanen (2017-05-15).
+
+ Lederhilger Martin
+  EunBong Song (2017-05-16).
+ the use of sem_post().  Consider this scenario:
+ the semaphore wait, it will expect to find
+
+
+ Masayuki Ishikawa (2017-05-18).
+ Masayuki Ishikawa (2017-05-19).
+ Masayuki Ishikawa
+ Juha Niskanen
+ Sebastien Lorquet (2017-05-19).
+ Simon
+ Taras Drozdovsky (2017-05-21).
+ Taras Drozdovsky.  Basically, the delay
+ hogging the system bandwidth.  So what
+ Nobutaka Toyoshima
+ Masayuki
+ Masayuki Ishikawa
+ Masayuki Ishikawa
+ Juha Niskanen (2017-05-23).
+
+ Jussi
+namer.c. This fix sets h_name in
+ Masayuki Ishikawa
+ Masayuki
+ the IP header length (2017-05-25).
+ David Sidrane
+ Alan
+ Alan Carvalho de Assis (2017-05-26).
+
+ Harri Luhtala (2017-05-31).
+ Juha Niskanen (2017-05-31).
+ Juha
+ Jussi Kivilinna
+ Jussi Kivilinna (2017-05-31).
+ Jussi Kivilinna (2017-05-31).
+
+ Jussi
+ Juha Niskanen (2017-06-01).
+
+ Juha
+ Jussi
+ Aleksandr Kazantsev
+ Gappi92 (2017-06-01).
+ scratch (rather
+ existing
+ Cristian Condurache
+ David Sidrane
+ FLASH access in board
+ David Sidrane (2017-06-02).
+ code, documented the use of undocumented bits.  Remove
+
+ David Sidrane
+ Anthony Merlino (2017-06-02).
+ Frank Benkert
+
+te write method of several drivers had a
+te write
+ David Sidrane (2017-06-06).
+
+ David Sidrane
+ David
+ David Sidrane
+ David Sidrane (2017-06-06).
+ Nicolas Estibals (2017-06-08).
+
+
+ David Sidrane
+ David Sidrane (2017-06-08).
+tes, but __cxa_guard_release
+. Fix it
+ Jim Paris
+ Jim Paris (2017-06-09).
+ output pin.  We
+ output pin. This patch fixes
+ Alan Carvalho de Assis (2017-06-09).
+ David Sidrane (2017-06-10).
+ Alan Carvalho de Assis (2017-06-11).
+
+ Mateusz Szafoni
+ Mateusz Szafoni
+ Masayuki Ishikawa (2017-06-12).
+name_r: Fix check for space in buffer (2017-06-12).
+ Sebastien Lorquet (2017-06-12).
+
+ the timer output of a STM32 clocked at 140 MHz (which works fine
+ 0, if I want to output half of the TIM clock, I must count to 1
+ JM (2017-06-13).
+ Jussi Kivilinna (2017-06-13).
+ Jussi Kivilinna
+ David Sidrane (2017-06-13).
+ sched/pthreads to libc/pthreads.
+
+
+ Hidetaka Takano (2017-06-14).
+ Anthony Merlino (2017-06-14).
+ Hidetaka
+ top
+ Hidetaka Takano
+ Mateusz Szafoni (2017-06-15).
+ Anthony Merlino
+ Anthony Merlino
+ David Sidrane
+
+ Sebastien
+
+ this new configuration (2017-06-16).
+
+ Anthony Merlino (2017-06-17).
+ Anthony
+ Mateusz Szafoni (2017-06-18).
+ Anthony Merlino (2017-06-18).
+ Mateusz Szafoni (2017-06-18).
+te arrays instead of
+ Anthony Merlino
+
+ Roland
+ Jussi Kivilinna
+ Oleg Evseev (2017-06-19).
+ Anthony Merlino (2017-06-19).
+ Pekka
+ Juha
+ Juha
+ Sebastien Lorquet  (2017-06-20).
+ David Sidrane (2017-06-20).
+ David Sidrane (2017-06-20).
+ Anthony Merlino (2017-06-20).
+ Anthony Merlino (2017-06-21).
+ initialkjc@yahoo.com (2017-06-21).
+ Juha
+ Anthony Merlino (2017-06-21).
+tes at the
+ Roland
+ Jeongchan Kim:  last change
+ another thread
+ Anthony Merlino
+ Masayuki Ishikawa (2017-06-23).
+ Ritjaina (2017-06-23).
+ Anthony Merlino (2017-06-25).
+
+ Juha
+ Mateusz Szafoni (2017-06-26).
+ Anthony Merlino (2017-06-26).
+
+ Anthony
+ Jussi Kivilinna (2017-06-28).
+ Julien Lecoeur
+
+ the recipient based on the
+ the
+ Anthony Merlino (2017-06-30).
+ the public include/nuttx/net/net.h to the
+ Anthony Merlino (2017-07-01).
+ Goran Meki (2017-07-01).
+ Jan Pobrislo (2017-07-02).
+ Anthony Merlino (2017-07-03).
+ Eetu
+ Jan
+ Jeff (2017-07-05).
+ Masayuki Ishikawa (2017-07-06).
+ Julien
+ default. But for F410 these peripherals are absent. This
+ Gwenhael
+ F4 parts other than F40x (2017-07-06).
+ CONFIG_ARCH_FAMILY.  Causes
+ Jeff (2017-07-06).
+ state structure (2017-07-06).
+ working
+
+ Gwenhael Goavec-Merou
+ other device poll events otherwise, some other waiting
+ Simon Piriou (2017-07-09).
+ Anthony Merlino (2017-07-09).
+ Anthony Merlino (2017-07-09).
+ Anthony Merlino (2017-07-09).
+ Anthony Merlino (2017-07-10).
+ Anthony Merlino (2017-07-10).
+ Eetu
+ Anthony
+ Alan
+ Anthony Merlino (2017-07-10).
+
+ Alan Carvalho de Assis (2017-07-11).
+ Matt Thompson
+ Anthony Merlino (2017-07-11).
+ Anthony
+ newly added radio attribute
+ Anthony Merlino (2017-07-12).
+ Anthony
+ Atmel.  One major improvement is using the
+ Matt Thompson (2017-07-12).
+ Offcode,
+ Janne Rosberg (2017-07-12).
+ Anthony
+ Alan Carvalho de Assis (2017-07-12).
+() method to interface
+ Anthony Merlino
+ Anthony Merlino (2017-07-13).
+ Anthony Merlino (2017-07-13).
+ Anthony Merlino (2017-07-13).
+ Anthony Merlino (2017-07-13).
+ savinz (2017-07-14).
+ Lwazi Dube (2017-07-16).
+ Anthony
+ Titus von Boxberg
+ Titus von Boxberg (2017-07-16).
+ Titus von
+ Titus von Boxberg (2017-07-18).
+ Anthony Merlino (2017-07-18).
+ Titus
+ merge of USB
+ Matt Thompson
+ Titus von Boxberg
+ the modf() should be same as sign of input.  But for inputs
+ Lokesh B V (2017-07-20).
+ Lokesh B V
+ Lokesh B V (2017-07-21).
+ Mateusz Szafoni
+
+ Mateusz Szafoni (2017-07-22).
+ Mateusz Szafoni (2017-07-22).
+ Simon Piriou (2017-07-22).
+ Simon
+ Simon Piriou
+ Simon Piriou
+ Mateusz
+ Titus von Boxberg
+ Jeff (2017-07-27).
+ Titus von Boxberg (2017-07-27).
+ Titus von Boxberg
+ anonymous Bitbucket Issue 59 (2017-07-27).
+ Giorgio
+ Jeff
+ the device because of the misconfigured CAN speed, instead
+ the CAN chip via interrupts and thus
+ Stefan Kolb (2017-07-28).
+ Sebastien
+ Titus von Boxberg (2017-07-28).
+ Titus von Boxberg (2017-07-29).
+
+P bit in the RCC_CR register.
+P in
+ Jeff
+ struct ieee802154_data_ind_s to
+ derive interface
+ Juha
+ Juha Niskanen
+ Jussi Kivilinna
+ inet_sockif to
+ Jussi Kivilinna (2017-07-31).
+te radio addressing.  Some
+ collisions with host
+ Titus von Boxberg
+ Sebastien
+ Ivan Ucherdzhiev
+ Sebastien Lorquet (2017-08-01).
+.  Add a function to wait for a
+ Masayuki Ishikawa (2017-08-02).
+ Masayuki
+ Ivan Ucherdzhiev (2017-08-02).
+ board.h (2017-08-02).
+ Jussi Kivilinna (2017-08-03).
+ Jussi Kivilinna (2017-08-03).
+te boundaries
+ Juha
+ Jussi Kivilinna (2017-08-04).
+
+ Jeff (2017-08-04).
+ Ivan Ucherdzhiev
+ Alan Carvalho de Assis (2017-08-06).
+ Simon Piriou
+ Simon Piriou (2017-08-06).
+ Alan Carvalho de Assis
+ the IP address,
+ Masayuki
+ not checking if Spirit is busy.  The TX
+ Jeff (2017-08-07).
+ Stefan Kolb
+
+ Alan
+
+ a little,
+ Masayuki Ishikawa (2017-08-09).
+  Masayuki Ishikawa (2017-08-09).
+te char
+ David Sidrane
+ Goran Meki (2017-08-12).
+ Sungki Kim
+ Juha
+ Juha
+ STM32.  Add ADC register definitions.  Note
+ original STM32
+ Juha Niskanen (2017-08-14).
+ Arjun Hary
+ David Sidrane
+ David Sidrane (2017-08-17).
+ David Sidrane (2017-08-17).
+ David Sidrane (2017-08-17).
+ Alan
+(), and
+ Mateusz Szafoni (2017-08-20).
+ Mateusz Szafoni
+ removing
+ only one driver.  The only supported
+ the actual backlog. (2) Add a maximum backlog
+ the radio, but no application is receiving
+ Mateusz Szafoni (2017-08-21).
+ Pekka Ervasti
+ Pekka Ervasti
+ Juha Niskanen
+ ssd1306_getrun().
+te (with value 0) past target
+te of buffer was fully cleared, instead of modifying only
+te.  (3) Add support for board power
+ Jussi Kivilinna (2017-08-22).
+ Aleksandr Kazantsev
+ Juha Niskanen
+ Juha Niskanen (2017-08-25).
+
+ Juha Niskanen (2017-08-25).
+ outgoing packets.  The design was extended to support
+ Nickolay Semyonov
+ Nickolay
+ Masayuki
+ Masayuki
+ Mateusz Szafoni (2017-08-27).
+ Mateusz Szafoni (2017-08-27).
+ Mateusz Szafoni (2017-08-27).
+ Mateusz Szafoni
+
+ Alan Carvalho de Assis
+ Juha Niskanen
+ Juha Niskanen
+ Juha Niskanen (2017-08-28).
+ Pascal Speck (2017-08-28).
+ Mateusz Szafoni
+ inet/ to tcp/.  There is
+ the socket should be
+ Juha Niskanen
+ Juha Niskanen
+ the CAN
+ Pascal Speck (2017-08-31).
+ Pascal Speck,
+ Pascal Speck) that the cancellation of
+ Alan Carvalho de Assis (2017-08-31).
+
+ Alan Carvalho de Assis (2017-08-31).
+ Juha Niskanen
+
+ details like how
+ Juha Niskanen (2017-09-01).
+
+ Jussi Kivilinna (2017-09-01).
+ Jussi Kivilinna
+ Jussi Kivilinna (2017-09-01).
+te or/and halfword types, since
+ Jussi Kivilinna (2017-09-01).
+
+ Boris Astardzhiev (2017-09-03).
+ Mateusz Szafoni (2017-09-03).
+ Jussi Kivilinna (2017-09-04).
+ Jussi Kivilinna
+
+ Boris
+ the Motorola MDK
+ Juha Niskanen (2017-09-06).
+ Oleg Evseev
+tes.  The is no application use case that can
+ Mateusz Szafoni (2017-09-10).
+ Mateusz Szafoni (2017-09-10).
+ Mateusz Szafoni (2017-09-10).
+ Masayuki
+
+:  Fix double leave_cancellation_point on error
+ Jussi Kivilinna (2017-09-12).
+ Jussi Kivilinna (2017-09-12).
+ Jussi Kivilinna (2017-09-12).
+ early testing sith the sim/fb cnofiguration (2017-09-12).
+ David Sidrane (2017-09-12).
+ David Sidrane (2017-09-13).
+ Rajan Gill (2017-09-13).
+ Coverity.
+ Coverity (2017-09-13).
+tes, not pixels
+ the LIS3DSH driver to fit the
+ Florian Olbrich (2017-09-14).
+ Florian
+ Florian Olbrich (2017-09-14).
+ ieee802154_ioctl.h and
+ Anthony Merlino
+ Anthony
+ Anthony Merlino (2017-09-15).
+ GCC 6 (2017-09-15).
+ Anthony Merlino (2017-09-15).
+ Rajan Gill (2017-09-16).
+ the STM32F4-Discovery.  Add a configuration for
+ Anthony Merlino
+
+ Anthony Merlino (2017-09-18).
+ Juha Niskanen (2017-09-19).
+ the STM32F4-Discovery.  Add CONFIG_BOARD_INITIALIZE
+
+ Aleksandr Kazantsev
+ the driver, will
+ David Sidrane
+ Pavel Pisa
+ Jussi Kivilinna (2017-09-21).
+ being
+te order (namely vlifetime,
+ the IPv6 address and netmask
+ Sakari Kapanen
+ Sakari Kapanen
+
+ Coverity in the nuttx repository:
+len integrity before using it.
+ Bruno Herrera (2017-09-25).
+
+ Miha Vrhovnik (2017-09-26).
+ Miha Vrhovnik
+ Juha Niskanen (2017-09-26).
+
+ Dmitriy Linikov
+ Tomasz Wozniak (2017-09-28).
+ flag and the wakeup flag PWR power control/status
+ Oleg Evseev (2017-09-28).
+ Louis
+ the board-specific
+tes, JEXTSEL bits, ADC1 output to DFSDM
+tes
+ tech support that
+ Kconfig
+ Juha Niskanen (2017-09-29).
+ file system on a per packet basis could be slow.  I
+ the routing
+ the routing table.  When a router matching an IP address is
+ Xiao Qin (2017-09-29).
+() is an internal interface and should not set the
+ Mateusz Szafoni (2017-10-01).
+ the defconfig file (2017-10-01).
+ the stm32l4.h global header, and this
+ Sebastien Lorquet
+ Sebastien Lorquet
+
+ some example code under apps/ that generate their own
+ the OS.  In the protected mode, the OS cannot provide
+ Motorola MDK
+PSHAD=0, the RTC_TR and RTC_DR registers may not be locked after
+ Juha Niskanen (2017-10-03).
+ sem_xyz
+ modifying the per-task
+ within the OS.  Created nxsem_timedwait() that is
+ Jussi Kivilinna (2017-10-06).
+ Jussi Kivilinna (2017-10-06).
+ the
+ the standard sleep() and usleep() in that (1) they dont
+ the C library into the OS and the addition cancellation
+
+
+ Mateusz Szafoni (2017-10-08).
+ Mateusz Szafoni
+ Sakari Kapanen
+ USART number,
+ Juha Niskanen (2017-10-09).
+ Mateusz
+ Mateusz Szafoni
+ Alan Carvalho de Assis), basic interrupt handling logic,
+ the measured voltage, so it
+ Sebastien Lorquet
+ clicker2-stm32.h to stm32_xbee.h
+ Anthony Merlino (2017-10-11).
+()
+()
+ Jeongchan Kim (2017-10-11).
+ Manish
+ Jussi Kivilinna
+ Anthony Merlino (2017-10-12).
+ 24h to one month
+ Juha Niskanen (2017-10-13).
+ adding a NULL pointer change before the
+ Dmitriy Linikov in Bitbucket Issue 72
+ Jussi Kivilinna (2017-10-13).
+ Jussi
+ Alan
+ Alan Carvalho de Assis (2017-10-14).
+ Mateusz Szafoni (2017-10-15).
+ Juha Niskanen (2017-10-17)
+ Juha
+ Jussi Kivilinna (2017-10-18).
+ Juha Niskanen (2017-10-18).
+ Anthony Merlino (2017-10-18).
+ Anthony Merlino (2017-10-18).
+ identifier and mailbox number).
+ fd the same
+ 4 and 2 respectively, the frequencies should be
+ Mattias Edlund (2017-10-19).
+ passing a pointer to the device to the board defined irq
+ Sebastien
+ Alan Carvalho de Assis (2017-10-19).
+ Jussi Kivilinna (2017-10-19).
+ Pascal Speck and this implementation of the
+ devif_conn_event(), this resulted in a call to
+ Pascal Speck.  Solution is also similar to a
+ Pascal Speck (2017-10-19).
+
+ Mateusz Szafoni (2017-10-19).
+ two places in tcp_sendfile.c
+.c (2017-10-19).
+
+ Jussi
+ Jussi Kivilinna (2017-10-20).
+ Jussi
+ Alan Carvalho de Assis (2017-10-20).
+ Juha Niskanen (2017-10-20).
+ Mateusz Szafoni
+ the OS.  This is a user-space application
+ Mateusz Szafoni (2017-10-22).
+ Mateusz Szafoni (2017-10-22).
+ Alan
+ Jussi Kivilinna (2017-10-23).
+ last
+ using unaligned
+ memalign later cause heap
+tes -> 8
+ Jussi Kivilinna (2017-10-24).
+ pthread TCB to common
+ main thread. Patch also
+ Jussi Kivilinna (2017-10-25).
+ Juha Niskanen
+ Jan Pobslo (2017-10-26).
+ Jussi
+ STM32L4 I2C driver to STM32F7 I2C
+ Jussi Kivilinna (2017-10-26).
+ stop
+ Jussi
+ Jussi Kivilinna
+ opendir.  This happened
+ adding a check for matching lengths.  i.e., if strlen(fs)
+ Alan
+ Jussi Kivilinna
+ Mateusz
+
+ Dmitriy Linikov (2017-10-30).
+ Dmitriy Linikov (2017-10-30).
+ Masayuki Ishikawa (2017-10-31).
+ inside of
+ Dmitriy Linikov (2017-10-31).
+
+ Anthony Merlino (2017-11-01).
+
+ dispatchers.  Should return
+tes sent (2017-11-01).
+
+ Anthony Merlino (2017-11-01).
+ Frank
+
+ Anthony Merlino (2017-11-03).
+ Alan Carvalho de Assis (2017-11-04).
+ Alan Carvalho de Assis (2017-11-04).
+ Mateusz Szafoni (2017-11-04).
+ Alan Carvalho de
+
+ Mateusz Szafoni
+ Mateusz Szafoni (2017-11-05).
+ the
+ Unix domain local sockets to UDP LocalHost loopback
+ dup method.  In order to return a
+ Anonymous in
+ Anonymous in Issue #75 (2017-11-06).
+ Masayuki Ishikawa (2017-11-07).
+ Masayuki Ishikawa
+ Masayuki Ishikawa (2017-11-08).
+ Sakari Kapanen
+ Sakari Kapanen (2017-11-08).
+ Jussi Kivilinna (2017-11-08).
+ Jussi Kivilinna (2017-11-08).
+ Jussi Kivilinna (2017-11-08).
+ Masayuki Ishikawa (2017-11-09).
+ jeditekunum (2017-11-09).
+ Jussi Kivilinna
+ Juha Niskanen (2017-11-10).
+ review of clock_nanosleep():  Misplaced right bracket,
+ Masayuki Ishikawa
+ Masayuki Ishikawa (2017-11-13).
+ all
+ default.
+ Alan
+ Anthony Merlino (2017-11-13).
+
+ Alexander Vasiljev
+ Alexander Vasiljev
+ 4 to 1
+ Alan Carvalho de Assis (2017-11-16).
+ Alan Carvalho de Assis (2017-11-16).
+ Alan Carvalho de Assis (2017-11-16).
+ Bob Feretich (2017-11-17).
+ Bob Feretich (2017-11-17).
+
+ Alan
+tes: character itself and zero one 0 after it, so will
+te variable argument and corrupt memory for variables
+ Oleg Evseev (2017-11-19).
+ Alan Carvalho de Assis
+ Anthony Merlino
+ Anthony Merlino (2017-11-20).
+ the
+ Anthony Merlino (2017-11-20).
+
+ Miha Vrhovnik (2017-11-21).
+ Jussi Kivilinna (2017-11-21).
+() logic:  It must keep a copy
+ struct icmpv6_conn_s.  It
+ Anthony Merlino (2017-11-21).
+ Mateusz Szafoni
+te-align the update region (2017-11-22).
+ Alan Carvalho de Assis (2017-11-22).
+ Anthony Merlino (2017-11-22).
+ Anthony Merlino (2017-11-22).
+ Anthony Merlino (2017-11-22).
+ Anthony
+ recent PR when routing
+ Anthony Merlino (2017-11-22).
+ recent PR when routing
+ Anthony Merlino (2017-11-22).
+ Masayuki Ishikawa (2017-11-23).
+
+ Alan Carvalho de Assis (2017-11-23).
+ Alan Carvalho de Assis (2017-11-24).
+ Alan Carvalho de Assis
+ Alan Carvalho de Assis (2017-11-25).
+
+
+ Alan Carvalho de Assis (2017-11-25).
+ Masayuki Ishikawa (2017-11-27).
+ Masayuki Ishikawa (2017-11-27).
+ the build
+ Masayuki
+
+ Alan Carvalho de Assis (2017-11-28).
+ Alan Carvalho de Assis (2017-11-28).
+ Anthony Merlino (2017-11-29).
+ Alan Carvalho de Assis (2017-11-29).
+ Ekaterina Kovylova (2017-11-29).
+ Juha Niskanen (2017-11-30).
+ Alan Carvalho de Assis
+tes in the
+-one when read
+ Jussi
+
+
+ Anthony Merlino (2017-12-07).
+ Anthony Merlino
+
+ Masayuki Ishikawa (2017-12-08).
+
+
+ Gregory Nutt (2017-12-10).
+ Gregory Nutt (2017-12-10).
+ Gregory Nutt
+ Gregory Nutt (2017-12-11).
+
+ Gregory Nutt (2017-12-12).
+ Gregory Nutt (2017-12-13).
+ Gregory Nutt (2017-12-13).
+
+
+ Gregory Nutt (2017-12-15).
+ Gregory Nutt (2017-12-15).
+ Bob Feretich (2017-12-16).
+ Gregory Nutt
+ Gregory
+ Bob Feretich (2017-12-16).
+
+ Gregory Nutt (2017-12-16).
+
+ Gregory Nutt
+ Gregory Nutt (2017-12-17).
+ Gregory Nutt (2017-12-17).
+
+ Dmitriy Linikov (2017-12-18).
+
+ Gregory Nutt (2017-12-18).
+ Juha Niskanen
+
+ Gregory Nutt (2017-12-18).
+ Gregory Nutt (2017-12-18).
+ Gregory Nutt (2017-12-18).
+
+ Gregory Nutt (2017-12-19).
+ Masayuki Ishikawa
+ Anthony
+ Alan Carvalho
+ Alan Carvalho de Assis (2017-12-20).
+ Jussi
+ Gregory
+ Masatoshi.Tateishi (2017-12-21).
+ Masayuki Ishikawa (2017-12-21).
+ Gintaras
+ Gregory Nutt (2017-12-21).
+ Gregory Nutt
+ Gregory Nutt (2017-12-21).
+ Michael Jung
+
+ Gregory Nutt (2017-12-22).
+ Gregory Nutt (2017-12-22).
+ Alan Carvalho de Assis (2017-12-22).
+ Gregory Nutt (2017-12-22).
+ Gregory Nutt (2017-12-23).
+ Gregory Nutt (2017-12-23).
+ the LPC43xx GPDMA
+ Gregory Nutt (2017-12-24).
+ Gregory
+ Gregory Nutt (2017-12-25).
+
+ Gregory Nutt
+ Michael Jung (2017-12-28).
+ Gregory Nutt (2017-12-30).
+ Gregory Nutt (2017-12-30).
+ Gregory Nutt
+ Gregory Nutt
+ makefiles, preserve .gdbinit
+ David Alessio (2018-01-02).
+tes of
+ Louis Mayencourt (2018-01-02).
+ raiden00pl (2018-01-03).
+ Gregory Nutt (2018-01-03).
+ Gregory Nutt
+ Gregory Nutt (2018-01-04).
+ Gregory Nutt (2018-01-04).
+ Gregory Nutt (2018-01-04).
+ Gregory
+ Gregory Nutt (2018-01-05).
+ Aleksandr Vyhovanec (2018-01-05).
+ Gregory Nutt
+ Gregory Nutt (2018-01-06).
+ Alan Carvalho de Assis (2018-01-06).
+ Gregory Nutt (2018-01-08).
+ Gregory Nutt (2018-01-08).
+ Masayuki
+ Masayuki Ishikawa (2018-01-10).
+ Masayuki
+ Matt Thompson (2018-01-11).
+ Matt
+ Matt Thompson
+ Gregory Nutt (2018-01-12).
+ Gregory Nutt (2018-01-12).
+ Gregory Nutt (2018-01-14).
+ Mateusz Szafoni
+ Fabio DUrso (2018-01-14).
+ Masayuki Ishikawa (2018-01-15).
+ timer
+ Gregory Nutt (2018-01-15).
+
+ Jussi Kivilinna (2018-01-16).
+ Juha Niskanen (2018-01-16).
+tes.   drivers/mmcsd: respect
+ Evgeniy Bobkov (2018-01-16).
+
+ Gregory Nutt (2018-01-16).
+ Masayuki Ishikawa (2018-01-17).
+
+
+ Gregory Nutt (2018-01-17).
+ Gregory Nutt
+ Gregory Nutt (2018-01-17).
+ Matt Thompson (2018-01-17).
+
+ the touchscrren but,
+ Gregory Nutt (2018-01-18).
+ Gregory Nutt (2018-01-18).
+ Masayuki Ishikawa (2018-01-19).
+ Gregory Nutt
+ Gregory Nutt (2018-01-20).
+
+ Mateusz Szafoni (2018-01-21).
+
+ Juha Niskanen (2018-01-22).
+ David Alessio (2018-01-22).
+
+ Gregory Nutt (2018-01-22).
+ WRB_* to TCPWB_* to make room in the namespace for write
+ Gregory Nutt (2018-01-22).
+
+ Gregory Nutt (2018-01-22).
+
+ Alexander
+ Alexander
+ Alexander Oryshchenko (2018-01-24).
+ Alexander Oryshchenko
+ Matt Thompson (2018-01-24).
+ 0 to 32.  Update
+ Gregory Nutt (2018-01-25).
+ Matt Thompson (2018-01-25).
+ Frank Benkert
+ the F2, F3, and F4 memory
+ Gregory Nutt (2018-01-26).
+
+ Matt Thompson (2018-01-28).
+
+ Bob Feretich (2018-01-29).
+ Juha
+ Gregory Nutt (2018-01-29).
+ Gregory Nutt (2018-01-29).
+ Matt Thompson (2018-01-29).
+ Gregory Nutt (2018-01-30).
+ Gregory Nutt
+ Gregory Nutt (2018-01-30).
+ Gregory Nutt (2018-01-30).
+
+ Gregory Nutt (2018-01-30).
+ Gregory Nutt (2018-01-30).
+ Gregory Nutt (2018-01-30).
+ sched_addreadytorun() and sched_removereadytorun() to
+ this change, task_exit()
+ another CPU. Similarly, other tasklists might be modified
+ Masayuki Ishikawa (2018-01-31).
+ Matt Thompson
+ Juha Niskanen (2018-01-31).
+ Gregory Nutt (2018-01-31).
+
+ board bringup logic should be kernel threads,
+ Gregory Nutt (2018-01-31).
+ drivers should be kernel threads, not user
+ Gregory Nutt (2018-01-31).
+ Gregory Nutt (2018-01-31).
+ all uses of kthread_create() (as
+ Gregory Nutt (2018-01-31).
+ Stewart (2018-02-01).
+ Gregory Nutt
+
+ Alan Carvalho de Assis (2018-02-04).
+ Gregory Nutt (2018-02-04).
+ Gregory Nutt (2018-02-04).
+ using just a
+ implementing atomic this_task()in sched_thistask.c
+ Masayuki Ishikawa (2018-02-04).
+ MTD init.  I was trying to
+ Michael Jung (2018-02-05).
+ Gregory Nutt (2018-02-05).
+
+ Gregory Nutt
+
+ Gregory Nutt
+ Gregory Nutt (2018-02-06).
+ this fraction).  So if it is not used, it should be
+ hg42 (2018-02-08).
+
+ Alan Carvalho
+
+ Gregory Nutt (2018-02-10).
+ Matt Thompson (2018-02-10).
+ Matt Thompson (2018-02-10).
+
+ Matt Thompson (2018-02-11).
+
+ Alan Carvalho de Assis (2018-02-11).
+ Gregory Nutt (2018-02-11).
+ this fraction).  This also has to
+ Harald Gutsche (2018-02-11).
+ Matt Thompson
+ Matt
+ Alan Carvalho de Assis (2018-02-11).
+ Alan Carvalho de Assis (2018-02-11).
+ Pelle Windestam (2018-02-13).
+ Alexander Oryshchenko (2018-02-13).
+ Alexander Oryshchenko (2018-02-13).
+
+
+ Alan Carvalho de Assis (2018-02-14).
+ a deadlock in up_schedulesigaction.c where inter-CPU signal
+ Masayuki Ishikawa (2018-02-14).
+ Masayuki Ishikawa to the
+ Gregory Nutt (2018-02-14).
+ Masayuki Ishikawa to the
+ Gregory Nutt (2018-02-14).
+
+ Alan Carvalho de Assis (2018-02-14).
+ Matt Thompson (2018-02-14).
+ Masayuki Ishikawa (2018-02-15).
+ Gregory Nutt (2018-02-15).
+ adding a
+ Sebastien Lorquet
+ Gwenhael Goavec-Merou (2018-02-17).
+ Louis
+: Pascal Speck <iktek01@yahoo.com>
+ Juha Niskanen (2018-02-19).
+ Juha Niskanen (2018-02-20).
+
+ Gianpaolo Ferroni Ariani (2018-02-22).
+ Gregory Nutt (2018-02-22).
+ Juho Grundstrom
+ Gregory Nutt (2018-02-22).
+ Masayuki Ishikawa (2018-02-23).
+
+ correct the type uses to link
+ SP (2018-02-23).
+ Gregory Nutt (2018-02-24).
+
+ STM32L4.
+
+ Mateusz
+ Juha Niskanen
+ Mateusz
+ lihaichen
+ the OS.  That is not an acceptable
+ Gregory Nutt
+
+ Gregory Nutt (2018-03-04).
+ Juha Niskanen (2018-03-05).
+ Giorgio
+ Gregory Nutt (2018-03-05).
+ Juha Niskanen (2018-03-06).
+ Juha
+ make
+ Gregory Nutt (2018-03-07).
+ Sebastien Lorquet
+ Gregory Nutt (2018-03-09).
+ Gregory Nutt (2018-03-11).
+ Sebastien Lorquet (2018-03-11).
+ Gregory Nutt
+ Simon Piriou (2018-03-12).
+ Gregory Nutt
+ Simon Piriou
+ Simon Piriou (2018-03-12).
+ Gregory Nutt
+
+ Gregory Nutt (2018-03-14).
+ Boris
+ Gregory Nutt (2018-03-16).
+ Gregory Nutt (2018-03-19).
+ Masayuki
+ Juha Niskanen
+ Dmitriy Linikov (2018-03-20).
+ Gregory Nutt (2018-03-20).
+ Juha
+ Jussi Kivilinna (2018-03-21).
+ Juha
+ Juha Niskanen (2018-03-22).
+ Gregory Nutt (2018-03-23).
+ Juha Niskanen (2018-03-23).
+ Gregory Nutt (2018-03-23).
+ Gregory
+ Janne Rosberg (2018-03-26).
+ Gregory Nutt (2018-03-26).
+ Masayuki Ishikawa (2018-03-27).
+ Janne Rosberg (2018-03-27).
+ starting at all in the case of a PHY failure.  This commit adds
+ Sebastien Lorquet (2018-03-27).
+
+ radio driver.  The
+ Anthony
+ the Intel/Zephyr
+ the Intel/Zephyr arduino101_firmware_source-v1.tar package.
+ Gregory Nutt (2018-03-29).
+ Gregory Nutt (2018-03-30).
+ Gregory
+ Vinicius Maciel (2018-04-01).
+ Gregory Nutt (2018-04-03).
+ Gregory Nutt (2018-04-03).
+ Masayuki Ishikawa (2018-04-04).
+ Alan Carvalho de Assis
+ Gregory Nutt (2018-04-04).
+ Juha
+ Mateusz Szafoni
+ lihaichen
+ Juha Niskanen (2018-04-04).
+ Bob Feratich (2018-04-07).
+ Mateusz
+ Tiago Almeida
+ Gregory Nutt (2018-04-09).
+ Kyle
+ Alan Carvalho de Assis (2018-04-10).
+ Gregory Nutt (2018-04-11) Updated, corrected, and verified.
+ Bob Feretich (2018-04-11).
+ Bob Feretich (2018-04-11).
+ Micha yszczek (2018-04-11).
+ Ivan Ucherdzhiev (2018-04-12).
+ EunBong Song
+ Gregory Nutt (2018-04-13).
+ the on
+ Ivan Ucherdzhiev (2018-04-13).
+ Gregory Nutt
+ Micha yszczek (2018-04-14).
+ Alan Carvalho de Assis (2018-04-14).
+tes
+
+ Alan Carvalho de Assis (2018-04-14).
+
+ Gregory Nutt
+te-ordering/endian-ness problem.  The root
+ Gregory Nutt (2018-04-17).
+ Gregory Nutt (2018-04-18).
+ Ivan Ucherdzhiev (2018-04-18).
+ Anthony Merlino (2018-04-19).
+ Dmitry Sharihin (2018-04-19).
+
+ Levin Li
+ Alan Carvalho de Assis (2018-04-20).
+
+ Alan Carvalho de Assis (2018-04-20).
+ Gregory Nutt (2018-04-20).
+ Micha
+ Jake Choy
+ Micha yszczek
+ Michael Jung (2018-04-21).
+ Alan Carvalho de Assis (2018-04-21).
+ Gregory Nutt
+ Micha
+ Gregory Nutt (2018-04-23).
+ Ivan Ucherdzhiev (2018-04-24).
+ 1-wire converter).  Unlike most other unlink
+ Juha Niskanen (2018-04-24).
+ Goran Meki (2018-04-24).
+() and
+ the connected remote peer.  On of these
+  <liguiding@pinecone.net>.  Changes were made as
+ Gregory Nutt (2018-04-25).
+ Gregory Nutt (2018-04-25).
+ Gregory Nutt (2018-04-25).
+
+ Pelle Windestam (2018-04-26).
+ hhuysqt (2018-04-26).
+
+ Gregory Nutt (2018-04-26).
+ Matt Thompson (2018-04-26).
+ seyyah (2018-04-26).
+
+ Gregory Nutt
+ Alan Carvalho de Assis (2018-04-26).
+ Gregory Nutt (2018-04-27).
+ Ivan Ucherdzhiev
+ Gregory Nutt
+ Jake
+
+ David Sidrane (2018-04-28).
+ Dmitry Sharihin (2018-04-28).
+ Alan Carvalho de Assis (2018-04-28).
+ Alan Carvalho de Assis (2018-04-28).
+ Gregory Nutt (2018-04-29).
+ NUTTX for TM4C1294.  The EEPROM driver currently
+tes(multiple of 4) and write
+ Shirshak Sengupta (2018-04-29).
+TE_WRITE for TM4c1294.
+ Shirshak Sengupta (2018-04-29).
+ erase page size.  Implement
+ Michael Jung (2018-05-01).
+ Gregory Nutt (2018-05-01).
+ Jake Choy (2018-05-01).
+ Jake Choy (2018-05-01).
+
+ Jake Choy (2018-05-02).
+ Gregory Nutt (2018-05-02).
+ Michael Jung (2018-05-02).
+ Anthony Merlino (2018-05-02).
+ Anthony Merlino (2018-05-02).
+ Anthony Merlino (2018-05-02).
+ Alan Carvalho
+ Gregory Nutt (2018-05-05).
+ Gregory Nutt (2018-05-05).
+
+ Michael Jung (2018-05-06).
+ Gregory Nutt (2018-05-07).
+ Micha yszczek (2018-05-08).
+
+ Gregory Nutt (2018-05-09).
+ Michael Jung (2018-05-10).
+ Gregory Nutt (2018-05-11).
+ Andrey Zabolotnyi (2018-05-12).
+ Alan Carvalho de Assis
+ Gregory Nutt (2018-05-12).
+() when it is
+ Gregory Nutt (2018-05-13).
+ Gregory Nutt (2018-05-13).
+ uninitialized memory with
+ Anthony
+ Gregory
+ Juha Niskanen
+ Gregory
+ Gregory
+ Jake Choy
+ Anthony Merlino (2018-05-15).
+ Gregory Nutt
+ William Douglas (2018-05-15).
+ Gregory Nutt
+ Anthony
+ Gregory Nutt (2018-05-17).
+ Dmitriy Linikov (2018-05-18).
+ Gregory Nutt (2018-05-18).
+ Alan Carvalho de Assis (2018-05-19).
+ the low-level, MCU SPI driver to manage that 9th
+ Gregory Nutt (2018-05-19).
+ Michael Jung (2018-05-20).
+
+ Gregory Nutt (2018-05-23).
+ Boris Astardzhiev
+ Gregory Nutt
+ Jake Choy (2018-05-25).
+ Gregory
+ Alan Carvalho de
+ Gregory
+ Gregory
+ Gregory
+ Gregory Nutt (2018-05-29).
+ Gregory Nutt (2018-05-29).
+ Mateusz Szafoni (2018-05-30).
+ David Sidrane
+ David Sidrane (2018-05-30).
+ Gregory Nutt (2018-05-31).
+ Gregory Nutt (2018-05-31).
+ Alan Carvalho de Assis (2018-06-01).
+
+ Gregory Nutt (2018-06-01).
+ Gregory Nutt (2018-06-01).
+ Gregory
+ Alan Carvalho de Assis (2018-06-02).
+ Alan Carvalho
+
+ Dmitriy Linikov (2018-06-05).
+ Dmitriy Linikov
+ Gregory Nutt (2018-06-05).
+ Masayuki Ishikawa (2018-06-05).
+
+ Juha
+
+ Gregory Nutt (2018-06-06).
+ Mark Shulte:
+ Gregory Nutt (2018-06-06).
+ Marco Krahl (2018-06-06).
+
+ Juha Niskanen (2018-06-08).
+ Juha
+ Gregory Nutt (2018-06-08).
+ Masayuki Ishikawa
+ Anthony Merlino (2018-06-13).
+
+ Kurt
+ Juha Niskanen (2018-06-15).
+ Gregory Nutt (2018-06-15).
+ Gregory Nutt (2018-06-16).
+ libs/libc/time
+ Gregory Nutt
+ Alan Carvalho de Assis (2018-06-16).
+
+ Alan Carvalho de Assis (2018-06-16).
+ Simon Laube
+ RNDIS; add
+ Alan Carvalho de Assis (2018-06-18).
+ Juha
+te order.  However, that
+ Gregory Nutt (2018-06-18).
+ the many older architectures. Only common vectors are
+ Gregory Nutt (2018-06-19).
+ Dmitriy Linikov (2018-06-20).
+ Juha
+ Gregory Nutt (2018-06-21).
+ the destination IP address.  Rather,
+ Gregory Nutt (2018-06-22).
+ Gregory Nutt
+ Gregory Nutt (2018-06-23).
+ Gregory Nutt (2018-06-24).
+ Gregory Nutt (2018-06-24).
+ Gregory Nutt
+ intentional use of fall through
+ Daniel Agar (2018-06-25).
+ being reused
+ assigned once.  The prevents
+ being removed, unregistered and re-installed,
+ Gregory
+ Gregory Nutt
+ Sebastien Lorquet (2018-06-25).
+ Marcin Wyrwas (2018-06-25).
+ Gregory
+ Gregory Nutt (2018-06-26).
+ work_cancel().
+ Gregory Nutt (2018-06-27).
+ Masayuki Ishikawa (2018-06-27).
+ Gregory Nutt (2018-06-27).
+ Gregory Nutt (2018-06-27).
+
+ Jussi Kivilinna
+ Rev 1. of the Reference
+ Gregory Nutt (2018-06-28).
+ Gregory Nutt (2018-06-28).
+ Gregory Nutt (2018-06-28).
+ Mark so that it can be used
+ Gregory Nutt (2018-06-29).
+
+ Gregory Nutt (2018-07-01).
+ Alan Carvalho de Assis (2018-07-02).
+
+
+ Gregory Nutt (2018-07-03).
+ Gregory Nutt (2018-07-04).
+
+ Frank Benkert (2018-07-04).
+ the naming confusion.  The
+tes
+te Ethernet header).  A more friendly solution
+ adding the MAC header length.  Instead, we define the
+ subtracting the IP
+ subtracting the IP header, the TCP header, and the
+ Gregory Nutt (2018-07-04).
+
+ RFC 879
+ Gregory
+ Gregory Nutt (2018-07-05).
+ unlocking the network lock while
+ Gregory Nutt (2018-07-06).
+ Mateusz Szafoni
+ Alan Carvalho de Assis (2018-07-07).
+ NXP, we should turn on power sources for
+ kxjiang (2018-07-08).
+ Gregory Nutt
+ Gregory Nutt (2018-07-09).
+ ligd (2018-07-09).
+ Daniel Pereira Carvalho (2018-07-10).
+ Masayuki Ishikawa
+ Mateusz Szafoni (2018-07-12).
+
+ David Sidrane (2018-07-12).
+ Masayuki Ishikawa (2018-07-13).
+ Gregory Nutt (2018-07-13).
+ locking
+ Masayuki Ishikawa (2018-07-14).
+ Masayuki
+
+ Gregory Nutt (2018-07-15).
+ Bob Feritich (2018-07-15).
+ Gregory Nutt (2018-07-15).
+ Daniel P. Carvalho (2018-07-16).
+ Fanda (2018-07-17).
+ Daniel P. Carvalho (2018-07-17).
+te-order issue when
+ Jake Choy
+ Masayuki Ishikawa
+ ligd
+ Gregory Nutt (2018-07-19).
+ Gregory Nutt (2018-07-19).
+ David
+ Alan Carvalho de Assis (2018-07-19).
+ Masayuki
+ Masayuki Ishikawa (2018-07-20).
+ Gregory
+ Bob Feretich (2018-07-20).
+ Bob
+ Alan Carvalho de Assis (2018-07-22).
+ Gregory Nutt
+ Masayuki
+ Frank Benkert (2018-07-23).
+ David Sidrane (2018-07-23).
+ Masayuki Ishikawa (2018-07-24).
+ the file system structures.  It was not
+ Jesse.
+ Gregory Nutt (2018-07-24).
+ Masayuki Ishikawa
+namer.c with
+ Masayuki Ishikawa (2018-07-25).
+ Ivan Ucherdzhiev (2018-07-26).
+ syscall.h.  Because
+ Masayuki Ishikawa (2018-07-26).
+
+ Jake Choy (2018-07-26).
+ Gregory Nutt
+ Ouss4 (2018-07-27).
+
+ Gregory Nutt (2018-07-28).
+
+ Gregory Nutt (2018-07-29).
+
+ Masayuki Ishikawa (2018-07-30).
+ Simon Liedl (2018-07-30).
+ Gregory Nutt (2018-07-30).
+ Gregory Nutt (2018-07-30).
+ Gregory
+ Marcin
+ Daniel Pereira Carvalho (2018-08-02).
+ Russ Webber (2018-08-02).
+ an exception of lower priority than the new
+
+
+ a repeated start.  No lower-half I2C
+ Gregory Nutt (2018-08-03).
+ Daniel P. Carvalho
+ Evgeniy Bobkov (2018-08-03).
+ Gregory Nutt (2018-08-03).
+ Gregory Nutt (2018-08-03).
+ about 48-bits per
+ Gregory Nutt (2018-08-04).
+ Gregory Nutt (2018-08-04).
+ Gregory Nutt (2018-08-05).
+ Alex Denisov in Bitbucket
+ Gregory Nutt (2018-08-05).
+ Gregory Nutt (2018-08-05).
+ Masayuki
+ 1KB to 55KB.  In previous
+ the tx threshold but
+ Masayuki Ishikawa (2018-08-06).
+ Juha Niskanen (2018-08-06).
+ Russ Webber
+
+ Gregory Nutt (2018-08-07).
+ Gregory Nutt (2018-08-07).
+ Daniel Pereira Carvalho
+
+ Juha Niskanen
+
+ the global CONFIG_RTC
+ Gregory Nutt (2018-08-08).
+ Gregory Nutt (2018-08-08).
+ Juha Niskanen (2018-08-09).
+ Daniel P.
+ David Sidrane (2018-08-09).
+ David
+ Gregory Nutt
+ Gregory Nutt (2018-08-10).
+
+ Juha
+ Juha Niskanen (2018-08-14).
+ Juha Niskanen (2018-08-14).
+ Dmitriy
+ Gregory
+ Gregory Nutt (2018-08-14).
+ Gregory Nutt (2018-08-15).
+
+ Gregory Nutt (2018-08-15).
+ Juha Niskanen (2018-08-16).
+ Juha Niskanen (2018-08-16).
+ Juha Niskanen (2018-08-16).
+
+ Gregory Nutt
+ Gregory Nutt (2018-08-17).
+ Gregory Nutt
+ Gregory Nutt (2018-08-19).
+ Gregory Nutt (2018-08-19).
+ other systems and having the dummy
+ Gregory Nutt
+ Gregory
+ the DMA buffer.  This
+
+ Evgeniy Bobkov
+ Gregory Nutt (2018-08-21).
+ anchao
+ Xiang Xiao (2018-08-22).
+ anchao
+ anchao (2018-08-22).
+ the
+ Gregory Nutt (2018-08-22).
+ Gregory
+ Xiang Xiao (2018-08-22).
+ Xiang Xiao
+ Gregory Nutt (2018-08-23).
+ Xiang Xiao (2018-08-23).
+ Xiang Xiao (2018-08-23).
+
+ Xiang
+ anchao (2018-08-23).
+ the coding standard.  Also coding standard
+ Gregory Nutt (2018-08-24).
+ Xiang Xiao (2018-08-24).
+
+
+ Xiang Xiao (2018-08-24).
+ Xiang Xiao (2018-08-24).
+ the stack
+ Xiang Xiao (2018-08-24).
+ dongjianli (2018-08-24).
+ Xiang Xiao (2018-08-24).
+ ligd (2018-08-24).
+ Xiang Xiao (2018-08-24).
+ Xiang Xiao (2018-08-24).
+ Xiang Xiao (2018-08-24).
+ Xiang Xiao (2018-08-24).
+ a oneshot timer driver (if it
+ Xiang Xiao (2018-08-24).
+ Xiang Xiao (2018-08-24).
+ Xiang Xiao
+ dongjianli (2018-08-24).
+ Xiang Xiao
+ zhuguangqing (2018-08-24).
+ Xiang Xiao (2018-08-24).
+ Gregory Nutt (2018-08-24).
+ the ARP table entry, rather than a
+ Gregory
+ David Sidrane (2018-08-25).
+ Xiang Xiao (2018-08-25).
+ DisruptiveNL (2018-08-25).
+ Gregory Nutt (2018-08-25).
+
+ Gregory Nutt (2018-08-25).
+ the
+ Gregory Nutt (2018-08-25).
+ ligd (2018-08-25).
+ xuanlin
+ Xiang Xiao (2018-08-26).
+ anchao (2018-08-26).
+ the pipe should return
+ ligd (2018-08-26).
+ ligd (2018-08-26).
+
+ ligd
+ xuanlin (2018-08-26).
+ Xiang Xiao (2018-08-26).
+ Xiang
+ Xiang Xiao (2018-08-26).
+ Xiang Xiao (2018-08-26).
+ ligd (2018-08-26).
+
+ Xiang Xiao (2018-08-26).
+
+ ligd (2018-08-26).
+
+ ligd
+
+ zhangyuan7 (2018-08-26).
+ anchao (2018-08-26).
+ ligd (2018-08-26).
+ Xiang Xiao (2018-08-26).
+ dongjianli
+ Gregory
+ getsetsockopt to psock_getsetsockopt
+ Xiang Xiao (2018-08-26).
+ Xiang
+ zhangyuan7 (2018-08-26).
+_ipv46addr return netdev_default() as last resort but
+ Xiang Xiao (2018-08-26).
+ Xiang
+ dongjianli (2018-08-26).
+
+ Gregory Nutt
+ Xiang Xiao
+
+ Xiang Xiao (2018-08-26).
+
+ Xiang Xiao (2018-08-26).
+
+
+ Xiang Xiao (2018-08-27).
+ Xiang Xiao (2018-08-27).
+ Xiang Xiao
+ zhuyanlin (2018-08-27).
+ zhuguangqing (2018-08-27).
+ Xiang Xiao (2018-08-27).
+
+
+ Gregory Nutt (2018-08-27).
+ liuhaiyang
+ QianWenfa (2018-08-27).
+ wchar.h to
+ Xiang Xiao (2018-08-27).
+ zhuyanlin (2018-08-27).
+ NSH_FILE_APPS to BUILD_LOADABLE
+ anchao (2018-08-27).
+
+ Xiang Xiao (2018-08-27).
+ Xiang Xiao (2018-08-27).
+ Juha Niskanen (2018-08-27).
+ ZhongAn
+
+ ZhongAn (2018-08-27).
+ anchao (2018-08-27).
+ ZhongAn (2018-08-27).
+
+ Xiang Xiao
+ zhuyanlin (2018-08-27).
+
+ the serial TTY Ctrl-C logic.  Add a
+ Gregory Nutt (2018-08-27).
+ adding
+ Xiang Xiao
+ Gregory Nutt
+ Xiang Xiao (2018-08-27).
+ zhuguangqing
+ Xiang Xiao (2018-08-27).
+
+ Xiang Xiao (2018-08-27).
+ zhuguangqing (2018-08-27).
+ ligd (2018-08-27).
+ Gregory Nutt
+ Gregory Nutt (2018-08-27).
+ wangyanjiong (2018-08-28).
+ Xiang Xiao (2018-08-28).
+ Xiang
+ Xiang Xiao (2018-08-28).
+ Xiang Xiao (2018-08-28).
+ 64 to a maximum
+ Gregory Nutt (2018-08-28).
+
+ Gregory Nutt (2018-08-28).
+ Gregory Nutt (2018-08-28).
+ Gregory Nutt (2018-08-28).
+ ligd (2018-08-28).
+ Gregory Nutt
+ EunBong Song (2018-08-29).
+ Juha
+ Gregory Nutt (2018-08-29).
+ Xiang Xiao (2018-08-29).
+ Gregory Nutt (2018-08-29).
+ Gregory Nutt
+ Gregory
+
+ initial
+ Gregory Nutt (2018-08-31).
+ Daniel Agar
+ raiden00pl
+ Ouss4 (2018-09-01).
+ Gregory Nutt (2018-09-01).
+ Gregory Nutt (2018-09-01).
+ Gregory Nutt
+ Gregory Nutt (2018-09-01).
+ default in the
+ Gregory Nutt (2018-09-01).
+ Gregory Nutt
+
+ Gregory Nutt
+ Gregory Nutt
+
+ Goden
+ Juha Niskanen (2018-09-04).
+ a failed export.  configs/sama5d4-ek/README.txt:  Update.
+ Gregory Nutt (2018-09-04).
+
+ Goden Freemans (2018-09-05).
+ apps/system/ping.  Remove references to
+ Gregory Nutt (2018-09-05).
+ Gregory Nutt
+ Gregory Nutt
+ Gregory Nutt (2018-09-09).
+ Gregory Nutt (2018-09-09).
+ Gregory Nutt (2018-09-09).
+ Gregory
+ Gregory Nutt (2018-09-09).
+ Jakob Haufe
+ removed some residual machinery that is no longer
+ Gregory Nutt (2018-09-10).
+ Gregory Nutt
+ Gregory Nutt (2018-09-10).
+ Gregory Nutt
+ EunBong Song (2018-09-11).
+ Gregory Nutt (2018-09-11).
+ the network device bound to the socket.  This obviously cannot
+
+ David Sidrane (2018-09-11).
+ Gregory Nutt
+ Gregory
+ Gregory Nutt (2018-09-12).
+ Gregory Nutt
+ Anthony
+ Gregory Nutt (2018-09-13).
+ Gregory Nutt (2018-09-13).
+ EunBong Song
+ Gregory Nutt (2018-09-14).
+ Jussi
+
+
+ file_detach() to
+ Gregory Nutt (2018-09-15).
+ Gregory Nutt (2018-09-15).
+ Gregory Nutt
+ Gregory Nutt (2018-09-15).
+ Gregory Nutt (2018-09-15).
+ Gregory
+ Freemans Goden (2018-09-16).
+ Gregory Nutt (2018-09-16).
+ raiden00pl (2018-09-16).
+ failure to converge for very specific input values.
+ Rajan Gill (2018-09-16).
+ Juha
+ Gregory Nutt (2018-09-17).
+ Gregory Nutt
+ Masayuki Ishikawa (2018-09-20).
+ EunBong Song (2018-09-21).
+ Gregory Nutt (2018-09-20).
+ Masayuki Ishikawa
+ Gregory Nutt (2018-09-21).
+ Gregory Nutt (2018-09-21).
+ David
+ Gregory Nutt (2018-09-21).
+ Gregory Nutt (2018-09-22).
+ Gregory Nutt (2018-09-22).
+ Anthony Merlino.
+ Gregory Nutt (2018-09-24).
+ Gregory Nutt (2018-09-24).
+ cold. I dumped the PHY registers to see what the differences
+ Dave Marples (2018-09-25).
+ Harri Luhtala
+ Harri Luhtala (2018-09-25).
+ Anthony Merlino (2018-09-25).
+ Anthony Merlino (2018-09-25).
+ applications.  This could cause issues for the OS but
+ Federico
+ Gregory Nutt (2018-09-26).
+ Ivan Ucherdzhiev (2018-09-26).
+ Ivan Ucherdzhiev (2018-09-26).
+ Dave Marples (2018-09-26).
+ Masayuki Ishikawa
+
+ the layer above anyway.
+ Dave
+
+ Alan Carvalho de Assis (2018-09-29).
+ the env command.  Documentation/NuttShell.html:
+ Gregory Nutt (2018-09-30).
+ Gregory Nutt (2018-09-30).
+ Gregory Nutt (2018-10-01).
+ Gregory Nutt (2018-10-02).
+ the input buffer. This made impossible to convert
+ advancing the
+ Mihai Serban (2018-10-03).
+ raiden00pl (2018-10-04).
+
+ raiden00pl (2018-10-05).
+ Gregory Nutt
+
+ Gregory Nutt (2018-10-06).
+ a mounted file system vs. in-memory data
+ Ramtin Amin (2018-10-07).
+ a
+ Gregory Nutt (2018-10-07).
+ Juha Niskanen
+ Juha Niskanen (2018-10-10).
+ Gregory Nutt (2018-10-10).
+ Gregory Nutt
+ Dave Marples (2018-10-12).
+te, (2)
+ Ivan Ucherdzhiev
+ Mateusz Szafoni (2018-10-14).
+ Mateusz
+ Ouss4 (2018-10-15).
+ Ouss4 (2018-10-16).
+ Ouss4 (2018-10-16).
+ Gregory
+
+ Ken Pettit (2018-10-18).
+ Gregory Nutt (2018-10-18).
+ Daniel Agar
+ Daniel P.
+ Gregory Nutt (2018-10-21).
+ means of changing the definitions in the board.h file.
+TECNT registers had the wrong
+ Dave Marples (2018-10-21).
+ Gregory Nutt (2018-10-21).
+ Jussi Kivilinna (2018-10-22).
+
+ Dave
+ Gregory Nutt (2018-10-23).
+ board.h
+ David Sidrane (2018-10-23).
+ Sakari Kapanen (2018-10-24).
+tes.  However, the code actually resets the whole TCP
+ Sakari Kapanen (2018-10-24).
+ Lokesh B
+
+ one transfer episode to the
+ Dave Marples (2018-10-24).
+ Gregory Nutt (2018-10-24).
+
+ Gregory Nutt (2018-10-25).
+ Daniel
+ Shao Li in
+ Gregory Nutt (2018-10-26).
+ Gregory Nutt (2018-10-26).
+
+
+ Anthony Merlino
+ Anthony Merlino
+ Gregory Nutt (2018-10-27).
+
+ Mateusz Szafoni (2018-10-28).
+ Mateusz Szafoni (2018-10-28).
+ Gregory Nutt (2018-10-28).
+ Gregory Nutt (2018-10-28).
+ OpenGroup.org.
+ Gregory Nutt (2018-10-28).
+ Alan Carvalho de Assis (2018-10-28).
+ Alan Carvalho de Assis (2018-10-28).
+ Gregory Nutt (2018-10-29).
+ hhuysqt (2018-10-30).
+
+ Anthony Merlino (2018-10-31).
+ Gregory Nutt (2018-10-31).
+ Gregory Nutt (2018-10-31).
+ Gregory Nutt (2018-10-31).
+ Gregory Nutt (2018-10-31).
+ Gregory Nutt
+ Gregory
+
+ Dave Marples (2018-10-31).
+ assuring that NuttX has booted
+ Anthony Merlino (2018-11-01).
+ Anthony Merlino (2018-11-01).
+ Gregory Nutt (2018-11-01).
+ Gregory Nutt (2018-11-01).
+ Alan Carvalho de Assis (2018-11-02).
+-hop
+ IPv6 can handle the presence of IPv6 header
+ Gregory Nutt (2018-11-02).
+ comparison with roughly leveraged code and the MDL
+
+ Gregory Nutt
+ Gregory Nutt
+ Gregory Nutt (2018-11-04).
+tes and reaches buffer length limit.
+ Anatol Ivanov
+ Daniel P.
+ Anatol Ivanov (2018-11-06).
+ Gregory Nutt
+ Gregory Nutt
+ David Sidrane (2018-11-06).
+ Gregory Nutt (2018-11-07).
+ Anonymous in Bitbucket Issue #129:   When MIPS port is built
+
+ reverse
+
+
+ nchao (2018-11-08).
+ Xiang Xiao (2018-11-08).
+ Xiang Xiao (2018-11-08).
+ dongjianli (2018-11-08).
+ Xiang Xiao (2018-11-08).
+ Xiang Xiao (2018-11-08).
+ ligd (2018-11-08).
+ Xiang Xiao
+ Xiang Xiao (2018-11-08).
+ Xiang Xiao
+ Xiang Xiao (2018-11-08).
+ Xiang Xiao (2018-11-08).
+ Xiang Xiao (2018-11-08).
+ Xiang Xiao
+ iuhaitao
+ zhangyuan7 (2018-11-08).
+ ligd (2018-11-08).
+ ligd (2018-11-08).
+ Xiang Xiao (2018-11-08).
+ the board.h file so set the Mux that
+ David Sidrane (2018-11-09).
+ Petteri Aimonen (2018-10-31).
+ Petteri Aimonen (2018-11-02).
+ Petteri Aimonen (2018-11-09).
+ composite driver is 4, and
+ Petteri Aimonen (2018-11-09).
+ Windows 2000 and
+ Petteri Aimonen (2018-11-09).
+ Petteri Aimonen (2018-11-09).
+ David Sidrane (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao (2018-11-09).
+
+ Xiang Xiao (2018-11-09).
+
+
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ zhangyuan7 (2018-11-09).
+ anchao
+ header files:
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ ligd
+ ligd
+ Xiang Xiao (2018-11-09).
+ Xiang
+ Xiang Xiao
+ checking packet
+ Xiang Xiao (2018-11-09).
+ Juha Niskanen (2018-11-09).
+ make distclean target per
+ Gregory Nutt (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao
+ zhangyuan7 (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao
+ Xiang Xiao (2018-11-09).
+ ligd (2018-11-09).
+ Gregory Nutt (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ arpa.inet.h
+ Xiang Xiao (2018-11-09).
+
+ Xiang
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ Gregory Nutt (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ moving all
+ Xiang Xiao (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ introducing a new coupling via C
+ Xiang Xiao (2018-11-09).
+ Gregory Nutt (2018-11-09).
+ Xiang Xiao (2018-11-09).
+ within
+ Xiang Xiao in order to avoid the long
+ any asynchronous
+ Gregory Nutt (2018-11-10).
+ ligd (2018-11-10).
+
+ Gregory Nutt (2018-11-10).
+ Gregory Nutt (2018-11-10).
+ Xiang Xiao (2018-11-10).
+ Xiang Xiao (2018-11-10).
+ Gregory
+ multiple groups in
+ Gregory Nutt (2018-11-11).
+ a single timer
+ Gregory Nutt (2018-11-11).
+ Gregory Nutt (2018-11-11).
+ fault handler since the
+ Xiang Xiao (2018-11-11).
+ Xiang Xiao (2018-11-11).
+
+ Xiang Xiao (2018-11-11).
+ Gregory Nutt (2018-11-11).
+ drivers/net/Kconfig to net/Kconfig so that we
+ Xiang Xiao
+ Xiang Xiao
+ zero as state here:
+ Xiang Xiao (2018-11-12).
+ them consistent with
+ Xiang Xiao (2018-11-12).
+ Xiang Xiao
+
+ Xiang Xiao (2018-11-12).
+te is considered
+ Petteri Aimonen (2018-11-12).
+ Mateusz Szafoni (2018-11-12).
+ Dave Marples
+ Dave Marples (2018-11-13).
+ David
+ Juha Niskanen
+ Juha
+ adding g_running_task to
+ Xiang Xiao
+ David Sidrane (2018-11-15).
+ David Sidrane (2018-11-15).
+
+ Juha Niskanen
+ Petteri Aimonen in
+ POSIX specs for opendir(): A pathname ... that ends with one or
+ Gregory Nutt (2018-11-16).
+ Gregory Nutt (2018-11-16).
+ Alan Carvalho de Assis (2018-11-17).
+ Dave Marples.
+ Mateusz Szafoni (2018-11-17).
+ Anthony Merlino (2018-11-17).
+ Gregory Nutt (2018-11-17).
+ nrf52-pca10040 to nrf52-generic
+ Zou Hanya (2018-11-18).
+ Lwazi Dube (2018-11-18).
+ Gregory Nutt
+ Eduard
+ Gregory Nutt (2018-11-19).
+ David Sidrane (2018-11-20).
+
+ Pavlina Koleva (2018-11-20).
+_addr(). It takes the same
+_addr() instead of
+ Bob Feretich (2018-11-20).
+ Gregory Nutt (2018-11-21).
+ Matous Pokorny (2018-11-21).
+ Anonymous in Bitbucket
+ Gregory Nutt (2018-11-21).
+ Gregory Nutt (2018-11-23).
+ Juha
+ Matous Pokorny (2018-11-23).
+ Kconfig selected and add interface to enable/disable timers
+ TIM1
+ Mateusz Szafoni (2018-11-23).
+ Gregory Nutt (2018-11-24).
+ Gregory Nutt
+ Gregory Nutt (2018-11-24).
+ Gregory Nutt (2018-11-24).
+ Gregory Nutt (2018-11-24).
+ Gregory
+
+
+ Lwazi
+ Gregory Nutt (2018-11-25).
+ Gregory Nutt (2018-11-26).
+ Lwazi
+ Gregory Nutt
+
+ Gregory Nutt
+ Gregory Nutt (2018-11-28).
+ Gregory Nutt (2018-11-29).
+ Xiang Xiao
+ Gregory Nutt (2018-11-29).
+ Lwazi
+ Lwazi
+ Dave Marples
+ Gregory
+ Gregory
+ Gregory
+ Alan Carvalho de Assis (2018-11-30).
+ Gregory Nutt (2018-11-30).
+
+ Mateusz Szafoni (2018-12-01).
+ Gregory Nutt (2018-12-01).
+ Mateusz Szafoni (2018-12-02).
+ Mateusz Szafoni (2018-12-02).
+ SPI.  It now supports a deferred DMA trigger hardware
+ Dave Marples (2018-12-02).
+ Lwazi Dube
+
+ Gregory Nutt (2018-12-03).
+ Gregory Nutt (2018-12-03).
+ Gregory Nutt (2018-12-03).
+ Gregory Nutt (2018-12-03).
+ Gregory
+ the application.  This should have
+ Dave Marples (2018-12-03).
+ Juha Paalijrvi (2018-12-04).
+
+
+ David Sidrane (2018-12-05).
+ Gregory Nutt (2018-12-05).
+ them on
+ Dave Marples
+ Gregory Nutt
+ David Sidrane (2018-12-06).
+tes was not read.  Per Anthony Merlino.
+ Gregory Nutt (2018-12-07).
+ Ouss4 (2018-12-07).
+ Ouss4
+ the trace dump output.
+ Ouss4 (2018-12-08).
+ Lwazi Dube (2018-12-08).
+ the trace dump
+ Ouss4 (2018-12-08).
+ the trace dump
+ Ouss4 (2018-12-08).
+ Mateusz Szafoni (2018-12-09).
+ Mateusz Szafoni (2018-12-09).
+ Mateusz Szafoni (2018-12-09).
+ Mateusz
+ Mateusz Szafoni (2018-12-09).
+
+ Mateusz Szafoni (2018-12-09).
+
+ Mateusz Szafoni (2018-12-09).
+
+ Mateusz Szafoni (2018-12-09).
+
+ David Sidrane (2018-12-10).
+
+ read to same
+ Juha Niskanen (2018-12-11).
+
+ Marc Rosen (2018-12-12).
+ Daniel P. Carvalho (2018-12-12).
+ David Sidrane
+ Marc Rosen
+ David
+ Lwazi Dube (2018-12-15).
+ Gregory Nutt
+ Anthony Merlino (2018-12-16).
+ MAC address. The
+ the radio address should match
+ Anthony Merlino
+ Masayuki Ishikawa (2018-12-18).
+ say, a short address, this bit should be forced to 0, indicating
+ Anthony Merlino (2018-12-18).
+ Gregory Nutt
+ Anthony Merlino (2018-12-18).
+ the upcoming crypto framework.  It
+ Sebastien Lorquet (2018-12-18).
+ commit
+ Gregory Nutt (2018-12-18).
+ Masayuki Ishikawa (2018-12-19).
+ Sebastien Lorquet (2018-12-19).
+
+ Mateusz
+ MCU and
+P must be enabled
+ Mateusz Szafoni (2018-12-19).
+ Anthony Merlino (2018-12-19).
+ EunBong Song results in major memory
+ Gregory Nutt
+ Gregory Nutt (2018-12-20).
+ David Sidrane (2018-12-20).
+ a not running
+ David Sidrane (2018-12-20).
+ Ken Pettit (2018-12-20).
+
+ Gregory Nutt (2018-12-22).
+ Masayuki Ishikawa (2018-12-25).
+ Gregory Nutt (2018-12-25).
+ Masayuki Ishikawa (2018-12-25).
+
+
+ another network
+
+ David Sidrane (2018-12-26).
+ Gregory Nutt
+ David Sidrane (2018-12-28).
+ Lwazi Dube
+ Gregory Nutt (2018-12-28).
+ Alexander
+ Daniel P. Carvalho (2018-12-29).
+ mm_sem.c into
+
+
+ Alan Carvalho de Assis (2018-12-30).
+ Alan Carvalho de Assis (2018-12-30).
+ Lwazi Dube (2018-12-30).
+ Gregory Nutt (2018-12-30).
+ Masayuki Ishikwawa:
+ Xiang Xiao (2018-12-30).
+
+ Lwazi Dube (2018-12-31).
+ Alan Carvalho de Assis (2018-12-31).
+ Lwazi Dube (2018-12-31).
+ Mateusz
+ Levin Li (2019-01-02).
+tes().
+ Jussi Kivilinna (2019-01-02).
+ Gregory Nutt (2019-01-02).
+ Gregory Nutt (2019-01-02).
+ Daniel Agar (2019-01-02).
+ Masayuki Ishikawa (2019-01-04).
+ Alan Carvalho de Assis (2019-01-04).
+ Alan Carvalho de Assis (2019-01-04).
+ Gregory Nutt (2019-01-05).
+ Alan Carvalho de Assis (2019-01-05).
+ Ken Pettit (2019-01-05).
+ Ken Pettit (2019-01-05).
+ Petro Karashchenko (2019-01-06).
+ Petro Karashchenko (2019-01-06).
+ Petro Karashchenko (2019-01-06).
+ Daniel Agar (2019-01-06).
+ Petro Karashchenko (2019-01-06).
+ Petro Karashchenko (2019-01-06).
+ Ouss4 (2019-01-06).
+ Masayuki Ishikawa (2019-01-07).
+ MYAPICI
+ lihaichen (2019-01-07).
+ Daniel Agar (2019-01-07).
+
+ Gregory Nutt (2019-01-07).
+
+ Ken Pettit (2019-01-08).
+ Ouss4
+ Gregory Nutt
+ Ken
+ Jussi Kivilinna (2019-01-09).
+ Jussi Kivilinna (2019-01-09).
+TE_WRITE
+ lihaichen (2019-01-09).
+ Mateusz
+ Mateusz Sfafoni
+
+ Gregory Nutt (2019-01-09).
+ Petro Karashchenko (2019-01-09).
+ Ken Pettit (2019-01-10).
+ Mateuz
+ Abdelatif Guettouche (2019-01-12).
+ Anthony Merlino (2019-01-13).
+ Masayuki Ishikawa (2019-01-14).
+
+ Masayuki Ishikawa (2019-01-14).
+
+ Gregory Nutt (2019-01-14).
+ Petro Karashchenko (2019-01-15).
+
+ Alexander Vasiliev
+ Gregory Nutt
+ USB which can be used as UART link for upload and console.
+ Phil Coval (2019-01-15).
+ Phil Coval (2019-01-15).
+
+ Petro Karashchenko (2019-01-16).
+ David Sidrane (2019-01-16).
+ David Sidrane (2019-01-16).
+ David Sidrane (2019-01-16).
+ David Sidrane (2019-01-16).
+ David
+ David Sidrane (2019-01-16).
+ David Sidrane (2019-01-16).
+ David Sidrane
+
+ Gregory Nutt
+ Daniel Agar (2018-01-19).
+ within
+ Gregory Nutt (2019-01-19).
+ Mateusz Szafoni (2019-01-20).
+ Alan
+ Gregory
+ Gregory Nutt
+ Jussi Kivilinna (2019-01-22).
+ Gregory Nutt (2019-01-22).
+ the TI DriverLib now
+ the
+ Gregory Nutt (2019-01-22).
+ Alan Carvalho de Assis (2019-01-22).
+ Gregory Nutt (2019-01-23).
+ Gregory
+
+ Mateusz Szafoni
+
+ David Sidrane
+ Juha Niskanen (Haltian)
+ David Sidrane (2019-01-25).
+ Roland Takacs in Bitbucket issue 141,
+ Gregory Nutt (2019-01-25).
+ Pavel Pisa
+ Gregory Nutt (2019-01-25).
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao (2019-01-26).
+
+ ligd (2019-01-26).
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao (2019-01-26).
+ Ken Pettit (2019-01-26).
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao (2019-01-26).
+ Ken Pettit (2019-01-26).
+ MM_NPAGES instead of MM_PGALIGNUP
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao (2019-01-26).
+
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao (2019-01-26).
+ introducing the generic
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao
+
+ Xiang Xiao (2019-01-26).
+ Xiang Xiao
+ anchao (2019-01-26).
+ anchao (2019-01-26).
+ Xiang Xiao
+value.c:  Remove unused
+ Xiang Xiao (2019-01-26).
+ Alan Carvalho de Assis (2019-01-26).
+ Xiang Xiao (2019-01-26).
+ ligd (2019-01-27).
+ Gregory Nutt (2019-01-27).
+ Xiang Xiao (2019-01-27).
+ Xiang Xiao (2019-01-27).
+ Gregory Nutt
+ Xiang Xiao (2019-01-27).
+ Xiang Xiao (2019-01-27).
+ Xiang Xiao (2019-01-27).
+ Gregory
+
+
+
+ Xiang Xiao
+ Mateusz Szafoni (2019-01-27).
+ Xiang Xiao (2019-01-27).
+ Gregory Nutt (2019-01-27).
+ Xiang Xiao (2019-01-27).
+ Xiang Xiao (2019-01-27).
+ Gregory Nutt (2019-01-27).
+ Xiang Xiao (2019-01-27).
+ int to bool
+ Gregory Nutt (2019-01-27).
+ ligd (2019-01-27).
+ ligd (2019-01-27).
+ Xiang Xiao (2019-01-27).
+ Xiang Xiao (2019-01-27).
+ Xiang Xiao (2019-01-27).
+ zhuyanlin (2019-01-27).
+ Xiang
+ ligd (2019-01-27).
+ Xiang Xiao (2019-01-27).
+ Xiang Xiao (2019-01-27).
+ dir, and (6)
+ Xiang Xiao (2019-01-27).
+ Gregory Nutt (2019-01-27).
+ Gregory Nutt (2019-01-27).
+ Pavel Pisa (2019-01-27).
+ loader.  EMC and related pins configuration has
+ SDRAM.  A region of SDRAM which
+ Pavel Pisa
+ Nikolay Semenov (2019-01-28).
+ Gregory Nutt (2019-01-28).
+
+ David Sidrane (2019-01-29).
+ David Sidrane (2019-01-29).
+
+ Kevin Liu (2019-01-30).
+
+
+ Gregory Nutt
+ Anthony Merlino (2019-02-02).
+ Gregory Nutt
+ Abdelatif Guettouche (2019-02-02).
+
+ sched_* to
+ Gregory Nutt (2019-02-03).
+ Gregory
+ Gregory Nutt (2019-02-04).
+ Gregory Nutt (2019-02-04).
+ Gregory Nutt (2019-02-04).
+ Gregory Nutt (2019-02-04).
+ many tasks.  If any task exits the getopt()
+ Xiang Xiao (2019-02-05).
+ Bruno Schwander (2019-02-06).
+ including sys/types.h where
+ GregoryN (2019-02-06).
+ AVR libc and provides improved
+ default. However, this version does
+ Keith
+ Ramtin Amin (2019-02-07).
+ Gregory Nutt (2019-02-07).
+ Gregory Nutt (2019-02-07).
+ Gregory Nutt (2019-02-08).
+ Gregory Nutt (2019-02-08).
+ Gregory Nutt (2019-02-09).
+ Gregory Nutt (2019-02-10).
+ the
+ Gregory Nutt (2019-02-10).
+
+ Gregory Nutt (2019-02-11).
+ FLEXCOM4 to UART1.  FLEXCOM4
+ Gregory Nutt (2019-02-11).
+ Gregory Nutt
+
+ Gregory Nutt (2019-02-12).
+ Gregory Nutt
+ Johannes (2019-02-14).
+ Gregory Nutt (2019-02-14).
+ internal OS
+ Gregory Nutt (2019-02-14).
+ Johannes (2019-02-14).
+ Gregory Nutt (2019-02-14).
+ Johannes (2019-02-15).
+
+ Gregory Nutt (2019-02-15).
+ Gregory Nutt (2019-02-15).
+ Johannes (2019-02-15).
+ Micha yszczek (2019-02-15).
+ Gregory Nutt (2019-02-16).
+ Gregory Nutt
+ Johannes (2019-02-16).
+ Gregory Nutt (2019-02-16).
+ Gregory Nutt
+ Mateusz Szafoni (2019-02-16).
+ Gregory Nutt
+ Johannes (2019-02-17).
+ Gregory Nutt (2019-02-17).
+ a combination of CONFIG_LIBC_PRINT_MINIMAL,
+ Gregory
+ Gregory Nutt (2019-02-17).
+ Gregory Nutt (2019-02-17).
+
+ Johannes (2019-02-18).
+ Johannes (2019-02-18).
+ Gregory Nutt (2019-02-18).
+ Gregory
+
+ Johannes (2019-02-19).
+ David Sidrane (2019-02-19).
+ Gregory Nutt
+tes, and therefore my loop through the arg list is
+tes except floating point
+ Gregory Nutt
+ Gregory Nutt (2019-02-20).
+ using two pass parsing and an argument list. The maximum
+ CONFIG_LIBC_NL_ARGMAX which
+ Johannes (2019-02-21).
+ many NSH commands become corrupted and useless.  Doesnt
+ Gregory Nutt (2019-02-21).
+ Gregory Nutt (2019-02-21).
+ struct pollfd.  It is not
+ OpenGroup.org and violates the NuttX C coding standard
+ Gregory Nutt (2019-02-21).
+ David Sidrane (2019-02-22).
+ Alan
+ Gregory Nutt (2019-02-24).
+ Gregory Nutt (2019-02-24).
+ review for coding style
+ Gregory Nutt (2019-02-24).
+ Mateusz Szafoni (2019-02-24).
+ Leif Jakob (2019-02-24).
+ pthread_mutex_timedlock() to
+ Gregory Nutt (2019-02-24).
+ Mateusz Szafoni (2019-02-25).
+ Mateusz Szafoni (2019-02-25).
+ David Sidrane (2019-02-25).
+ /sched/pthread to where
+ Gregory Nutt (2019-02-25).
+ default button support
+
+ Gregory Nutt
+ David Sidrane
+ David Sidrane (2019-02-27).
+ Gregory Nutt
+ Gregory Nutt (2019-02-28).
+ David Sidrane
+ David Sidrane (2019-02-28).
+ Gregory Nutt
+ other STM32
+ D2 domain
+ Mateusz Szafoni (2019-03-01).
+ Petri Ahonen (2019-03-02).
+ Mateusz
+tes to specify memory region
+ Mateusz Szafoni (2019-03-03).
+ Alan Carvalho
+ NXP and
+ Johannes (2019-03-04).
+
+ Gregory Nutt (2019-03-04).
+
+
+ Gregory Nutt
+ the OS:
+ Gregory Nutt (2019-03-06).
+ Gregory Nutt (2019-03-06).
+ Gregory Nutt (2019-03-06).
+ Gregory Nutt
+ the display.  Needs
+ Gregory Nutt (2019-03-07).
+ Bill Gatliff (2019-03-07).
+ Gregory Nutt
+ those resources is included in this
+ Bill Gatliff (2019-03-08).
+ Gregory Nutt (2019-03-08).
+ Gregory Nutt (2019-03-08).
+ Gregory Nutt (2019-03-08).
+ Gregory Nutt (2019-03-09).
+ preceding
+ Gregory Nutt (2019-03-09).
+ Mateusz Szafoni (2019-03-10).
+ Johannes (2019-03-10).
+ Bill Gatliff (2019-03-10).
+ Gregory Nutt
+ Gregory Nutt (2019-03-10).
+
+ lib_lo_ipv4matchto() to lib_lo_ipv6match().  Also add
+ Kejun ZHOU (2019-03-11).
+ Mateusz
+ testing
+ Gregory Nutt (2019-03-11).
+ Levin Li (2019-03-12).
+ adding
+ Valmantas Palika (2019-03-12).
+
+
+ RNG module 3. use general
+ Levin Li
+ Gregory Nutt (2019-03-13).
+ Gregory Nutt (2019-03-13).
+ Gregory Nutt (2019-03-13).
+
+ the framebuffer).
+ Gregory Nutt (2019-03-14).
+ Gregory Nutt (2019-03-14).
+
+ Gregory Nutt (2019-03-14).
+ Sebastien Lorquet
+ Bilal Wasim (2019-03-14).
+ the
+ the shadow, per-window framebuffer.  graphics/nxbe:  The
+ Gregory Nutt (2019-03-15).
+
+ Gregory Nutt (2019-03-15).
+
+ testing per-window framebuffer.  Still lots of problems.
+ Gregory Nutt (2019-03-16).
+ Gregory Nutt (2019-03-16).
+ Gregory Nutt
+ Gregory Nutt (2019-03-17).
+ Gregory Nutt (2019-03-17).
+
+ Joao Matos
+ Gregory Nutt (2019-03-18).
+ Joao Matos (2019-03-18).
+ Gregory Nutt (2019-03-18).
+ Valmantas Palika (2019-03-19).
+ Gregory Nutt (2019-03-19).
+te unit.
+ Xiang Xiao (2019-03-19).
+
+
+ anchao (2019-03-19).
+ anchao (2019-03-19).
+ zhangyuan7 (2019-03-19).
+ device to connection.
+
+ anchao (2019-03-19).
+ zhangyuan7 (2019-03-19).
+ replacing nxsem_wait() with
+
+ Xiang
+ Xiang Xiao (2019-03-19).
+ zhangyuan7 (2019-03-19).
+ anchao (2019-03-19).
+ Xiang Xiao
+ Xiang Xiao (2019-03-19).
+ Xiang
+ Xiang
+ zhangyuan7 (2019-03-19).
+ zhangyuan7 (2019-03-19).
+ zhangyuan7 (2019-03-19).
+ zhangyuan7 (2019-03-19).
+
+ liuzhuang
+ Xiang
+ Xiang Xiao (2019-03-19).
+
+ adding a new barriers.h header file that provides these
+ Gregory Nutt (2019-03-19).
+ Gregory Nutt (2019-03-19).
+ universal cache interfaces.
+ Gregory Nutt (2019-03-19).
+ Gregory Nutt (2019-03-19).
+ Valmantas Paliksa (2019-03-20).
+ Valmantas Paliksa (2019-03-20).
+ Valmantas Paliksa (2019-03-20).
+ Valmantas Paliksa (2019-03-20).
+ Valmantas Paliksa
+
+ Valmantas Paliksa (2019-03-20).
+ Valmantas Paliksa (2019-03-20).
+ Valmantas
+
+ Valmantas Paliksa (2019-03-20).
+ Gregory Nutt
+ Gregory Nutt
+ Gregory Nutt (2019-03-20).
+ Gregory Nutt (2019-03-20).
+ Mateusz Szafoni
+
+ Gregory Nutt (2019-03-20).
+ the configuration.  This was apparently
+ Gregory Nutt (2019-03-20).
+ Gregory Nutt (2019-03-20).
+ Gregory Nutt (2019-03-20).
+ Gregory Nutt (2019-03-20).
+ Gregory Nutt (2019-03-20).
+
+ Gregory Nutt (2019-03-20).
+ Gregory Nutt (2019-03-20).
+ Gregory Nutt (2019-03-20).
+ Valmantas Paliksa (2019-03-21).
+ Valmantas Paliksa (2019-03-21).
+
+ Valmantas Paliksa (2019-03-22).
+
+
+
+ Bill Gatliff (2019-03-24).
+ Bill Gatliff (2019-03-24).
+ Mateusz Szafoni (2019-03-24).
+ Mateusz Szafoni
+ different boards.  The
+ the architecture-specific code and
+ Gregory Nutt (2019-03-25).
+
+ Pierre-Olivier Vauboin (2019-03-25).
+ Gregory Nutt (2019-03-25).
+ Gregory Nutt
+ Matias N (2019-03-25).
+ Bill Gatliff (2019-03-26).
+ Xiang Xiao
+ Xiang Xiao (2019-03-26).
+ Xiang Xiao
+ Matias N (2019-03-26).
+tes, or request
+ Bill Gatliff (2019-03-26).
+ Matous Pokorny (2019-03-29).
+ Gregory Nutt (2019-04-02).
+
+ Jussi Kivilinna (2019-04-03).
+passing the input clock divider on the SDMMC
+ Anthony Merlino (2019-04-03).
+pass mode,
+ Anthony Merlino (2019-04-03).
+ Anthony Merlino (2019-04-03).
+ Erik Englund (2019-04-03).
+ Abdelatif Guettouche (2019-04-03).
+ Jussi
+ YanLin Zhu (2019-04-04).
+ Joao Matos (2019-04-04).
+ Joao Matos
+ Joao Matos (2019-04-04).
+ Joao Matos (2019-04-04).
+ Joao
+ Joao Matos (2019-04-04).
+ Joao
+ Joao Matos (2019-04-04).
+ oao Matos (2019-04-04).
+ oao Matos (2019-04-04).
+
+ Gregory Nutt (2019-04-04).
+ Gregory Nutt (2019-04-04).
+ Gregory Nutt (2019-04-04).
+ Gregory Nutt (2019-04-05).
+ 0x00. SAK == 0x00
+
+ Mateusz Szafoni
+ Gregory Nutt
+ jjlange
+ Gregory Nutt (2019-04-06).
+ Gregory Nutt (2019-04-06).
+
+ Ramtin
+
+ Matthew
+ Eduard Niesner
+ Gregory Nutt (2019-04-08).
+
+ Gregory Nutt
+ Mateusz Szafoni (2019-04-09).
+ Gregory Nutt (2019-04-09).
+ Gregory Nutt
+ Matias N (2019-03-30).
+ Ramtin Amin (2019-04-11).
+ Gregory Nutt (2019-04-11).
+ Gregory Nutt
+ Valmantas
+ Valmantas Paliksa (2019-04-12).
+ Valmantas Paliksa (2019-04-12).
+ Valmantas Paliksa (2019-04-12).
+ Valmantas
+
+ Valmantas
+ Valmantas Paliksa
+ Gregory Nutt (2019-04-13).
+ Matias N, the FLASH base address used
+ Gregory Nutt (2019-04-13).
+ Matias N (2019-04-13).
+ staring at this
+ Gregory Nutt (2019-04-13).
+ Alan
+ Gregory
+ Gregory Nutt (2019-04-15).
+ Jussi Kivilinna (2019-04-15).
+ Matias N (2019-04-15).
+ David Sidrane (2019-04-16).
+ Fabian Justi (2019-04-17).
+ Fabian Justi (2019-04-17).
+
+ Anthony Merlino (2019-04-17).
+ Gregory Nutt (2019-04-21).
+ Nobuto Kobayashi (2019-04-22).
+ Nobuto Kobayashi
+ Jason Harris (2019-04-23).
+ Gregory Nutt
+
+ Gregory Nutt (2019-04-24).
+ Mateusz Szafoni (2019-04-25).
+ Gregory Nutt (2019-04-25).
+ Phil Coval
+ Jason Harris
+ zero case.  However, this
+ clock
+ Gregory Nutt
+ Phil Coval (2019-04-26).
+ Phil Coval (2019-04-26).
+ Phil Coval (2019-04-27).
+ Mateusz Szafoni (2019-04-28).
+ Mateusz Szafoni (2019-04-28).
+ Gregory Nutt (2019-04-28).
+ Phil Coval in Bitbucket PR
+ Gregory Nutt (2019-04-29).
+ Juha Niskanen
+ the separation of network initialization logic
+ Gregory Nutt (2019-04-29).
+ Gregory Nutt (2019-04-29).
+ Gregory Nutt (2019-04-29).
+ Jukka Laitinen (2019-04-30).
+ Jukka Laitinen (2019-04-30).
+ STM32F7, with
+ Jukka Laitinen (2019-04-30).
+ Jukka Laitinen (2019-04-30).
+ Jukka Laitinen (2019-04-30).
+ Jukka Laitinen (2019-04-30).
+ Jukka Laitinen
+ Jukka Laitinen
+
+
+
+ the mainline code...but I think its
+ the new-chip-support
+ increasing timer in line with
+ ENET PHY
+ Dave Marples (2019-04-30).
+ Micha yszczek
+ Gregory Nutt (2019-05-03).
+ Tom Kopriva (2019-05-03).
+ Gregory Nutt
+
+ Gregory
+ Jason Harris (2019-05-04).
+ Twm4Nx:  When a window is iconified, the icon should appear
+ Gregory Nutt (2019-05-05).
+ Jukka Laitinen (2019-05-05).
+ Jukka Laitinen (2019-05-05).
+ Mateusz Szafoni (2019-05-06).
+ Fabian Justi
+ Gregory Nutt (2019-05-06).
+ Gregory Nutt (2019-05-06).
+ Gregory Nutt (2019-05-07).
+ Gregory Nutt
+ Ivan Ucherdzhiev (2019-05-08).
+ LPC17.  This is a
+ Gregory Nutt (2019-05-08).
+ Gregory Nutt
+ Mateusz Szafoni (2019-05-09).
+ Mateusz Szafoni (2019-05-09).
+ Gregory Nutt (2019-05-09).
+ Gregory Nutt (2019-05-10).
+ Gregory Nutt
+ Leif Jakob (2019-05-11).
+ Gregory Nutt (2019-05-12).
+ Gregory Nutt (2019-05-13).
+ Juha Niskanen (2019-05-14).
+ Juha
+ Mateusz Szafoni (2019-05-15).
+ Mateusz Szafoni (2019-05-15).
+ Mateusz
+
+
+ Gregory Nutt (2019-05-16).
+
+ Mateusz Szafoni (2019-05-17).
+ Juha Niskanen (2019-05-17).
+
+ Mateusz
+
+ Maximilian Kriegleder (2019-05-21).
+ Juha Niskanen (2019-05-21).
+ Juha Niskanen (2019-05-21).
+ Gregory Nutt (2019-05-21).
+ Gregory Nutt (2019-05-21).
+
+
+
+ Valmantas Palika (2019-05-22).
+ Gregory Nutt (2019-05-22).
+ Gregory Nutt
+ Gregory Nutt (2019-05-24).
+ the
+ Gregory Nutt
+ Gregory Nutt (2019-05-25).
+ Daniel Agar (2019-05-25).
+
+ Gregory Nutt
+ raiden00pl
+ raiden00pl (2019-05-27).
+ Jason Harris
+ Gregory Nutt (2019-05-27).
+ Jason Harris (2019-05-27).
+ raiden00pl (2019-05-28).
+ Juha Niskanen (2019-05-28).
+ Juha Niskanen
+ Juha Niskanen (2019-05-28).
+ Dave Marples (2019-05-30).
+ Bernd Walter, but
+ Gregory Nutt (2019-05-30).
+ Jussi Kivilinna (2019-05-29).
+ Jussi Kivilinna (2019-05-29).
+
+ Valmantas Paliksa
+ Dave
+ rajan gill (2019-05-31).
+ Gregory Nutt (2019-06-01).
+
+ the C89
+ Gregory Nutt (2019-06-02).
+ Jason Harris (2019-06-02).
+
+ Gregory Nutt (2019-06-02).
+ Gregory Nutt (2019-06-02).
+
+
+
+ Masayuki Ishikawa (2019-06-03).
+ raiden00pl (2019-06-03).
+ Dave Marples (2019-06-03).
+ the
+ Gregory Nutt (2019-06-03).
+ Gregory Nutt (2019-06-03).
+ Gregory Nutt
+ Gregory Nutt (2019-06-03).
+ Gregory
+ type long
+ Gregory Nutt
+ Gregory
+ Gregory Nutt (2019-06-03).
+ Gregory Nutt (2019-06-03).
+ Gregory Nutt (2019-06-03).
+ Gregory Nutt (2019-06-04).
+
+ Alin Jerpelea (2019-06-05).
+ Fabian Justi (2019-06-05).
+ Fabian Justi
+ Alin Jerpelea (2019-06-05).
+ SPI driver.  Move
+ ez80_lowinit.c to here as is
+ Gregory Nutt (2019-06-05).
+ xxx_lowinit.c to xxx_boot.c;
+ xxx_lowinit() to
+ Gregory Nutt (2019-06-05).
+
+
+
+ Gregory
+
+ Gregory Nutt (2019-06-08).
+ Gregory Nutt (2019-06-08).
+
+ raiden00pl (2019-06-10).
+ Gregory Nutt
+ Alin Jerpelea
+ Masayuki Ishikawa (2019-06-11).
+ Alin
+ raiden00pl (2019-06-12).
+ Alin Jerpelea (2019-06-12).
+ Gregory
+ Anthony Merlino
+
+ RNDIS host during RNDIS
+tes out packet). To handle these packets, actual
+ Masayuki
+ Masayuki
+
+ Juha Niskanen (2019-06-13).
+
+ Alin Jerpelea (2019-06-13).
+ Phil Coval (2019-06-13).
+ Phil Coval (2019-06-13).
+ David Sidrane
+ David
+ David Sidrane
+ David Sidrane (2019-06-13).
+ David Sidrane (2019-06-13).
+ Dave Marples (2019-06-13).
+ Masayuki Ishikawa (2019-06-14).
+
+ Alin Jerpelea (2019-06-14).
+
+ the CONFIG_CXD56_PM_PROCFS option.
+ Alin Jerpelea (2019-06-14).
+ Phil Coval (2019-06-15).
+ Phil Coval (2019-06-15).
+ Alan Carvalho de Assis (2019-06-15).
+ Config.mk as do other
+ Gregory Nutt (2019-06-15).
+ Gregory Nutt
+ Alan
+ raiden00pl (2019-06-16).
+ Gregory Nutt (2019-06-16).
+ Gregory Nutt (2019-06-16).
+ Masayuki
+ Masayuki Ishikawa
+ Gregory Nutt (2019-06-17).
+
+ Gregory Nutt (2019-06-17).
+ Gregory Nutt
+ Michael Jung (2019-06-17).
+
+ Alin Jerpelea
+
+ SCU on
+ Alin Jerpelea (2019-06-18).
+ Dave Marples (2019-06-18).
+ Gregory Nutt
+ Gregory Nutt (2019-06-18).
+
+ Alin Jerpelea (2019-06-19).
+ Adam
+ Adam Porter (2019-06-20).
+ Alin Jerpelea (2019-06-20).
+ usbhost_copyinterface().  This commit
+ Adam Porter (2019-06-21).
+ stm32f3discovery
+ Phil Coval
+ Adam Porter (2019-06-22).
+ Michael Jung (2019-06-22).
+ Adam Porter (2019-06-23).
+ an SD card.
+ Gregory Nutt (2019-06-23).
+ Alin Jerpelea (2019-06-24).
+ Gregory Nutt (2019-06-24).
+ Alin Jerpelea (2019-06-25).
+ Alin Jerpelea (2019-06-25).
+ Gregory Nutt (2019-06-25).
+ Masayuki
+ Alin Jerpelea (2019-06-26).
+ Alin
+ Gregory Nutt (2019-06-26).
+ Bernd
+ Gregory Nutt (2019-06-26).
+ Gregory Nutt (2019-06-26).
+
+ Alin
+ Eduard
+ Gregory Nutt (2019-06-27).
+ Michael Jung (2019-06-28).
+
+ Ouss4 (2019-06-28).
+ Abdelatif Guettouche
+ Gregory Nutt (2019-06-28).
+ Gregory Nutt
+ Gregory Nutt (2019-06-29).
+ Gregory Nutt (2019-06-29).
+te should use 5 lsb to store PKTLEN and 3 msb to
+
+ Michael Jung (2019-06-29).
+ Gregory Nutt (2019-06-29).
+
+ Dave
+ Adam Porter (2019-06-30).
+ moving libgcc into recursive
+ Gregory Nutt
+ Gregory Nutt (2019-06-30).
+ Gregory
+ Michael Jung (2019-06-30).
+
+
+ default SPI 4 and 5, and enable SPI to
+ Alin Jerpelea (2019-07-01).
+ Masayuki Ishikawa
+ Gregory Nutt (2019-07-01).
+ Alin Jerpelea (2019-07-02).
+ Masayuki Ishikawa (2019-07-03).
+ Masayuki Ishikawa
+ Alin
+ Alin Jerpelea
+ Alin Jerpelea
+ Alin
+ Beat Kng (2019-07-03).
+ Dave Marples (2019-07-03).
+ Beat Kng (2019-07-03).
+ Beat Kng (2019-07-03).
+ Petro Karashchenko (2019-07-03).
+
+
+ 4MHz to
+ 512B to 1KBm abd (4)
+ Masayuki Ishikawa (2019-07-04).
+ Gregory
+ Alin Jerpelea (2019-07-04).
+
+ David Sidrane
+ David
+ Alin Jerpelea (2019-07-05).
+ Jonathan Richner (2019-07-05).
+ Beat Kng
+ Gregory Nutt (2019-07-05).
+ Petro Karashchenko (2019-07-06).
+
+ Bernd Walter
+ Masayuki Ishikawa (2019-07-06).
+ Petro
+ Petro Karashchenko (2019-07-06).
+ Gregory Nutt (2019-07-06).
+
+ Phil Coval (2019-07-07).
+
+ Gregory Nutt (2019-07-07).
+ Gregory Nutt (2019-07-07).
+
+ how close they
+ Gregory Nutt (2019-07-07).
+ Alin
+ Alin Jerpelea (2019-07-08).
+ Alin Jerpelea
+ Jonathan Richner (2019-07-08).
+ Gregory Nutt (2019-07-08).
+ Gregory Nutt (2019-07-08).
+ Gregory Nutt (2019-07-08).
+ Gregory
+ Gregory Nutt (2019-07-08).
+ Gregory
+ Gregory Nutt (2019-07-08).
+ Alin Jerpelea (2019-07-09).
+
+ those two blocks
+ 32KiB.  The only other
+ an MPU region point of view), which is probably
+
+ Michael Jung (2019-07-09).
+ Gregory Nutt (2019-07-09).
+ Petro Karashchenko (2019-07-09).
+ Petro
+ Gregory Nutt (2019-07-09).
+
+ Alin Jerpelea (2019-07-10).
+ Michael Jung (2019-07-10).
+ uan Flores (2019-07-10).
+
+
+
+ Gregory
+ Gregory Nutt (2019-07-10).
+
+ Gregory Nutt (2019-07-10).
+
+
+ Alin Jerpelea
+ Alin
+ junmin-kim
+ Juan Flores (2019-07-11).
+ Daniel P. Carvalho (2019-07-11).
+ jjlange (2019-07-11).
+ jjlange (2019-07-11).
+ fixed
+ also avoid (expensive if
+ rajan gill (2019-07-11).
+
+ Masayuki Ishikawa
+ Alin Jerpelea (2019-07-12).
+ Alin Jerpelea (2019-07-12).
+ Juan Flores (2019-07-12).
+ Alan Carvalho de Assis (2019-07-13).
+ Joao Matos (2019-07-13).
+ Gregory Nutt (2019-07-13).
+ David Sidrane (2019-07-13).
+
+ Alin Jerpelea (2019-07-17).
+ Alan Carvalho de Assis (2019-07-17).
+ Gregory
+ default emulating a terminal with newline
+ Gregory Nutt (2019-07-20).
+ Nathan
+ Yang ChungFan (2019-07-20).
+ Bernd Walter (2019-07-21).
+ Ouss4 (2019-07-21).
+ Ouss4 (2019-07-21).
+ Ouss4 (2019-07-21).
+ Anthony Merlino (2019-07-22).
+
+ Daniel P. Carvalho (2019-07-23).
+
+ Anthony
+ David Sidrane (2019-07-24).
+ Masayuki Ishikawa (2019-07-25).
+ Augusto Fraga Giachero (2019-07-25).
+ calling userled_lower_initialize() in
+ Nathan Hartman (2019-07-25).
+ Augusto Fraga
+ CONFIG_NET_BROADCAST.  This
+ Masayuki Ishikawa
+ David Sidrane
+ Simon Piriou (2019-07-26).
+ Daniel P. Carvalho (2019-07-27).
+ Gregory Nutt (2019-07-27).
+ Augusto Fraga Giachero
+ a DMA data checksum failure,
+ Dave Marples
+ Dave
+ David S. Alessio
+ David S. Alessio (2019-07-29).
+ mailing list
+tes in
+ Michael Jung (2019-07-29).
+ a programming standpoint,
+ Nathan Hartman (2019-07-29).
+ jjlange (2019-07-29).
+ NuttX is the TM4C1294NCPDT used on the TI EK-TM4C1294XL Connected
+ Nathan Hartman (2019-07-29).
+ David S. Alessio (2019-07-29).
+ Masayuki Ishikawa (2019-07-30).
+ Masayuki
+ Nathan Hartman (2019-07-30).
+ Michael Jung (2019-07-31).
+ POSIX, but are part of 4.3BSD and
+ Michael Jung (2019-07-31).
+
+ David Sidrane
+
+ Gregory
+
+ Gregory Nutt (2019-08-01).
+ David Sidrane (2019-08-01).
+ Markus Bernet
+ Gregory Nutt (2019-08-02).
+ Nathan Hartman (2019-08-02).
+ Michael Jung (2019-08-03).
+
+
+ Michael Jung (2019-08-04).
+ Kejun ZHOU (2019-08-04).
+
+ Gregory Nutt (2019-08-04).
+ Nathan Hartman (2019-08-04).
+ Alin Jerpelea (2019-08-05).
+ Gregory Nutt (2019-08-05).
+
+ Alin Jerpelea (2019-08-05).
+ Gregory Nutt (2019-08-05).
+ Gregory Nutt (2019-08-05).
+
+ Gregory Nutt (2019-08-05).
+ Gregory Nutt (2019-08-05).
+ David Sidrane
+ Gregory Nutt (2019-08-05).
+ Gregory Nutt (2019-08-05).
+ the same task group that opened it.  If not, then list
+ 
+ Michael Jung (2019-08-06).
+
+
+ Markus Bernet (2019-08-06).
+ Gregory Nutt
+ architecture.  All boards that share the same
+
+ Alin Jerpelea (2019-08-06).
+ Gregory Nutt (2019-08-06).
+ the tools
+ Gregory Nutt (2019-08-06).
+ Gregory Nutt (2019-08-06).
+ Gregory Nutt (2019-08-06).
+ Gregory Nutt (2019-08-06).
+ all child task
+ Gregory Nutt (2019-08-06).
+
+ Nathan Hartman (2019-08-06).
+ Nathan Hartman (2019-08-07).
+ Augusto Fraga
+ and writing to
+ Augusto Fraga Giachero
+
+ Alin Jerpelea
+ Gregory Nutt (2019-08-07).
+ Gregory Nutt
+ Gregory Nutt (2019-08-07).
+ Gregory Nutt (2019-08-07).
+
+ Gregory Nutt (2019-08-08).
+ Markus
+ Gregory Nutt (2019-08-08).
+ Alin Jerpelea (2019-08-08).
+ Gregory Nutt (2019-08-08).
+ the change in the
+ Gregory Nutt
+ Gregory Nutt (2019-08-08).
+ David Sidrane
+ Gregory Nutt (2019-08-08).
+ Gregory Nutt (2019-08-08).
+ Gregory
+
+ Gregory Nutt (2019-08-09).
+
+
+ Gregory Nutt
+ 8- to 32-bits to allow more flags.
+ Nathan Hartman (2019-08-09).
+ Nathan Hartman (2019-08-09).
+ Anthony Merlino (2019-08-09).
+ Gregory Nutt (2019-08-10).
+ raiden00pl (2019-08-10).
+ Manuel Sthn (2019-08-10).
+ Gregory Nutt (2019-08-10).
+ Anthony
+ introducing a new radio call/callback, as the PHY
+ Anthony Merlino
+ Anthony Merlino (2019-08-10).
+ Anthony Merlino
+ Anthony Merlino (2019-08-10).
+ Anthony Merlino
+
+
+ Anthony Merlino
+ the driver d_buf. */
+ Anthony Merlino (2019-08-10).
+
+ the radio
+ the committee for suggestions/feedback on the future
+ Anthony Merlino
+ Anthony Merlino (2019-08-10).
+ Anthony
+ Gregory Nutt
+ Alin Jerpelea (2019-08-12).
+ Gregory Nutt (2019-08-12).
+ Nathan Hartman (2019-08-12).
+ Gregory Nutt (2019-08-12).
+ Gregory Nutt (2019-08-13).
+
+ Pavel Pisa (2019-08-13).
+ application or
+ EXECFUNCS configuration.  I have tried to follow
+ another applications in their address space as kernel allows.
+ kernel to
+ Pavel Pisa
+ Gregory Nutt (2019-08-13).
+ Gregory Nutt (2019-08-13).
+ Alin Jerpelea (2019-08-13).
+ Gregory Nutt (2019-08-13).
+ Gregory Nutt (2019-08-13).
+ Gregory Nutt (2019-08-13).
+ Gregory Nutt (2019-08-13).
+ Gregory Nutt (2019-08-13).
+ i.MXRT.  It is the same
+ Gregory Nutt (2019-08-13).
+ Gregory Nutt
+ Pavel Pisa (2019-08-13).
+ base_clock in
+ Pavel Pisa (2019-08-13).
+ Gregory Nutt
+ samd2l2; bring in Cortex-M4F Systick and interrupt
+ Gregory Nutt (2019-08-13).
+ Alin Jerpelea (2019-08-14).
+ Alin Jerpelea (2019-08-14).
+ Gregory Nutt (2019-08-14).
+ Gregory Nutt (2019-08-14).
+ Pavel Pisa (2019-08-14).
+ Pavel Pisa (2019-08-14).
+ Gregory Nutt (2019-08-14).
+ Gregory Nutt
+ David Sidrane (2019-08-15).
+ Alin Jerpelea (2019-08-15).
+ Gregory Nutt
+ Nathan Hartman (2019-08-15).
+ Pavel
+ berr() to binfo() when dumping module
+ Pavel
+ Beat Kng (2019-08-15).
+ Gregory Nutt (2019-08-15).
+ Nathan
+
+ Gregory Nutt (2019-08-15).
+ Nathan Hartman (2019-08-15).
+te ordering with EUI-64.
+
+ Anthony Merlino (2019-08-16).
+ Alin Jerpelea (2019-08-16).
+ Anthony Merlino
+ Anthony Merlino
+
+ Anthony Merlino (2019-01-10).
+ periodically (if
+ Anthony Merlino (2019-01-10).
+ Anthony
+ Anthony Merlino (2019-01-16).
+ Kinetis.  Looks like
+ Gregory Nutt (2019-08-16).
+ Anthony Merlino (2019-08-16).
+ Gregory Nutt (2019-08-16).
+ Gregory Nutt (2019-08-16).
+ David Sidrane (2019-08-17).
+ Gregory Nutt (2019-08-17).
+ Gregory Nutt (2019-08-17).
+ i.MXRT
+ Gregory Nutt (2019-08-17).
+ acting as an input.
+ the Freedom-K66f with has the same LED
+ Gregory Nutt (2019-08-18).
+ the Kinetis port for the IDLE loop and for
+ Gregory Nutt (2019-08-18).
+ Gregory Nutt (2019-08-19).
+ Alin Jerpelea (2019-08-19).
+ Anthony Merlino (2019-08-19).
+ Gregory
+ Ivan Ucherdzhiev (2019-08-19).
+ Michael Jung (2019-08-19).
+ Gregory Nutt (2019-08-19).
+ jjlange (2019-08-19).
+ Gregory Nutt (2019-08-19).
+ the register access logic.  A such
+ Gregory
+ Gregory Nutt (2019-08-19).
+ jjlange (2019-08-19).
+ David Sidrane (2019-08-19).
+ David Sidrane (2019-08-19).
+ Anthony Merlino (2019-08-19).
+ Anthony
+ David Sidrane (2019-08-20).
+ David Sidrane (2019-08-20).
+ SRAM.
+ working.
+ Gregory Nutt (2019-08-20).
+ Gregory Nutt (2019-08-20).
+ Alin
+ an nsh prompt with:  hexdump
+ David Alessio (2019-08-21).
+ Ivan Ucherdzhiev (2019-08-21).
+ Ivan
+ the i.MXRT which used the identical IP.
+ Gregory Nutt (2019-08-21).
+ Gregory
+ Alin Jerpelea (2019-08-21).
+
+ Gregory Nutt (2019-08-21).
+ Gregory Nutt (2019-08-21).
+
+
+ David Sidrane (2019-08-22).
+ Alin Jerpelea (2019-08-22).
+ Alin Jerpelea (2019-08-22).
+ Gregory Nutt (2019-08-22).
+ Gregory Nutt (2019-08-22).
+ Gregory Nutt (2019-08-22).
+ Gregory Nutt (2019-08-22).
+ Alin Jerpelea (2019-08-23).
+ Gregory Nutt
+ apps/nshlib into this logic and hence, must be part of
+ Gregory Nutt (2019-08-23).
+ applications only via a system call.
+ Gregory Nutt (2019-08-23).
+ David Sidrane
+ the boards/
+ Gregory Nutt (2019-08-24).
+ Gregory Nutt (2019-08-24).
+ Ouss4 (2019-08-24).
+ Gregory Nutt (2019-08-24).
+ Gregory Nutt (2019-08-24).
+ Michael Jung (2019-08-25).
+
+ Michael
+ the FLAT
+ applications to the
+ Gregory Nutt
+ Gregory Nutt (2019-08-25).
+ Bernd Walter (2019-08-26).
+ the SDK.
+ Alin Jerpelea (2019-08-26).
+ David Alessio (2019-08-26).
+ ligd (2019-08-26).
+ ligd (2019-08-26).
+
+ ligd (2019-08-26).
+
+
+ David Sidrane (2019-08-26).
+ Gregory Nutt
+ David Alessio
+ Gregory Nutt (2019-08-26).
+ the qualifier CODE
+ Gregory Nutt (2019-08-26).
+
+ Gregory Nutt (2019-08-27).
+ Gregory Nutt
+ David Sidrane (2019-08-28).
+ Augusto Fraga Giachero (2019-08-28).
+ Pavel Pisa (2019-08-28).
+ Pavel Pisa (2019-08-28).
+ Pavel Pisa
+ Markus Bernet (2019-08-28).
+ Gregory Nutt
+ Jukka Laitinen (2019-08-28).
+ Jukka Laitinen (2019-08-28).
+ Augusto Fraga Giachero (2019-08-28).
+
+ Matous Pokorny (2019-08-29).
+ zhangyuan7 (2019-08-30).
+ Pavel Pisa (2019-08-30).
+ Pavel Pisa (2019-08-30).
+ Gregory Nutt (2019-08-30).
+ Gregory Nutt
+ Pavel Pisa (2019-08-30).
+
+
+ Gregory Nutt (2019-08-31).
+ Gregory Nutt (2019-08-31).
+ Gregory Nutt (2019-08-31).
+ Gregory Nutt (2019-08-31).
+ Gregory Nutt (2019-08-31).
+ Gregory
+ Gregory Nutt (2019-09-01).
+ Gregory Nutt (2019-09-01).
+ Gregory
+ Masayuki Ishikawa (2019-09-02).
+ Augusto Fraga Giachero (2019-09-02).
+ Gregory Nutt (2019-09-03).
+ Gregory Nutt (2019-09-03).
+ Loyen Wang (2019-09-04).
+ Matous Pokorny (2019-09-04).
+ jjlange (2019-09-05).
+ Gregory Nutt (2019-09-04).
+ Juha
+ Augusto Fraga Giachero
+ Augusto Fraga Giachero
+ Gregory Nutt (2019-09-05).
+
+ Gregory Nutt (2019-09-06).
+ Nathan
+ Adam
+ Gregory Nutt (2019-09-06).
+ Gregory Nutt
+ the
+ Gregory Nutt (2019-09-07).
+ Adam Porter (2019-09-08).
+ Gregory Nutt (2019-09-08).
+ Gregory
+ Oki Minabe (2019-09-08).
+ Oki Minabe (2019-09-08).
+ Oki Minabe (2019-09-08).
+ ligd (2019-09-09).
+ Adam Porter (2019-09-09).
+ Pavel Pisa (2019-09-10).
+ Pavel Pisa (2019-09-10).
+
+ Gregory Nutt
+ Nathan Hartman
+ the big boards/ directory
+ Gregory Nutt (2019-09-11).
+ the big boargs/ directory
+ Gregory Nutt (2019-09-11).
+ Gregory Nutt (2019-09-11).
+ internal OS logic for
+ Gregory
+ Daniel Pereira Volpato
+ Daniel
+ Alan Carvalho de Assis (2019-09-11).
+
+
+ Gregory Nutt (2019-09-12).
+ Nathan Hartman
+
+ Juha Niskanen.
+ Gregory Nutt (2019-09-13).
+ zhangbo_a
+ YanLin Zhu (2019-09-15).
+
+
+ Xiang Xiao (2019-09-15).
+tes in the .bss section will not be initialized
+ Gregory Nutt
+tes in the .data section may not be initialized
+ Gregory Nutt (2019-09-15).
+ Xiang Xiao (2019-09-16).
+
+ Juha Niskanen (2019-09-16).
+ Bazooka Joe
+tes at a time in a loop.  The start (_sbss)
+tes since the write is done with
+te to prevent initializing past the end off the
+ Gregory Nutt
+ Gregory Nutt (2019-09-16).
+ Gregory Nutt (2019-09-16).
+ Gregory
+ Takayoshi Koizumi (2019-09-16).
+
+ the CONFIG_CXD56_CUSTOM_PINCONFIG option).
+ the new CONFIG_SPRESENSE_EXTENSION
+ Gregory Nutt (2019-09-17).
+
+ Daniel Pereira Volpato (2019-09-17).
+ Daniel Pereira Volpato
+ Daniel Pereira Volpato
+
+ Daniel Pereira Volpato (2019-09-17).
+ Daniel Pereira Volpato (2019-09-17).
+ Augusto Fraga Giachero
+ Alin
+ Gregory Nutt
+
+
+ Xiang Xiao (2019-09-18).
+ AXI SRAM may lead
+ David Sidrane (2019-09-19).
+ anchao (2019-09-19).
+ Juha Niskanen (2019-09-19).
+ Gregory Nutt
+ David Alessio
+ Xiang Xiao (2019-09-20).
+ Xiang Xiao
+
+ Alan Carvalho de Assis (2019-09-22).
+ Alan Carvalho de Assis (2019-09-22).
+ the
+ Andrei Stefanescu (2019-09-22).
+ Alan Carvalho de Assis (2019-09-22).
+ Gregory Nutt (2019-09-23).
+ Markus Bernet (2019-09-24).
+ David
+ Nathan
+
+ Bernd Walter (2019-09-25).
+ Bernd Walter:
+ Gregory Nutt (2019-09-25).
+ stopping SD clock
+ calling PANIC() for
+ default.
+ default on the
+ Alin Jerpelea (2019-09-26).
+
+ Juha Niskanen (2019-09-27).
+ Gregory Nutt
+ CFLAGS in Make.defs of several
+ Daniel Pereira Volpato (2019-09-27).
+ ligd (2019-09-28).
+ Xiang Xiao (2019-09-28).
+ Xiang Xiao (2019-09-28).
+ Xiang Xiao (2019-09-28).
+ userspace binary for
+ Xiang Xiao (2019-09-28).
+ Xiang Xiao (2019-09-28).
+
+ Gregory Nutt (2019-09-29).
+
+ Gregory Nutt (2019-09-29).
+ Xiang Xiao (2019-09-30).
+ Xiang
+ kernel space
+ KernelLibs.mk since kernel build doesnt
+ Xiang Xiao (2019-09-30).
+ Xiang Xiao
+
+ Gregory Nutt
+ Gregory
+ Masayuki Ishikawa (2019-10-01).
+
+ Juha
+ Gregory Nutt (2019-10-01).
+ Xiang Xiao
+
+ Xiang Xiao (2019-10-02).
+
+ Gregory Nutt (2019-10-02).
+ Gregory Nutt (2019-10-02).
+ Gregory Nutt (2019-10-02).
+ Xiang Xiao (2019-10-03).
+ a
+ calling up_send_irqreq() in both up_enable_irq() and
+ Masayuki Ishikawa (2019-10-03).
+ Masayuki Ishikawa (2019-10-03).
+ Xiang Xiao (2019-10-03).
+
+ Gregory Nutt (2019-10-03).
+ raiden00pl (2019-10-04).
+ CPU1, in this case, we would see a deadlock in later call of
+ Masayuki Ishikawa (2019-10-04).
+ Gregory Nutt (2019-10-04).
+ Gregory Nutt (2019-10-04).
+ Dave Marples (2019-10-04).
+ Augusto Fraga Giachero
+ DisruptiveNL (2019-10-05).
+ Xiang Xiao (2019-10-07).
+ Bernd Walter (2019-10-07).
+ Daniel Pereira Volpato (2019-10-07).
+ Daniel Pereira Volpato (2019-10-07).
+ Daniel Pereira Volpato (2019-10-07).
+ Dave Marples (2019-10-08).
+
+ Alin Jerpelea (2019-10-08).
+ Christian Clauss
+ Alin Jerpelea (2019-10-09).
+ raiden00pl (2019-10-11).
+ Anjana (2019-10-11).
+ Alin Jerpelea (2019-10-11).
+ Matias N (2019-10-12).
+ Masayuki Ishikawa (2019-10-13).
+ Masayuki Ishikawa (2019-10-15).
+ Masayuki Ishikawa (2019-10-16).
+ Masayuki Ishikawa (2019-10-16).
+ Juha Niskanen
+ Jussi
+ liuhaitao (2019-10-17).
+ default.  It also could
+ liuhaitao (2019-10-17).
+
+ Daniel Pereira
+ Daniel Pereira Volpato (2019-10-17).
+ Masayuki
+ Alin Jerpelea (2019-10-18).
+ Gregory Nutt (2019-10-18).
+ Gregory Nutt (2019-10-18).
+ Gregory Nutt
+ Gregory Nutt (2019-10-18).
+ Xiang Xiao (2019-10-19).
+ Gregory Nutt
+tes.  In
+ Gregory
+ Gregory Nutt (2019-10-19).
+ Fabio Balzano (2019-10-20).
+ Matias N (2019-10-20).
+ Jens
+ Markus
+ Alin Jerpelea (2019-10-21).
+ Matias N (2019-10-22).
+ Masayuki Ishikawa (2019-10-22).
+ David Sidrane (2019-10-22).
+ Gregory Nutt (2019-10-22).
+ Gregory Nutt (2019-10-22).
+ accident an endif was
+
+ Alin Jerpelea (2019-10-23).
+ Jeff Theusch
+ Alin Jerpelea (2019-10-23).
+ Gregory Nutt (2019-10-23).
+ Gregory Nutt (2019-10-23).
+ Fabio Balzano (2019-10-23).
+ Fabio Balzano (2019-10-23).
+ Fabio Balzano (2019-10-23).
+ Gregory Nutt (2019-10-23).
+ Matias N (2019-10-24).
+
+ Fabio Balzano (2019-10-24).
+ the display driver on spresense platform
+ Alin Jerpelea (2019-10-24).
+ Gregory Nutt (2019-10-24).
+ Gregory Nutt (2019-10-24).
+ Jussi Kivilinna (2019-10-25).
+ Jussi Kivilinna (2019-10-25).
+te address operation for capacity larger
+ YanLin Zhu (2019-10-25).
+ Gregory Nutt (2019-10-25).
+ Gregory Nutt
+ introducing a new
+ Gregory Nutt (2019-10-26).
+ Gregory Nutt
+ Gregory Nutt (2019-10-26).
+ Gregory
+ applications that need boardctl() support...
+ Gregory Nutt
+ Gregory Nutt (2019-10-27).
+ Gregory Nutt (2019-10-27).
+ Gregory Nutt
+
+ Gregory Nutt
+ Gregory Nutt
+ Matias N
+ Gregory Nutt (2019-10-27).
+ DisruptiveNL (2019-10-28).
+ Xiang Xiao (2019-10-29).
+ Xiang Xiao (2019-10-29).
+ ligd (2019-10-29).
+ David Sidrane (2019-10-29).
+ David Sidrane (2019-10-29).
+ Gregory Nutt (2019-10-29).
+ David Sidrane (2019-10-29).
+ David Sidrane (2019-10-29).
+ David Sidrane
+ Gregory Nutt (2019-10-29).
+ Gregory Nutt
+ Gregory Nutt (2019-10-29).
+ David Sidrane (2019-10-30).
+
+
+ Juha Niskanen (2019-10-31).
+ Gregory Nutt (2019-10-31).
+ https://github.com/FishsemiCode/nuttx.  The
+ Guiding
+ Gregory Nutt (2019-11-02).
+ Xiang Xiao (2019-11-03).
+ Xiang Xiao (2019-11-03).
+ Gregory Nutt (2019-11-03).
+ Gregory Nutt (2019-11-03).
+ Gregory Nutt (2019-11-03).
+ initial testing using NSH arp -t
+ Gregory Nutt (2019-11-03).
+ Petro Karashchenko (2019-11-03).
+ Xiang Xiao
+ Xiang Xiao (2019-11-03).
+ Xiang Xiao (2019-11-03).
+ ligd (2019-11-03).
+
+ Xiang Xiao (2019-11-03).
+ ligd (2019-11-03).
+
+ Alin Jerpelea (2019-11-04).
+ Xiang Xiao (2019-11-04).
+ Gregory Nutt (2019-11-04).
+ Xiang Xiao
+
+ Gregory Nutt
+ enabling the RX & TX
+ Dave Marples
+ Daniel
+
+ Gregory Nutt
+ Gregory Nutt (2019-11-02).
+ David Sidrane (2019-11-04).
+ Gregory Nutt (2019-11-04).
+ Gregory Nutt (2019-11-04).
+ David Alessio (2019-11-05).
+ Juha Niskanen (2019-11-05).
+ Juha Niskanen (2019-11-05).
+ David Alessio (2019-11-05).
+ Heiko Demlang (2019-11-05).
+ Xiang Xiao
+ David S. Alessio
+ ligd (2019-11-06).
+ David
+ Nathan Hartman (2019-11-06).
+tes to FLASH. However, this function does NOT support
+ Nathan Hartman (2019-11-06).
+
+ ligd (2019-11-07).
+ Han Raaijmakers (2019-11-07).
+ Gregory
+ STOP mode, the MSI
+ Matias N (2019-11-07).
+ Juha Niskanen (2019-11-08).
+ Dave
+ cacheable when
+ David Sidrane (2019-11-08).
+ the Netlink sockets.  Also fixed naming
+ Gregory Nutt (2019-11-08).
+
+ Dave Marples (2019-11-08).
+
+ Dave Marples (2019-11-08).
+ Dave Marples
+ Gregory Nutt (2019-11-09).
+ activity levels, and (2) and
+ the lower
+ Matias Nitsche (2019-11-09).
+ Gregory Nutt (2019-11-09).
+
+ Gregory Nutt (2019-11-09).
+ Gregory Nutt (2019-11-09).
+ David Sidrane (2019-11-10).
+ hao.an (2019-11-10).
+ Xiang Xiao (2019-11-10).
+ Xiang Xiao
+
+ Gregory Nutt (2019-11-10).
+ Gregory Nutt (2019-11-10).
+ Dave Marples (2019-11-10).
+ simuart_thread.
+ Xiang Xiao (2019-11-10).
+ Xiang
+ Xiang Xiao (2019-11-10).
+ Xiang Xiao (2019-11-11).
+ Xiang Xiao (2019-11-11).
+ ligd
+ Alin Jerpelea (2019-11-11).
+ Gregory Nutt
+ chao.an
+ Alin Jerpelea (2019-11-12).
+ Alin Jerpelea (2019-11-12).
+ Alin Jerpelea (2019-11-12).
+ ligd (2019-11-12).
+ low-power modes. Disable
+ default did not enter low-power mode on a wfi.
+ Dave Marples (2019-11-12).
+tes
+ ligd (2019-11-12).
+ putting an imxrt_lowputc(A+irq) into up_doirq. For the
+ which NuttX handles
+ this point on everything works correctly and you can reboot
+
+ Dave Marples (2019-11-12).
+ Gregory Nutt (2019-11-12).
+ Gregory Nutt (2019-11-12).
+ Gregory Nutt (2019-11-12).
+ liuhaitao
+ Gregory Nutt
+
+ David Sidrane (2019-11-14).
+ Juha Niskanen (2019-11-14).
+ Gregory Nutt (2019-11-14).
+ Gregory Nutt (2019-11-14).
+ Gregory Nutt (2019-11-14).
+ Gregory Nutt (2019-11-14).
