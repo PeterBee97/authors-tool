@@ -69,4 +69,7 @@ will return all items that doesn't seem to belong to Greg (considering copyright
 ## Results
 
 The results for latest release as of Aug 3,2020 has been uploaded as authors-nuttx.db and authors-apps.db, respectively.
-The names in [ChangeLog](https://github.com/apache/incubator-nuttx/blob/nuttx-9.0.0-RC0/ChangeLog) from NuttX 9.0.0 RC0 is in names-changelog.txt. And the names in git log (nuttx and apps combined) of master branch at Aug 6,2020 is in names-gitlog.txt.
+
+The names in [ChangeLog](https://github.com/apache/incubator-nuttx/blob/nuttx-9.0.0-RC0/ChangeLog) from NuttX 9.0.0 RC0 is in names-changelog.txt. 
+
+And the names in git log (nuttx and apps combined) of master branch at Aug 6,2020 is in names-gitlog.txt.
