@@ -1,0 +1,506 @@
+d5d9fa89ab Fix a FAT error when trying to create file in a non-existent directory. Reported by Andrew Tridgell.
+a93d71f857 Fix CDC/ACM alternate interface number (from Antti)
+41f3401979 Fix CDC/ACM alternate interface number (from Antti)
+927d8f46e2 Patches for LPC17xx SSP driver from Chris Taglia; patch for RAM test from Rommel Marcelo
+edc4fd3f96 Patches for LPC17xx SSP driver from Chris Taglia; patch for RAM test from Rommel Marcelo
+b9bb22d564 Directories where the same source files are used to build different objects need to keep those objects in separate directories; LPC17xx updates from Chris Taglia
+6c2fb4405c Directories where the same source files are used to build different objects need to keep those objects in separate directories; LPC17xx updates from Chris Taglia
+1f3846afd5 Add workaround for ADC errata from Chris Taglia
+a5a4c35954 Add workaround for ADC errata from Chris Taglia
+bdc36db6a0 Updates from Darcy Gong for UG-2864SWEG01 OLED
+e7ae8fa5a6 Updates from Darcy Gong for UG-2864SWEG01 OLED
+7c432bb739 Add UG_2965SWEG01 driver from Darcy Gong; fix logic error in how waiters are reawakened in the USB HID keyboard driver
+cde9146476 Add UG_2965SWEG01 driver from Darcy Gong; fix logic error in how waiters are reawakened in the USB HID keyboard driver
+c9331b5ee5 Add chip ID funcitions for Shenzhou and Cloudctrl boards; Extened NSH ifconfig command and improve DHCPC -- All from Darcy Gong
+d960511ec9 Add chip ID funcitions for Shenzhou and Cloudctrl boards; Extened NSH ifconfig command and improve DHCPC -- All from Darcy Gong
+36463721d0 Add chip ID funcitions for Shenzhou and Cloudctrl boards; Extened NSH ifconfig command and improve DHCPC -- All from Darcy Gong
+bc43998595 configs/cloudctrl and tools/prebuild.py from Darcy Gong
+a060ee06a3 configs/cloudctrl and tools/prebuild.py from Darcy Gong
+233f7f69ac Make ostest RR scheduler test use less memory from Freddie Chopin; Plus build fix from Darcy Gong
+07ca64a5b9 Make ostest RR scheduler test use less memory from Freddie Chopin; Plus build fix from Darcy Gong
+844eb528d1 Add interfaces flags, extend ifconfig, add ifup and ifdown commands (Darcy Gong
+73659bfd99 Add interfaces flags, extend ifconfig, add ifup and ifdown commands (Darcy Gong
+053a064ade Relay example from Darcy Gong
+d700a5844c Relay example from Darcy Gong
+2da5226ac3 libm compilation fixes from Darcy Gong
+647429897c Add port of cJSON from Darcy Gong
+1d0fad5f70 Add port of cJSON from Darcy Gong
+4e9a15f938 Support for relays on the Shenzhou board (Darcy Gong)
+b0abe342d9 Support for relays on the Shenzhou board (Darcy Gong)
+a6402e4c45 Add a THTTPD configuration for the Shenzhou board (Darcy Gong)
+5fd0d8ce7a Add a THTTPD configuration for the Shenzhou board (Darcy Gong)
+82dc9393de Add a THTTPD configuration for the Shenzhou board (Darcy Gong)
+1c866be556 ADC support for the Shenzhou board from Darcy Gong
+7438dd1dde ADC support for the Shenzhou board from Darcy Gong
+5b989e7735 Several bugfixes, mostly from Darcy Gong
+318f3427f3 Several bugfixes, mostly from Darcy Gong
+d876c6370b Fix problem with ping that prevent ping from going outside local network (Darcy Gong)
+0663694745 Fix problem with ping that prevent ping from going outside local network (Darcy Gong)
+0676572c28 Add David Hewson's corrections to the LPC214x USB device driver; Add LPC214x configuration to test the USB composite device
+837fc59607 Add David Hewson's corrections to the LPC214x USB device driver; Add LPC214x configuration to test the USB composite device
+7b0bcac04d Add David Hewson's corrections to the LPC214x USB device driver; Add LPC214x configuration to test the USB composite device
+07634ecb5d Misc improvements from David Hewson
+b921a8cce8 Driver fixes from David Hewson
+2501f0c6bb Driver fixes from David Hewson
+7b7d120995 Important fixed to USB storage and SCSI state machine from David Hewson
+3ec0372296 Bug fixes by David Hewson
+9e7daa0bf9 Bug fixes by David Hewson
+f03cb0ff3a Bugfixes submitted by David Hewson
+ba8c762a86 Bugfixes submitted by David Hewson
+1fa8e0c8a1 Bugfixes submitted by David Hewson
+e901816a09 Don't build drivers/mtd unless CONFIG_MTD is defined (Denis Carikli)
+a5fbf66049 Don't build drivers/mtd unless CONFIG_MTD is defined (Denis Carikli)
+5d6a42268e standard keypad inteface and apps/examples/keypadtest from Denis Carikli
+b696d2dde7 standard keypad inteface and apps/examples/keypadtest from Denis Carikli
+e4bde1803a standard keypad inteface and apps/examples/keypadtest from Denis Carikli
+f9acbe55c8 0001-RS-485-support-for-STM32-serial-driver.patch from Freddi Chopin
+3eb38c0153 0001-RS-485-support-for-STM32-serial-driver.patch from Freddi Chopin
+3aef90061f 0001-RS-485-support-for-STM32-serial-driver.patch from Freddi Chopin
+b25e932ef5 STM32 FLASH changes from Freddie Chopin
+55723a1b17 STM32 FLASH changes from Freddie Chopin
+cd20adb63d Patches from Petteri Aimonen + stdbool and rand() changes for Freddie Chopin
+5306523bce Patches from Petteri Aimonen + stdbool and rand() changes for Freddie Chopin
+dfb8770721 Add one to internal result of random number generator to avoid the value zero, from Freddie Chopin
+929ffc14d2 Add one to internal result of random number generator to avoid the value zero, from Freddie Chopin
+8ff65a24b2 Patches for NSH disable background, and ARMv7M assembly from Freddie Chopin
+aace222e94 Patches for NSH disable background, and ARMv7M assembly from Freddie Chopin
+7017e67234 Patches for NSH disable background, and ARMv7M assembly from Freddie Chopin
+4cba378e03 Kconfig updates from Freddie Chopin
+0ea48ddabc Kconfig updates from Freddie Chopin
+5d611c9f9b Support for non-common vectors from Freddie Chopin
+6a43d75878 Support for non-common vectors from Freddie Chopin
+013a27cbc9 Support for non-common vectors from Freddie Chopin
+cf8f828900 Patch to removed MMCSD NSLOTS warning from Freddie Chopin
+8b5fb4c1f6 Patch to removed MMCSD NSLOTS warning from Freddie Chopin
+09bdd34963 STM32 F100 High Density support and generic board configuration from Freddie Chopin
+221b3b9f52 STM32 F100 High Density support and generic board configuration from Freddie Chopin
+af72a0e147 STM32 F100 High Density support and generic board configuration from Freddie Chopin
+396d51f802 STM32 F100 High Density support and generic board configuration from Freddie Chopin
+233f7f69ac Make ostest RR scheduler test use less memory from Freddie Chopin; Plus build fix from Darcy Gong
+07ca64a5b9 Make ostest RR scheduler test use less memory from Freddie Chopin; Plus build fix from Darcy Gong
+41f2f44f19 Missed a few ld.script files in Freddie Chopin's last big change
+a0ad129ef4 Missed a few ld.script files in Freddie Chopin's last big change
+df4d338a10 Massive clean-up of linker scripts from Freddie Chopin
+34344abd32 Massive clean-up of linker scripts from Freddie Chopin
+0c0168ccc0 More STM32 Value Line updates from Freddie Chopin
+6a4d802afc More STM32 Value Line updates from Freddie Chopin
+c0cf42801c Another fix to STM32 definitions from Freddie Chopin
+e3b38f2591 Another fix to STM32 definitions from Freddie Chopin
+eac0c012e2 Fixes to STM32 definitions from Freddie Chopin
+7ea714ec94 Fixes to STM32 definitions from Freddie Chopin
+e162e760f7 Fixes for warnings from Freddie Chopin
+461311e9c8 ST32F4Discovery board.h patches from Freddie Chopin
+d2e6e40f66 ST32F4Discovery board.h patches from Freddie Chopin
+b4e9cec9ca SDIO fixes for the STM32 F2 from  Gary Teravskis and Scott Rondestvedt
+fa593262f4 SDIO fixes for the STM32 F2 from  Gary Teravskis and Scott Rondestvedt
+3dc0b679af CAN ISO-11783 support contributed by Gary Teravskis
+22ffe347bc CAN ISO-11783 support contributed by Gary Teravskis
+4e82d14da1 CAN ISO-11783 support contributed by Gary Teravskis
+f7833e1c8e MIPS stack alignment fix for floating point from Helmut
+75a1f693d1 MIPS stack alignment fix for floating point from Helmut
+d0a8966719 Add OpenOCD support for LM4F120 LaunchPad.  From JP Carballo
+3daa175977 Add OpenOCD support for LM4F120 LaunchPad.  From JP Carballo
+f48cdaa30e Fix bug reported by JP Carballo
+e80b9e970d LM3S OpenOCD configuration from Jose Pablo Carballo
+2153fc40b5 LM3S OpenOCD configuration from Jose Pablo Carballo
+6de0a97d9b Use kconfig- prefix to avoid tool name conflicts (from Jose Pablo Carballo)
+380fb5569a Use kconfig- prefix to avoid tool name conflicts (from Jose Pablo Carballo)
+1d6f741412 Use kconfig- prefix to avoid tool name conflicts (from Jose Pablo Carballo)
+6eb62c82cc Add support for Fire STM32v3; sscanf fixes from Kate
+0829cfcb45 Add support for Fire STM32v3; sscanf fixes from Kate
+626be6d914 Add support for Fire STM32v3; sscanf fixes from Kate
+8f3559bd34 Fix ording of bytes in ENC28J60 MAC address; Web server refactoring from Kate
+3464e7e956 Fix ENC28J60 Tx transmit (still a receive problem); Add HTTP 408 logic from Kate
+c4b2ce70ba Fix ENC28J60 Tx transmit (still a receive problem); Add HTTP 408 logic from Kate
+f5365ff661 AVR corrections from Richard Cochran; uIP webserver enhancements from Kate
+3174ce14b9 AVR corrections from Richard Cochran; uIP webserver enhancements from Kate
+89d98d72cf More M3 Wildfire logic; mmap-related bug fixes from Kate
+84ec123a1e More M3 Wildfire logic; mmap-related bug fixes from Kate
+ac9fda80ab Enhancements to the uIP web server from Kate
+a6adaff343 More patches/bugfixes from Kate
+c18b47aafb More patches/bugfixes from Kate
+a3df67ef8a NxWidgets updates from Petteri Aimonen; buildroot GDB build fix from Ken Bannister
+5d1fe3e123 ez80Acclaim fixes from Kevin Franzen
+024334302d ez80Acclaim fixes from Kevin Franzen
+1b8bc0682a ez80Acclaim fixes from Kevin Franzen
+c12385678d Add HID parser from LUFA
+a86934e351 Add HID parser from LUFA
+7faf5646a1 Adds support for the STM32F103VCT6 and for the Hy-Mini STM32v board.  Contributed by Laurent Latil
+a126047cb3 Adds support for the STM32F103VCT6 and for the Hy-Mini STM32v board.  Contributed by Laurent Latil
+1877006302 Adds support for the STM32F103VCT6 and for the Hy-Mini STM32v board.  Contributed by Laurent Latil
+1a67cb9e1e Fix for trailing %n bug in sscanf (with help from Lorenz Meier)
+29852e0d10 Add psock_poll(); Fix some warnings reported by Lorenz Meier; lm4f logic from JP
+eebf74006e Add psock_poll(); Fix some warnings reported by Lorenz Meier; lm4f logic from JP
+fe57db141d Add psock_poll(); Fix some warnings reported by Lorenz Meier; lm4f logic from JP
+209327349e Add psock_poll(); Fix some warnings reported by Lorenz Meier; lm4f logic from JP
+44c3becee8 Add psock_poll(); Fix some warnings reported by Lorenz Meier; lm4f logic from JP
+476db17b51 Mirtoo differences from Konstantin; File system fix from Lorenz Meier
+33053f10e2 Mirtoo differences from Konstantin; File system fix from Lorenz Meier
+b4c6554c8b Add support for CAN1 and CAN2 to zkit-arm-1769.  From M. Kannan
+4750867a34 Add support for CAN1 and CAN2 to zkit-arm-1769.  From M. Kannan
+971c73c6d3 Add support for CAN1 and CAN2 to zkit-arm-1769.  From M. Kannan
+83c4c55b12 Add support for CAN1 and CAN2 to zkit-arm-1769.  From M. Kannan
+d126ddeeed Kconfig:  Mark Windows Native build as EXPERIMENTAL (#144)
+d9a4327c04 Add XML RPC server plus NXWM build fixes from Max Holtzberg
+6b29aaf9cd Add XML RPC server plus NXWM build fixes from Max Holtzberg
+5f470bd756 Add XML RPC server plus NXWM build fixes from Max Holtzberg
+3e7c5c1b43 Fix for recvfrom() hang when the new CONFIG_NET_TCP_RECVDELAY is set to zero (from Max Holtzberg)
+12232a94f1 Add UDP discovery configuration for the STM3240G-EVAL (from Max Holtzberg)
+c7cd6b6457 Add UDP discovery configuration for the STM3240G-EVAL (from Max Holtzberg)
+cea9cedee5 Network discover utility from Max Holtzberg
+4aef3076d2 Network discover utility from Max Holtzberg
+8bc26dadb0 The content for uIP web server demo is no longer canned, but is not built dynameically (Thanks to Max Holtzberg)
+c28bda212a The content for uIP web server demo is no longer canned, but is not built dynameically (Thanks to Max Holtzberg)
+29f34c4ef3 Add support for Olimex STM32-P107 board (contributed by Max Holtzberg)
+ed08dd8997 Add support for Olimex STM32-P107 board (contributed by Max Holtzberg)
+11a5c81fd6 Add support for Olimex STM32-P107 board (contributed by Max Holtzberg)
+4996e1117e Add support for Olimex STM32-P107 board (contributed by Max Holtzberg)
+d9a4327c04 Add XML RPC server plus NXWM build fixes from Max Holtzberg
+6b29aaf9cd Add XML RPC server plus NXWM build fixes from Max Holtzberg
+5f470bd756 Add XML RPC server plus NXWM build fixes from Max Holtzberg
+3e7c5c1b43 Fix for recvfrom() hang when the new CONFIG_NET_TCP_RECVDELAY is set to zero (from Max Holtzberg)
+12232a94f1 Add UDP discovery configuration for the STM3240G-EVAL (from Max Holtzberg)
+c7cd6b6457 Add UDP discovery configuration for the STM3240G-EVAL (from Max Holtzberg)
+cea9cedee5 Network discover utility from Max Holtzberg
+4aef3076d2 Network discover utility from Max Holtzberg
+8bc26dadb0 The content for uIP web server demo is no longer canned, but is not built dynameically (Thanks to Max Holtzberg)
+c28bda212a The content for uIP web server demo is no longer canned, but is not built dynameically (Thanks to Max Holtzberg)
+29f34c4ef3 Add support for Olimex STM32-P107 board (contributed by Max Holtzberg)
+ed08dd8997 Add support for Olimex STM32-P107 board (contributed by Max Holtzberg)
+11a5c81fd6 Add support for Olimex STM32-P107 board (contributed by Max Holtzberg)
+4996e1117e Add support for Olimex STM32-P107 board (contributed by Max Holtzberg)
+370913df84 Add support for STM32 F427/437 chips.  From Mike Smith
+0bfa1b75e2 Add support for STM32 F427/437 chips.  From Mike Smith
+46f1faca46 Updated Open1788 calibration; More compilation fixes from Mike Smith
+95af0bc8bf Updated Open1788 calibration; More compilation fixes from Mike Smith
+0d5553ffa3 Bugs reported by Mike Smith fixed; ZKIT-ARM-1769 CAN support from Rashid Fatah
+edc5e0bee6 Bugs reported by Mike Smith fixed; ZKIT-ARM-1769 CAN support from Rashid Fatah
+0449f2f22e Bugs reported by Mike Smith fixed; ZKIT-ARM-1769 CAN support from Rashid Fatah
+33a78ff078 Fix for compilation issues reported by Mike Smith
+5be437b0bb Fix for compilation issues reported by Mike Smith
+36299b338f Fix for compilation issues reported by Mike Smith
+be899cfa82 Two fixes from Mike Smith: (1) use -m install of --mode in install commands, (2) fix typo in stm32_exti.h introduced with the STM32 F3 port
+243e45b1a4 Two fixes from Mike Smith: (1) use -m install of --mode in install commands, (2) fix typo in stm32_exti.h introduced with the STM32 F3 port
+493102b322 Two fixes from Mike Smith: (1) use -m install of --mode in install commands, (2) fix typo in stm32_exti.h introduced with the STM32 F3 port
+9df1608786 LPC17xx now supports FPU needed by LPC1788; LPC17xx can not use Mike's common vectors
+d938d49e5a LPC17xx now supports FPU needed by LPC1788; LPC17xx can not use Mike's common vectors
+426f8f0214 LPC17xx now supports FPU needed by LPC1788; LPC17xx can not use Mike's common vectors
+f8e68eb019 STM32 I2C changes from Mike Smith
+457b768f43 STM32 I2C changes from Mike Smith
+04cbcfc1cf NSH will now run files from the file system; Add logic to unload and clean-up after running a task from a file system; Extensions to builtin apps from Mike Smith
+2e8283f28f NSH will now run files from the file system; Add logic to unload and clean-up after running a task from a file system; Extensions to builtin apps from Mike Smith
+4a801e4904 NSH will now run files from the file system; Add logic to unload and clean-up after running a task from a file system; Extensions to builtin apps from Mike Smith
+dc1a1db176 Add logic to automatically unload module on exit; Several patches from Mike Smith
+956bded9c1 Add logic to automatically unload module on exit; Several patches from Mike Smith
+7bb46c2166 Fix rounding in clock_time2ticks().  From Mike Smith.
+3f0a6ae819 Fix several build issues noted by Mike Smith
+afcd36e5a9 Fix several build issues noted by Mike Smith
+671044fd30 Fix several build issues noted by Mike Smith
+1496d489c7 Misc build fixes, some from Mike some for ez80 native build
+5c4869de2e Misc build fixes, some from Mike some for ez80 native build
+25f1b3b97b Misc build fixes, some from Mike some for ez80 native build
+2ecbe6d360 Add common Toolchain.defs for AVR/AVR32; Add Toolchain.defs for ARM; Add more toolchain options (from Mike); incdir.sh and .bat now take -s option
+f99e55676b Add common Toolchain.defs for AVR/AVR32; Add Toolchain.defs for ARM; Add more toolchain options (from Mike); incdir.sh and .bat now take -s option
+92469824e6 Add common Toolchain.defs for AVR/AVR32; Add Toolchain.defs for ARM; Add more toolchain options (from Mike); incdir.sh and .bat now take -s option
+930842ed82 /configs/stm32f4discovery/winbuild and configs/cloudctrl upated to use Mike's Toolchain.defs; Fix error introduced into tools/configure.sh
+04dbba6227 /configs/stm32f4discovery/winbuild and configs/cloudctrl upated to use Mike's Toolchain.defs; Fix error introduced into tools/configure.sh
+bb9dc58217 /configs/stm32f4discovery/winbuild and configs/cloudctrl upated to use Mike's Toolchain.defs; Fix error introduced into tools/configure.sh
+f5158166f0 Big refactoring of toolchain definitions by Mike Smith
+74949ee01d Big refactoring of toolchain definitions by Mike Smith
+64e00aa972 Big refactoring of toolchain definitions by Mike Smith
+76f2745323 Changes from Mike
+ed622c80ce More changes for Mike
+2f5eab1892 More changes for Mike
+f0614cb6b6 Move some (hopefully) un-necessary quotes in Makefiles for Mike
+7163ac74fa Move some (hopefully) un-necessary quotes in Makefiles for Mike
+2d46acb6e4 Move some (hopefully) un-necessary quotes in Makefiles for Mike
+f751d36eee Move some (hopefully) un-necessary quotes in Makefiles for Mike
+b0261744d7 Optimized ARMv7-M memcpy() function from Mike Smith
+cc9af097d6 Optimized ARMv7-M memcpy() function from Mike Smith
+46233a57f6 Another dtoa() fix from Mike Smith
+018b0e9970 Another dtoa() fix from Mike Smith
+c8eac8afc3 Add support for STM32F100x value line.  Contributed by Mike Smith.  Still missing a file
+c5a7577df5 Add support for STM32F100x value line.  Contributed by Mike Smith.  Still missing a file
+a9468eb7e1 Add support for STM32F100x value line.  Contributed by Mike Smith.  Still missing a file
+20c5148e2a Some STM32 bugfixes from Mike Smith
+8a9c292626 Some STM32 bugfixes from Mike Smith
+c7aa0b0a23 Incoporate (more) new ARMv7-M exception handling logic contributed by Mike Smith
+1e145dddae Incoporate (more) new ARMv7-M exception handling logic contributed by Mike Smith
+95476a03ea Incoporate new ARMv7-M exception handling logic contributed by Mike Smith
+6e2a5140fb Incoporate new ARMv7-M exception handling logic contributed by Mike Smith
+cb32f5c1a4 Incoporate new ARMv7-M exception handling logic contributed by Mike Smith
+50138c565e Candidate fix for the libboard.a dependency problem (from Mike Smith)
+e94dcdf625 Candidate fix for the libboard.a dependency problem (from Mike Smith)
+5a69380d47 Add support for the STM32F4-Discovery (from Mike Smith)
+e7f40581f3 Add support for the STM32F4-Discovery (from Mike Smith)
+163a0dbe4a Add support for the STM32F4-Discovery (from Mike Smith)
+796999fbee Apply STM32 timer patch from Mike Smith
+9a05ff6ae1 Apply STM32 timer patch from Mike Smith
+370913df84 Add support for STM32 F427/437 chips.  From Mike Smith
+0bfa1b75e2 Add support for STM32 F427/437 chips.  From Mike Smith
+46f1faca46 Updated Open1788 calibration; More compilation fixes from Mike Smith
+95af0bc8bf Updated Open1788 calibration; More compilation fixes from Mike Smith
+0d5553ffa3 Bugs reported by Mike Smith fixed; ZKIT-ARM-1769 CAN support from Rashid Fatah
+edc5e0bee6 Bugs reported by Mike Smith fixed; ZKIT-ARM-1769 CAN support from Rashid Fatah
+0449f2f22e Bugs reported by Mike Smith fixed; ZKIT-ARM-1769 CAN support from Rashid Fatah
+33a78ff078 Fix for compilation issues reported by Mike Smith
+5be437b0bb Fix for compilation issues reported by Mike Smith
+36299b338f Fix for compilation issues reported by Mike Smith
+be899cfa82 Two fixes from Mike Smith: (1) use -m install of --mode in install commands, (2) fix typo in stm32_exti.h introduced with the STM32 F3 port
+243e45b1a4 Two fixes from Mike Smith: (1) use -m install of --mode in install commands, (2) fix typo in stm32_exti.h introduced with the STM32 F3 port
+493102b322 Two fixes from Mike Smith: (1) use -m install of --mode in install commands, (2) fix typo in stm32_exti.h introduced with the STM32 F3 port
+f8e68eb019 STM32 I2C changes from Mike Smith
+457b768f43 STM32 I2C changes from Mike Smith
+04cbcfc1cf NSH will now run files from the file system; Add logic to unload and clean-up after running a task from a file system; Extensions to builtin apps from Mike Smith
+2e8283f28f NSH will now run files from the file system; Add logic to unload and clean-up after running a task from a file system; Extensions to builtin apps from Mike Smith
+4a801e4904 NSH will now run files from the file system; Add logic to unload and clean-up after running a task from a file system; Extensions to builtin apps from Mike Smith
+dc1a1db176 Add logic to automatically unload module on exit; Several patches from Mike Smith
+956bded9c1 Add logic to automatically unload module on exit; Several patches from Mike Smith
+7bb46c2166 Fix rounding in clock_time2ticks().  From Mike Smith.
+3f0a6ae819 Fix several build issues noted by Mike Smith
+afcd36e5a9 Fix several build issues noted by Mike Smith
+671044fd30 Fix several build issues noted by Mike Smith
+f5158166f0 Big refactoring of toolchain definitions by Mike Smith
+74949ee01d Big refactoring of toolchain definitions by Mike Smith
+64e00aa972 Big refactoring of toolchain definitions by Mike Smith
+b0261744d7 Optimized ARMv7-M memcpy() function from Mike Smith
+cc9af097d6 Optimized ARMv7-M memcpy() function from Mike Smith
+46233a57f6 Another dtoa() fix from Mike Smith
+018b0e9970 Another dtoa() fix from Mike Smith
+c8eac8afc3 Add support for STM32F100x value line.  Contributed by Mike Smith.  Still missing a file
+c5a7577df5 Add support for STM32F100x value line.  Contributed by Mike Smith.  Still missing a file
+a9468eb7e1 Add support for STM32F100x value line.  Contributed by Mike Smith.  Still missing a file
+20c5148e2a Some STM32 bugfixes from Mike Smith
+8a9c292626 Some STM32 bugfixes from Mike Smith
+c7aa0b0a23 Incoporate (more) new ARMv7-M exception handling logic contributed by Mike Smith
+1e145dddae Incoporate (more) new ARMv7-M exception handling logic contributed by Mike Smith
+95476a03ea Incoporate new ARMv7-M exception handling logic contributed by Mike Smith
+6e2a5140fb Incoporate new ARMv7-M exception handling logic contributed by Mike Smith
+cb32f5c1a4 Incoporate new ARMv7-M exception handling logic contributed by Mike Smith
+50138c565e Candidate fix for the libboard.a dependency problem (from Mike Smith)
+e94dcdf625 Candidate fix for the libboard.a dependency problem (from Mike Smith)
+5a69380d47 Add support for the STM32F4-Discovery (from Mike Smith)
+e7f40581f3 Add support for the STM32F4-Discovery (from Mike Smith)
+163a0dbe4a Add support for the STM32F4-Discovery (from Mike Smith)
+796999fbee Apply STM32 timer patch from Mike Smith
+9a05ff6ae1 Apply STM32 timer patch from Mike Smith
+a2badca703 Update M25P driver per feedback from Mohammed Elwakeel
+9e6a174857 Update M25P driver per feedback from Mohammed Elwakeel
+0cb9ae021b Update M25P driver per feedback from Mohammed Elwakeel
+310d7ee1f6 Pascal now installs in the apps/ directory
+30c2b91c8a Pascal now installs in the apps/ directory
+6cece5a803 Pascal now installs in the apps/ directory
+63dfc73c7e Pascal configuration
+54242efbcd Pascal configuration
+f12d0f98a1 Pascal P-Code binaries are now big-endian
+4dd560c5f0 Pascal P-Code binaries are now big-endian
+6ec1fd0674 Add Pascal test case
+7b3c17b1c1 Add Pascal test case
+ad8140f162 Pascal Test Case
+0014364161 Add support for Pascal P-Code interpreter
+731e425116 Add support for Pascal P-Code interpreter
+981846cb54 Add task switching instrumentation for missing case. Contributed by Petri Tanskanen.
+1920f18cc1 Add handler for bad_function_call.  Petteri Aimonen patch 0015
+59d3cbfe2e NxWidgets/NxWM updates from Petteri Aimonen (Patches 0007-0013)
+e22f90aa29 Fixes to STM32 SPI, USB MSC class driver, and MMC/SD SPI driver from Petteri Aimonen
+7d20a67179 Fixes to STM32 SPI, USB MSC class driver, and MMC/SD SPI driver from Petteri Aimonen
+d0f99eee31 STM32 OTF FS device patches from Petteri Aimonen (patches 0001-0003)
+d0f21192e0 STM32 OTF FS device patches from Petteri Aimonen (patches 0001-0003)
+0b1f142939 STM32 F4 patches from Petteri Aimonen (mostly USB)
+a96e54b96d STM32 F4 patches from Petteri Aimonen (mostly USB)
+d932e56dca STM32 F4 patches from Petteri Aimonen (mostly USB)
+1ed1a4abcb Several patches from Petteri Aimonen
+153984b9c9 Several patches from Petteri Aimonen
+e102123f0d Additional patches from Petteri Aimonen for FAT, STM32 SPI, and AT25
+4587760eee Additional patches from Petteri Aimonen for FAT, STM32 SPI, and AT25
+a3df67ef8a NxWidgets updates from Petteri Aimonen; buildroot GDB build fix from Ken Bannister
+782803e51b Patches from Petteri Aimonen (plus a few other things)
+775a420331 Patches from Petteri Aimonen (plus a few other things)
+cc022f93df Patches from Petteri Aimonen (plus a few other things)
+cd20adb63d Patches from Petteri Aimonen + stdbool and rand() changes for Freddie Chopin
+5306523bce Patches from Petteri Aimonen + stdbool and rand() changes for Freddie Chopin
+4e27a1a255 Several changes (mostly graphics related) from Petteri Aimonen
+9ff9979b2b Several changes (mostly graphics related) from Petteri Aimonen
+43dda7996d Patches 7-9 from Petteri Aimonen
+39ce8b1fab Patches 4-6 from Petteri Aimonen
+7fbc31650e Several patches from Petteri Aimonen (mostly NxWidgets)
+5446f8faed Several patches from Petteri Aimonen (mostly NxWidgets)
+55c7b1f978 Several patches from Petteri Aimonen (mostly NxWidgets)
+41f697bb86 STM32 OTG FS fix from Petteri Aimonen; Finish off some UG-2864AMBAG01 test logic
+635248de1a STM32 OTG FS fix from Petteri Aimonen; Finish off some UG-2864AMBAG01 test logic
+9bb950da29 STM32 OTG FS fix from Petteri Aimonen; Finish off some UG-2864AMBAG01 test logic
+ae553018f3 STM32 OTG FS device fix from Petteri Aimonen
+07bf00b775 STM32 OTG FS device fix from Petteri Aimonen
+6ebb026a1a Several bugfixes contributed by Petteri Aimonen
+e16d4463fa Several bugfixes contributed by Petteri Aimonen
+3ac88b412e Add MAX11802 touchscreeen driver from Petteri Aimonen
+2a3bcb1ec3 Incorporate Z80 bugfixes reported by Phillip Klaus Krause
+8f1e3f8ccd Incorporate Z80 bugfixes reported by Phillip Klaus Krause
+174318319b Incorporate Z80 bugfixes reported by Phillip Klaus Krause
+793e3d7571 RGMP 4.0 update from Qiang Yu
+0a9af6aeef RGMP 4.0 update from Qiang Yu
+308516c028 RGMP 4.0 update from Qiang Yu
+d4fcd8fed9 ZKIT-ARM-1769 support for ADC and DAC from Rashid
+36a65f3e0e ZKIT-ARM-1769 support for ADC and DAC from Rashid
+43d8762499 ZKIT-ARM-1769 support for ADC and DAC from Rashid
+0d5553ffa3 Bugs reported by Mike Smith fixed; ZKIT-ARM-1769 CAN support from Rashid Fatah
+edc5e0bee6 Bugs reported by Mike Smith fixed; ZKIT-ARM-1769 CAN support from Rashid Fatah
+0449f2f22e Bugs reported by Mike Smith fixed; ZKIT-ARM-1769 CAN support from Rashid Fatah
+0d5553ffa3 Bugs reported by Mike Smith fixed; ZKIT-ARM-1769 CAN support from Rashid Fatah
+edc5e0bee6 Bugs reported by Mike Smith fixed; ZKIT-ARM-1769 CAN support from Rashid Fatah
+0449f2f22e Bugs reported by Mike Smith fixed; ZKIT-ARM-1769 CAN support from Rashid Fatah
+f38a5477c7 Refactor common make definitions to tools/Config.mk; Add verbosity option to build (Richard Cochran)
+7f9ed0d7bb Refactor common make definitions to tools/Config.mk; Add verbosity option to build (Richard Cochran)
+f5365ff661 AVR corrections from Richard Cochran; uIP webserver enhancements from Kate
+3174ce14b9 AVR corrections from Richard Cochran; uIP webserver enhancements from Kate
+cadc799f21 CONFIG_DRAM_END configuration change from Richard Cochran
+b8a19e310e CONFIG_DRAM_END configuration change from Richard Cochran
+aca459968b Auto-configuration updates from Richard Cochran
+95ec4c3991 Auto-configuration updates from Richard Cochran
+6d011bfad4 Auto-configuration updates from Richard Cochran
+cefff5a8f1 Correct some errors in the LPC17xx SYSCON register bit definitions (from Rommel Marcello)
+e47a801fd1 Correct some errors in the LPC17xx SYSCON register bit definitions (from Rommel Marcello)
+3e52f2eb38 Correct some errors in the LPC17xx SYSCON register bit definitions (from Rommel Marcello)
+5811f16053 LPC1788 LCD fixes from Rommel Marcelo
+70af8aa6a0 LPC1788 LCD fixes from Rommel Marcelo
+927d8f46e2 Patches for LPC17xx SSP driver from Chris Taglia; patch for RAM test from Rommel Marcelo
+edc4fd3f96 Patches for LPC17xx SSP driver from Chris Taglia; patch for RAM test from Rommel Marcelo
+f36fe911a6 More LPC1788 updates from Rommel Marcelo
+ffd85ebe97 More LPC1788 updates from Rommel Marcelo
+cb74c76617 More LPC1788 updates from Rommel Marcelo
+cd8c86118e LPC1788 SD Card driver updates from Rommel Marcelo
+0df69d1de3 LPC1788 SD Card driver updates from Rommel Marcelo
+3185d5492b LPC1788 SD Card driver updates from Rommel Marcelo
+f4131d6aef Updated LPC1788 SDCARD logic from Rommel Marcelo
+0567ef3a9e Updated LPC1788 SDCARD logic from Rommel Marcelo
+23c8c591e9 Updated LPC1788 SDCARD logic from Rommel Marcelo
+dfed728304 More LPC1788 changes from Rommel Marcelo + a few kernel build fixes
+d61d9c3f56 More LPC1788 changes from Rommel Marcelo + a few kernel build fixes
+c74bef7053 More LPC1788 changes from Rommel Marcelo + a few kernel build fixes
+ac23001d25 LPC1788 updates from Rommel Marcelo
+422cf0cc0d LPC1788 updates from Rommel Marcelo
+309c3c2ff5 LPC1788 updates from Rommel Marcelo
+c749779b55 More LPC1788 updates from Rommel Marcelo
+6938c8ab96 More LPC1788 updates from Rommel Marcelo
+0c948a5bf1 More LPC1788 updates from Rommel Marcelo
+7c919b80a1 LPC1788 updates from Rommel Marcelo; NUC120 updates
+a6f13bdd15 LPC1788 updates from Rommel Marcelo; NUC120 updates
+98f37596d8 LPC1788 updates from Rommel Marcelo; NUC120 updates
+ca846f82d5 LPC1788 PLL configuration from Rommel Marcelo
+e6f3604333 LPC1788 PLL configuration from Rommel Marcelo
+255534f9bb LPC1788 PLL configuration from Rommel Marcelo
+9c9d742528 LPC1788 header file updates from Rommel Marcelo
+c61fead107 LPC1788 header file updates from Rommel Marcelo
+5ea42ec239 Updated LPC78x GPIO logic from Rommel Marcelo
+ad2cddb6e2 Updated LPC78x GPIO logic from Rommel Marcelo
+5d082d39b5 LPC1788 updated from Rommel Marcelo
+66ecae2f65 LPC1788 updated from Rommel Marcelo
+d29e9ca29d Add lpc178x_iocon.h from Rommel Marcelo
+8c8744ed8c Add lpc178x_iocon.h from Rommel Marcelo
+911d599d2f lpc1788 update from Rommel Marcelo; Beginning of logic to retain child exit status
+21817ecc38 lpc1788 update from Rommel Marcelo; Beginning of logic to retain child exit status
+b1c26dd6b3 Add vectors for the LPC1788 - from Rommel Marcelo
+849cc03ccf Add vectors for the LPC1788 - from Rommel Marcelo
+035b3a579c More LPC1788 register definitions from Rommel Marcelo
+71d3e9d80c More LPC1788 register definitions from Rommel Marcelo
+3e16c93178 lpc2378 port contributed by Rommel Marcelo
+75ed1a4ff6 lpc2378 port contributed by Rommel Marcelo
+2bd1d18f1a lpc2378 port contributed by Rommel Marcelo
+773c45580b lpc2378 port contributed by Rommel Marcelo
+5e32ac3abd lpc2378 port contributed by Rommel Marcelo
+9c671715e2 lpc2378 port contributed by Rommel Marcelo
+08ea0ce740 Some error handling bugs noted by Ronen Vainish
+f9ca53339d itoa() from Ryan Sundberg
+f8da801140 itoa() from Ryan Sundberg
+d960ca3b8d itoa() from Ryan Sundberg
+343d11be4a Qencoder fixes from Ryan Sundberg
+38ee7d8bbc Qencoder fixes from Ryan Sundberg
+53e3cbbfc7 Qencoder fixes from Ryan Sundberg
+b4e9cec9ca SDIO fixes for the STM32 F2 from  Gary Teravskis and Scott Rondestvedt
+fa593262f4 SDIO fixes for the STM32 F2 from  Gary Teravskis and Scott Rondestvedt
+b4e9cec9ca SDIO fixes for the STM32 F2 from  Gary Teravskis and Scott Rondestvedt
+fa593262f4 SDIO fixes for the STM32 F2 from  Gary Teravskis and Scott Rondestvedt
+7ce352ca5c Add bugfixes recommended by Sheref Younan
+510df49c46 Incorporate two FAT bugfixes reported by Sheref Younan.
+fe92ab2c27 I2C fixes from Uros; USB serial fix from Sheref; + A little more kernel mode stuff
+0374d16b98 I2C fixes from Uros; USB serial fix from Sheref; + A little more kernel mode stuff
+7ce352ca5c Add bugfixes recommended by Sheref Younan
+510df49c46 Incorporate two FAT bugfixes reported by Sheref Younan.
+5be01dab5a Add Uros' RCC actitivity counter to STM32 idle loop
+927f0f0d50 Add Uros' RCC actitivity counter to STM32 idle loop
+f86ead7d00 Add support for multiplexed SDIO pins from Uros
+48238d6781 Add support for multiplexed SDIO pins from Uros
+ad0721c9d7 Add support for multiplexed SDIO pins from Uros
+a87259ebc6 Add support for multiplexed SDIO pins from Uros
+c374547263 Add initial CC1101 wireless logic from Uros
+9278c5d5ee Add initial CC1101 wireless logic from Uros
+63d11edd8b Add initial CC1101 wireless logic from Uros
+1ba2240762 Add initial CC1101 wireless logic from Uros
+365f145069 Incorporate install app from Uros
+0faef6c9f0 Incorporate install app from Uros
+2f429ca4ad Mostly cosmetic changes from Uros
+d0696dba3a Mostly cosmetic changes from Uros
+9a9ebcd417 Mostly cosmetic changes from Uros
+66d5081229 More timer changes from Uros
+dd6533cf0e More timer changes from Uros
+9ecda2e9fa More timer changes from Uros
+8da8486fcb Updates from Uros
+8d752c8795 More changes from Uros
+cfd8e86d24 More changes from Uros
+9076917379 More changes from Uros
+4cbbcb893b Add code changes from Uros
+8fe277d601 Add code changes from Uros
+c1c80a723b Add code changes from Uros
+fe92ab2c27 I2C fixes from Uros; USB serial fix from Sheref; + A little more kernel mode stuff
+0374d16b98 I2C fixes from Uros; USB serial fix from Sheref; + A little more kernel mode stuff
+d0f637d1fe LIS331DL and STM32 I2C patch from Uros
+e08b22d33c LIS331DL and STM32 I2C patch from Uros
+d7f529bf0e LIS331DL and STM32 I2C patch from Uros
+f8bf60a519 New LIS331DL driver and VSN updates from Uros
+c6eb9d6c3f New LIS331DL driver and VSN updates from Uros
+9009f4ca68 New LIS331DL driver and VSN updates from Uros
+9ea1d98999 New LIS331DL driver and VSN updates from Uros
+249c892e16 More changes from Uros
+18f50c72e3 More changes from Uros
+c718778f56 More changes from Uros
+a082aebc77 More changes from Uros
+3ee884c63f Files deleted by Uros
+39bbebdce9 Files deleted by Uros
+a1f116b3aa More changes from Uros
+ebfcd6e6ff More changes from Uros
+2bcb84af12 More changes from Uros
+be2c99118c Updates from Uros
+721ae0f79e Updates from Uros
+9b1a363c1a Updates from Uros
+14d44c7c3b Incorporate changes from Uros Platise
+a98616d299 Incorporate changes from Uros Platise
+431f64f4d0 Incorporate changes from Uros Platise
+3ecec83ef0 Incorporate changes from Uros Platise
+2e9977373c apps/ update from Uros
+aea37927d5 apps/ update from Uros
+7e9ace204d apps/ update from Uros
+d01ad9777b Correct STM32 SPI3 bug reported by Uros
+1efaf770f6 Correct STM32 SPI3 bug reported by Uros
+0443335a11 Correct STM32 SPI3 bug reported by Uros
+3debf5b8dc SDIO-based MMC/SD fixes from Uros Platise
+6f021c7086 SDIO-based MMC/SD fixes from Uros Platise
+f81d416b37 SDIO-based MMC/SD fixes from Uros Platise
+14d44c7c3b Incorporate changes from Uros Platise
+a98616d299 Incorporate changes from Uros Platise
+431f64f4d0 Incorporate changes from Uros Platise
+3ecec83ef0 Incorporate changes from Uros Platise
+3debf5b8dc SDIO-based MMC/SD fixes from Uros Platise
+6f021c7086 SDIO-based MMC/SD fixes from Uros Platise
+f81d416b37 SDIO-based MMC/SD fixes from Uros Platise
+052b9dc37d Fix to STM32 F2/F4 DMA driver from Yan T.
+03ed16b39f Fix to STM32 F2/F4 DMA driver from Yan T.
+3560eed547 Add Yu Qiang's patch for RGMP support on the ARM
+44c5e2ca31 Add Yu Qiang's patch for RGMP support on the ARM
+be7cd049c4 Add Yu Qiang's patch for RGMP support on the ARM
+dd615c2b19 RGMP build patches from Yu Qiang
+19a048baf0 RGMP build patches from Yu Qiang
+ebda75c4d4 RGMP build patches from Yu Qiang
+0e59372648 Add E1000 PIC NIC driver from Yu Qiang
+56a4432633 Add E1000 PIC NIC driver from Yu Qiang
+76181fc1e8 Add E1000 PIC NIC driver from Yu Qiang
+f2fcf596a0 Add E1000 PIC NIC driver from Yu Qiang
