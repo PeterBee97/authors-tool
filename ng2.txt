@@ -1,0 +1,311 @@
+Abdelatifs
+Adam Porter
+Alan Carvahlo de Assis
+Alan Carvalho de Assis
+Alan Carvalho de Assiss
+Aleksandr Kazantsev
+Alessandro Temil
+Alex D
+Alex Denisov
+Alexander Entinger
+Alin
+Alin Jerpelea
+Andrew Bradford
+Andrew Tridgell
+Andrew Twidgell
+Andrew Webster
+Angus Gratton
+Anthony Merlino
+Anton D. Kachalov
+Anton Gropyanov
+Antti
+Arie de Muijnck
+Artur Mdrzak
+Ben Dyer
+Benix Vincent
+Bernd Walter
+Bertikd Van den Bergh
+Bertold Van den Bergh
+Bob DOIRON
+Bob Doiron
+Bob Doisin
+Bob Doison
+Bouteville
+Bradley Noyes
+Bradlye Noyes
+Brandon Warhurst
+Brennan Ashton
+Brennen Ashton
+Brian Webb
+Bruno Herrera
+Calvin Maguranis
+Charles Ash
+Chia Cheng Tsao
+Chris Taglia
+Chung Hwan Kim
+Claudio Micheli
+Craig Comstock
+Daniel Carvalho
+Daniel Lazlo Sitzer
+Daniel Lazo Sitzer
+Daniel P. Volpato
+Daniel Palmer
+Daniel Pereira de Carvalho
+Darcy Gong
+Dave
+Dave Marples
+Davice Sidrane
+David Alessio
+David Alession:
+David Drinn
+David Hewson
+David Sidrane
+David.Sidrane@Nscdg.com
+Davide Sidrane
+Denis Arnst
+Denis Carikli
+Derek B. NoonBurg
+Derek B. Noonburg
+Dmitriy Linikov
+Dmitry Nikolaev
+Dong Heng
+Duckworth
+Eetu Nevalainen
+Efim Monjak
+EunBong Song
+Eunbong Song
+Evgeniy Bobkov
+Fabien Comte
+Fabio Balzano
+Fanda
+Federico Braghiroli
+Frank Benkert
+Frank Bennett
+Frank Berkert
+Frank Sautter
+Freddi Chopin
+Freddie Chopin
+Freemans Goden
+Gappi92
+Gary Teravskis
+Greg Meiste
+Gregory
+Gregory Nutt
+Hal Glenn
+Hang Xu
+Harri Luhtala
+Harri Luhtala <
+Helmut
+Henjiu Kang
+Henry Zhang
+Hiro
+Howefver
+Huang Qi
+Ivan Ucherdzhiev
+JP Carballo
+Jahu Niskanen
+Jakob Haufe
+Jakob Odersky
+Janne Rosberg
+Janne Rosberg <janne.rosberg@offcode.fi
+Jari Nippula
+Jari van Ewijk
+Jason Jiang
+Jeongchan Kim
+Jerome Lang
+Jerpelea <Alin.Jerpelea@sonymobile.com
+Jesse
+Jim Ewing
+Jim Wolfman
+Jim Wylder
+Johannes Hampel
+John Wharington
+Joo Matos
+Jose Pablo Carballo
+Jouko Holopainen
+Juha
+Juha Niskanen
+Jukka Laitinen
+Junmin Kim
+Junyeon LEE
+Jussi Kivilinna
+Kate
+Kaushal Parikh
+Kazuya Hioki
+Kconstantin Berezenko
+Kejun ZHOU <zhoukejun@outlook.com
+Ken Bannister
+Ken Petit
+Ken Pettit
+Kevin Franzen
+Kevin Hester
+Kistopher Tate
+Koichi Okamoto
+Kosma Moczek
+Kriegleder
+Krishna Kumar
+Kristopher Tate
+Kwonsk
+Kyle Lei
+LUFA
+Laurent Latil
+Lederhilger Martin
+Leif Jacob
+Leo Aloe3132
+Leo aloe3132
+Librae
+Liio Chen
+Lizhuoyi
+Lok
+Lorenz Meier
+Luciano Neri
+Lwazi Dube
+M. Kannan
+M_E128
+Maciej Wjcik
+Macs N.
+Macs Neklyudov
+Magnus Templing
+Make Smith
+Malcom McLean
+Manuel
+Manuel Sthn
+Manuel Stuehn
+Marc Alexander Lehmanns
+Marco
+Marco Aurlio da Cruz
+Marco Cruz
+Marco Krahl
+Mark
+Mark Shulte
+Mark Whitehorn
+Marten Svanfeldt
+Martin Davey
+Martin Lederhilger
+Masayuki Ishikawa
+Masayuki Ishikwawa
+Mateusz Szafoni <raiden00pl@gmail.com
+Matias N
+Matt Campbell
+Matt Poppe
+Max
+Max Holtberg
+Max Holtzberg
+Max Kriegleder
+Max Kriegleder et al.
+Max Kriegler
+Max Nekludov
+Max Neklyudov
+Max Nekyudov
+Max/Himax
+Maxim Integrated
+Maz Holtzberg
+Michael
+Michael Hope
+Michal Ulianko
+Mike
+Mike Smith
+Mohammed Elwakeel
+Murilo Ponte
+Nate Weibley
+Nathan Hartman
+Nicholas Chin
+Noel Bouteville
+Oleg Evseev
+Orbital Fox
+OrbitalFox
+Paolo Messina
+Pascal
+Pascal Speck
+Patrizio Simona
+Paul A. Patience
+Paul Alexander Patience
+Paul Osmialowski
+Paul Y. Zhang
+Paul Zhang
+Pavel Krienko
+Pavel Pisa
+Pavlina Koleva
+Pelle Winderstam
+Pelle Windestam
+Peter Bee
+Petri Tanskanen
+Petro Karashchenko
+Petteri Aimonen
+Phil Coval
+Philippe Coval
+Phillip Klaus Krause
+Pierre
+Pierre-Noel Bouteville
+Pierre-noel
+Qi Huang
+Qiang Yu
+Raashid Fatah
+Rajan Gill
+Ramtin Amin
+Rashid
+Rashid Fatah
+Richar Cochran
+Richard Cochran
+Roland Takacs
+Roman Saveljev
+Rommel Marcello
+Rommel Marcelo
+Ronen Vainish
+Rony XLN
+Rony Xln
+Ryan Sundberg
+Ryan VanSickle
+Sakari Kapanen
+Sami Pelkonen
+Sbastien Lorquet
+Scott
+Scott Rondestvedt
+Sebastien
+Sebastien Lorquet
+Serg Podtynnyi
+Shao Li
+Sheref
+Sheref Younan
+Simon Piriou
+Spirit
+Stavros Polymenis
+Stefan Kolb
+Stefan Sperling
+Steve Redler IV
+Surya Prakash Verma
+Takeyoshi Kikuchi
+Teemu Pirinen
+Thomas Gruber
+Thomas Grubler
+Tilak Tangudu
+Uros
+Uros Platise
+Vadzim Dambrouski
+Valmantas Palika
+Versiboard
+Victor Mayoral Vilches
+Vijay Kumar
+Vinti
+Vladimir Komendantskiy
+Vlado Vidovic
+Vytautas Lukenskas
+Wig Cheng
+Woohan Lee
+Xiang Xiao
+Xiao Xiang
+Yan T.
+Yiran Liao
+Yu Qiang
+Yusuke Mitsuki
+bkueng
+eero.nurkkala
+ez80f910200zco
+gdi@embedders.org
+junmin-kim
+junmindd.kim@samsung.com
+junyeon2.lee@samsung.com
+kr Bahadr Arslan
+pn_bouteville@yahoo.fr
+xiaoxiang781216
+xyz
