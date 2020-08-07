@@ -1,10 +1,11 @@
 # authors-tool
 
-A shell script to help clearing the licenses for NuttX
+Scripts to help clearing the licenses for NuttX 
 
 ## Functions
 
-The script extracts copyright owners and declared authors from the comment blocks at the start of a file. The top 3 (number of lines edited) contributors to the file, determined by git log, are also recorded. All data is stored in a SQLite3 database for ease of use.
+### Database
+The script authors-db.sh extracts copyright owners and declared authors from the comment blocks at the start of a file. The top 3 (number of lines edited) contributors to the file, determined by git log, are also recorded. All data is stored in a SQLite3 database for ease of use.
 
 Comments like:
 
@@ -41,6 +42,15 @@ The data fields explained:
  - Sometimes copyright contains the whole line
  - Sometimes copyright0 is absolutely wrong
  - Declared authors may contain extra characters between names
+
+### Names
+
+ The Python script process.py uses some NLP library to filter out names from text log. Put changelog.sh, process.py and <somelog.txt> in the same folder and run:
+ 
+     ./changelog.sh <somelog.txt>
+     
+ and you will get a names.txt with names appeared in the log.(Manual polishment required)
+ 
 ## Prerequisites
 
 Install SQLite3:
@@ -62,3 +72,7 @@ will return all items that doesn't seem to belong to Greg (considering copyright
 ## Results
 
 The results for latest release as of Aug 3,2020 has been uploaded as authors-nuttx.db and authors-apps.db, respectively.
+
+The names in [ChangeLog](https://github.com/apache/incubator-nuttx/blob/nuttx-9.0.0-RC0/ChangeLog) from NuttX 9.0.0 RC0 is in names-changelog.txt. 
+
+And the names in git log (nuttx and apps combined) of master branch at Aug 6,2020 is in names-gitlog.txt.
