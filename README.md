@@ -76,3 +76,9 @@ The results for latest release as of Aug 3,2020 has been uploaded as authors-nut
 The names in [ChangeLog](https://github.com/apache/incubator-nuttx/blob/nuttx-9.0.0-RC0/ChangeLog) from NuttX 9.0.0 RC0 is in names-changelog.txt. 
 
 And the names in git log (nuttx and apps combined) of master branch at Aug 6,2020 is in names-gitlog.txt.
+
+### name-commits.tst
+
+    git log --no-merges --author=patacongo --pretty=format:"%h %s" > gp.txt
+    cat ng2.txt | xargs -n 1 -I pp grep "pp" gp.txt > commits-patacongo.txt
+    ./name-commits.sh ng2.txt name-commits.txt commits-patacongo.txt
