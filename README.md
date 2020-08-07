@@ -82,5 +82,4 @@ And the names in git log (nuttx and apps combined) of master branch at Aug 6,202
     git log --no-merges --author=patacongo --pretty=format:"%h %s" > gp.txt
     cat ng2.txt | xargs -n 1 -I pp grep "pp" gp.txt > commits-patacongo.txt
     ./name-commits.sh ng2.txt name-commits.txt commits-patacongo.txt
-    cat ng3.txt | xargs -n 1 -I pp grep "pp" gp.txt > commits-patacongo.txt
     ./name-commits.sh ng3.txt name-commits-full.txt commits-patacongo.txt
