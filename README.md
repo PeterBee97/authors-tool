@@ -77,7 +77,7 @@ The names in [ChangeLog](https://github.com/apache/incubator-nuttx/blob/nuttx-9.
 
 And the names in git log (nuttx and apps combined) of master branch at Aug 6,2020 is in names-gitlog.txt.
 
-### name-commits.tst
+### name-commits.txt
 
     git log --no-merges --author=patacongo --pretty=format:"%h %s" > gp.txt
     cat ng2.txt | xargs -n 1 -I pp grep "pp" gp.txt > commits-patacongo.txt
